@@ -266,6 +266,76 @@ LINK_ENTITY_TO_CLASS(item_box_lrounds, CItem_BoxLRounds);
 LINK_ENTITY_TO_CLASS(item_ammo_ar2, CItem_BoxLRounds);
 
 // ========================================================================
+//	>> Box 9mm MP5 Rounds
+// ========================================================================
+class CItem_BoxMP5Rounds : public CItem
+{
+public:
+	DECLARE_CLASS(CItem_BoxMP5Rounds, CItem);
+
+	void Spawn()
+	{
+		Precache();
+		SetModel("models/items/boxsrounds.mdl");
+
+		BaseClass::Spawn();
+	}
+	void Precache()
+	{
+		PrecacheModel("models/items/boxsrounds.mdl");
+	}
+	bool MyTouch(CBasePlayer* pPlayer)
+	{
+		if (ITEM_GiveAmmo(pPlayer, SIZE_AMMO_MP5, "MP5"))
+		{
+			if (g_pGameRules->ItemShouldRespawn(this) == GR_ITEM_RESPAWN_NO)
+			{
+				UTIL_Remove(this);
+			}
+			return true;
+		}
+		return false;
+	}
+};
+LINK_ENTITY_TO_CLASS(item_box_mp5rounds, CItem_BoxMP5Rounds);
+LINK_ENTITY_TO_CLASS(item_ammo_mp5, CItem_BoxMP5Rounds);
+
+// ========================================================================
+//	>> Large Box 9mm MP5 Rounds
+// ========================================================================
+class CItem_LargeBoxMP5Rounds : public CItem
+{
+public:
+	DECLARE_CLASS(CItem_LargeBoxMP5Rounds, CItem);
+
+	void Spawn()
+	{
+		Precache();
+		SetModel("models/items/boxsrounds.mdl");
+
+		BaseClass::Spawn();
+	}
+	void Precache()
+	{
+		PrecacheModel("models/items/boxsrounds.mdl");
+	}
+	bool MyTouch(CBasePlayer* pPlayer)
+	{
+		if (ITEM_GiveAmmo(pPlayer, SIZE_AMMO_MP5_LARGE, "MP5"))
+		{
+			if (g_pGameRules->ItemShouldRespawn(this) == GR_ITEM_RESPAWN_NO)
+			{
+				UTIL_Remove(this);
+			}
+			return true;
+		}
+		return false;
+	}
+};
+LINK_ENTITY_TO_CLASS(item_large_box_mp5rounds, CItem_LargeBoxMP5Rounds);
+LINK_ENTITY_TO_CLASS(item_ammo_mp5_large, CItem_LargeBoxMP5Rounds);
+
+// ========================================================================
 //	>> LargeBoxLRounds
 // ========================================================================
 class CItem_LargeBoxLRounds : public CItem
