@@ -802,7 +802,6 @@ void CNPC_Houndeye::StartTask(const Task_t* pTask)
 			Vector vTargetPos = GetEnemyLKP();
 			vTargetPos.z = GetFloorZ(vTargetPos);
 
-			if (GetNavigator()->SetRadialGoal(vTargetPos, random->RandomInt(50, 500), 90, 175, m_bLoopClockwise))
 			{
 				TaskComplete();
 				return;
@@ -1091,7 +1090,7 @@ int CNPC_Houndeye::SelectSchedule(void)
 			return SCHED_HOUND_GROUP_RETREAT;
 		}
 
-		if (HasCondition(COND_LIGHT_DAMAGE) |
+		if (HasCondition(COND_LIGHT_DAMAGE) ||
 			HasCondition(COND_HEAVY_DAMAGE))
 		{
 			if (random->RandomFloat(0, 1) <= 0.4)
