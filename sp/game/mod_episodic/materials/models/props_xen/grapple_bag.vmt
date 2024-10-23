@@ -1,0 +1,15 @@
+"VertexLitGeneric"
+{
+	"$baseTexture"			"models/props_xen/grapple_bag"
+	"$bumpmap"				"models/props_xen/grapple_bag_nm"
+//	"$envmap"	"env_cubemap"
+//                "$normalmapalphaenvmapmask" "1"
+//            "$envmaptint"			"[0.2 0.2 0.2]"
+$halflambert 1
+	$nodecal 1
+	$model 1
+	$phong 1
+	$phongexponent 10
+	$phongboost	.1
+	$phongfresnelranges	"[0.05 0.5 1]"	
+}

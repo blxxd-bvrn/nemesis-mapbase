@@ -1,0 +1,26 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 					"models/props_xen/interloper/crater"
+	"$bumpmap" 						"models/props_xen/interloper/crater_nm"
+	"$normalmapalphaenvmapmask" 	"1"
+
+	"$surfaceprop" 					"rock"
+
+	"$envmap" 						"env_cubemap"
+	"$envmaptint" 					"[.08 .1 .03]"
+	"$envmapsaturation" 			"1"
+
+	"$phong" 						"1"
+	"$phongexponent" 				"80"
+	"$phongboost" 					"3"
+	"$phongfresnelranges"			"[0.2 0.6 2.8]"
+	"$phongtint"					"[.35 .4 .2]"
+
+//	$detail 						detail\rock_lg
+       //$detailscale 				10
+       //$detailblendfactor 		.4
+		
+	"%keywords" 					"bms, Jenn0, xen"
+    "$model" 1
+
+}

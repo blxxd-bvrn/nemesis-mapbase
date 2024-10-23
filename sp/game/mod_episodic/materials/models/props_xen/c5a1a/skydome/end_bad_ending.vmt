@@ -1,0 +1,10 @@
+"UnlitGeneric"
+{
+
+	$basetexture "models/props_xen/c5a1a/skydome/end_bad_ending"
+	
+	"$alphatest" 					"1"
+    "$alphatestreference" 			"0.1"
+	
+    "$model" 1
+}

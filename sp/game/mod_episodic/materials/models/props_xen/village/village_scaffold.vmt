@@ -1,0 +1,16 @@
+"VertexlitGeneric"
+{
+	"$basetexture" 			"models/props_xen/village/village_scaffold_a"
+	"$bumpmap" 				"models/props_xen/village/village_scaffold_n"
+//	$detail 				"detail/detail_wood01_bm"
+//	$detailtexturetransform "center .5 .5 scale 1 1 rotate 90 translate 0 0"
+//	$detailscale 			8
+//	$detailblendmode 		0
+//	$detailblendfactor 		.69//nice
+	$phong 					1
+	$phongexponent 			1
+	$phongBoost 			1
+	$phongFresnelRanges 	"[0.25 .25 .5]"
+    "$model" 1
+
+}

@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	$basetexture "props_xen/testing/websphere_d"
+	$bumpmap "props_xen/testing/websphere_normal"
+    "$model" 1
+}

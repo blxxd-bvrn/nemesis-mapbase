@@ -1,0 +1,12 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_xen/village/vort_crate_a"
+	"$alphatest" 1
+	"$nocull" 1
+	$phong 1
+	$phongexponent 2
+	$phongBoost 1
+	$phongFresnelRanges "[0.25 .5 1]"
+    "$model" 1
+
+}

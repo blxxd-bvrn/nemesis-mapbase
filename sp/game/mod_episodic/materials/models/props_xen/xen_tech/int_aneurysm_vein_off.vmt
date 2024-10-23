@@ -1,0 +1,32 @@
+"VertexLitGeneric"
+{
+	$model 							1
+
+	$basetexture 					"models/props_xen/interloper/int_aneurysm_vein_d"
+	$bumpmap 						"models/props_xen/interloper/int_aneurysm_vein_n"
+
+	//$color2 						"{10 45 10}"
+	
+	$envmap 						env_cubemap
+	$envmapcontrast 				.25
+	$envmaptint 					1 1 1
+
+	$phong 							1
+	$phongboost 					40
+	$phongexponent 					16
+	$phongfresnelranges 			"[.25 .5 0]"
+	$nodecal 						1
+
+	$selfillum 						1
+	//$halflambert 					1
+	
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar" 			"$basetexturetransform"
+			"texturescrollrate" 		.2
+			"texturescrollangle"		 90.00
+		}
+	}
+}

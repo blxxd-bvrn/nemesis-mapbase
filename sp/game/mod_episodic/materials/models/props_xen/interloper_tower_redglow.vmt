@@ -1,0 +1,31 @@
+"VertexLitGeneric"
+{
+	"$basetexture" 			"models/props_xen/interloper_tower_hires"
+	"$bumpmap"				"models/props_xen/interloper_tower_n_hires"
+//	"$detail" 				"detail/bm_concrete_detail_02"
+//	"$detailblendmode" 		"0"
+//	"$detailscale" 			"8"
+//	"$detailblendfactor" 	"1"
+	
+	"$envmap" 				"env_cubemap"
+//	"$envmaptint" 			"[.25 .25 .25]"
+	"$envmapcontrast" 		.25
+	"$envmapsaturation" 	1
+
+
+	"$phong" 				"1"
+	"$phongexponent" 		"2"
+	"$phongboost" 			"1"
+
+	"$phongfresnelranges"	"[0 0.8 1]"
+	"$phongalbedotint" 		"1"
+	"$phongtint" 			"{225 75 25}"
+
+	"$rimlight" 			"1"				// To enable rim lighting (requires phong)
+	"$rimlightexponent" 	"16"		// Exponent for phong component of rim lighting
+	"$rimlightboost" 		"0.02"			// Boost for ambient cube component of rim lighting
+	
+	
+	"$selfillum" 			"1"
+    	"$model" 1
+}

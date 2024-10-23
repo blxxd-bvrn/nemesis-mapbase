@@ -1,0 +1,20 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "xen/xen_int_sandstone_01a"
+	"$bumpmap" "xen/xen_int_sandstone_01a_n"
+	$basetexturetransform "center .5 .5 scale .5 .5 rotate 0 translate 0 0"
+	"$color2" "[.86 .86 .86]"
+	"$normalmapalphaenvmapmask" "1"
+
+	"$surfaceprop" 	"rock"
+
+	"$envmap" 	"env_cubemap"
+	"$envmaptint" 	"[.06 .06 .06]"
+	"$envmapsaturation" ".25"
+	$phong 1
+	$phongexponent 2
+	$phongBoost 1
+	$phongFresnelRanges "[0.05 .5 1]"
+    "$model" 1
+
+}

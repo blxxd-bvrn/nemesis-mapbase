@@ -1,0 +1,22 @@
+"VertexLitGeneric"
+{
+
+//	$detail 						"detail/rock_lg"
+	
+	$basetexture 					"xen/xen_c1a4a_rock_003a"
+	$bumpmap 						"xen/xen_c1a4a_rock_003a_normal"
+
+	"$MOSS_ENABLE" 					"1"
+	"$MOSS_REF_DIRECTION" 			"[0 0 1]"
+	"$MOSS_ANGLE_THETA" 			"20"
+	"$MOSS_ANGLE_PHI" 				"60"
+	"$MOSS_ANGLE_FALLOFF" 			"1"
+	"$MOSS_BLEND_FACTOR" 			"0.6"
+	"$MOSS_SCALE" 					"8"
+	"$MOSS_SCALE_TURN_ON_ABSOLUTE" 	"1"
+	$MOSS_TEXTURE 					"models/props_xen/moss_test/bubblemoss"
+
+	 $detailblendmode 				"0"
+	 $detailblendfactor 			"0.7"
+    "$model" 1
+}

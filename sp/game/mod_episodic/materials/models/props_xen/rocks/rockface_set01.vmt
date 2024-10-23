@@ -1,0 +1,16 @@
+VertexLitGeneric
+{
+	$baseTexture models\props_xen\rocks\rockface_set01
+	$bumpMap models\props_xen\rocks\rockface_set01_normal
+	
+	$phong 1
+	$phongExponent 15
+	$phongBoost 2
+	$phongFresnelRanges "[0.25 0.5 1]"
+	
+//	$detail xen\xen_c1a4a_rock_001a
+//	$detailScale 4
+//	$detailBlendFactor 1
+//	$detailBlendMode 4
+    "$model" 1
+}

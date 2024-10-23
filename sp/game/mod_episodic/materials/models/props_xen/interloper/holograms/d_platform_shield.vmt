@@ -1,0 +1,31 @@
+"VertexLitGeneric"
+{
+	"$model"									"1"	
+// File Created by Wall Worm Pro ( http://dev.wallworm.com )
+
+// BEGIN Textures
+	$basetexture "models/props_xen/interloper/holograms/d_platform_shield"
+// END Textures
+
+
+
+// BEGIN Transparency
+	"$nocull" 1
+	"$translucent" 								"1"
+	"$additive" 								"1"
+// END Transparency
+
+
+
+
+	
+	"$emissiveBlendEnabled" 					"1"
+	"$emissiveBlendTint" 						"{255 20 10}"
+ 	"$emissiveBlendTexture" 					"models\props_xen\interloper\holograms\noise01"
+	"$emissiveBlendBaseTexture" 				"models\props_xen\interloper\holograms\d_platform_shield"
+	"$emissiveBlendFlowTexture" 				"models\props_xen\interloper\holograms\down_flow" 				//Can use a flow mask that scrolls to create disruptive patterns. Use white for just basic glow.
+	"$emissiveBlendStrength" 					"1" 															//Strength of glow. Can be controlled via proxy for variable glow.
+	"$emissiveBlendScrollVector" 				"[0.05 0.05]" 
+	"$sheenpassenabled" 						"1"
+
+}

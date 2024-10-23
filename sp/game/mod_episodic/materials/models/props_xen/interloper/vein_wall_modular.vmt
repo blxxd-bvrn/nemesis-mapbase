@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_xen/interloper/vein_wall_a"
+	"$bumpmap" "models/props_xen/interloper/vein_wall_n"
+    "$model" 1
+
+}

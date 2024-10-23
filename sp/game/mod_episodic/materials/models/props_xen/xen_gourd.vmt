@@ -1,0 +1,27 @@
+"VertexLitGeneric"
+{
+	"$baseTexture"				"models/props_xen/xen_gourd"
+	"$bumpmap"					"models/props_xen/xen_gourd_nm"
+	$selfillum 1
+
+	"$envmap" 					"env_cubemap"
+   	"$envmaptint" 				"[.2 .2 .2]"
+	"$normalmapalphaenvmapmask" 1	
+//	$detail 					"detail/detail_coral2.vtf"
+//	$detailscale 				10
+//	$detailblendfactor 			.75
+//	$detailblendmode 			0
+	"$halflambert" 				1
+	"$multipass" 				1
+	"$phongwarptexture"  		"models/effects/phongwarp_library/iridescence008"
+
+	$phong 						1
+        $phongexponent 			4
+        $phongboost 			1
+        $phongtint 				"[1 1 1]"
+        $phongfresnelranges 	"[.4 .1 1]"
+	$rimlight 					"1"
+	$rimlightexponent 			"20"
+	$rimlightboost 				"0.5"	
+    "$model" 1
+}

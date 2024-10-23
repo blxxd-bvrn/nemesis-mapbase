@@ -1,0 +1,15 @@
+"vertexlitgeneric"
+{
+	"$basetexture" "lab/lab1_panel1d"
+	"$surfaceprop" "metal"
+	"$bumpmap" "lab/lab1_panel1d_ssbump"
+
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1	
+	"$envmaptint" "[.8 .8 .8]"
+	"$envmapcontrast"	1
+
+
+	"%keywords" "bms,jenn0"
+    "$model" 1
+}

@@ -25,6 +25,9 @@ class CNPC_Houndeye : public CAI_BaseNPC
 	DECLARE_CLASS( CNPC_Houndeye, CAI_BaseNPC );
 
 public:
+
+	CNPC_Houndeye();
+
 	void			Spawn( void );
 	void			Precache( void );
 	Class_T			Classify ( void );

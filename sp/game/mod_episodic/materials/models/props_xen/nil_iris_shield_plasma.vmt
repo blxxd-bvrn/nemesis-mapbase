@@ -1,0 +1,40 @@
+//"UnLitTwoTexture"//
+"nihi_vortex_Shield"
+{
+	"$basetexture" 	"models\props_xen\nil_iris_shield_plasma"
+	"$texture2" "models\props_xen\nil_iris_shield_noise"
+	"$BURN_NOISE" 	"dev/burnableweb3_mask"	
+	//"$BURN_NOISE" 	"dev/xognoise"	
+	"$BURN_GRAD" 	"dev/vortex_burn_grad_1d"	
+	//"$translucent" 1
+	"$model" 1
+	"$additive" 1
+	"$nocull"	1
+    	"$angle" 0
+    	"$translate" "[0.0 0.0]"
+    	"$center" "[0.5 0.5]"
+
+
+    // "Proxies"
+    // {
+        // "LinearRamp"
+        // {
+            // "rate" -80
+            // "initialValue" 0.0
+            // "resultVar" "$angle"
+        // }
+
+		// "TextureScroll"
+		// {
+		// "textureScrollVar" $basetexturetransform
+		// "textureScrollRate" 0.3
+		// "textureScrollAngle" -140
+		// }
+		// "TextureScroll"
+		// {
+		// "textureScrollVar" $texture2transform
+		// "textureScrollRate" 0.8
+		// "textureScrollAngle" -120
+		// }
+    // } 
+}

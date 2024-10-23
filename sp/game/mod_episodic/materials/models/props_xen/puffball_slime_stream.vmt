@@ -1,0 +1,23 @@
+"UnlitGeneric"
+{
+	"$basetexture" 			"models/props_xen/puffball_slime_stream"
+	"$translucent" 			1
+	"$additive" 			1
+	//"$selfillum" 			1
+	//$selfillummaskscale 	.45
+//	$detail 				models\props_xen\healingislandstream_small
+//	$detailScale 			1
+//	$detailBlendFactor 		1
+//	$detailBlendMode 		8
+	"$nocull"				1
+	"$model" 1
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar" "$baseTextureTransform"
+			"texturescrollrate" .2
+			"texturescrollangle" -90
+		}
+	}
+}

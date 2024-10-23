@@ -1,0 +1,37 @@
+"VertexLitGeneric"
+{
+
+	"$basetexture" 			"models/props_xen/foliage/mold/xen_mold_cyst_001a"
+	"$bumpmap" 			"models/props_xen/foliage/mold/xen_mold_cyst_001a_normal"
+
+	"$normalmapalphaenvmapmask" 	"1"
+	"$envmap" 			"env_cubemap"
+	"$envmaptint" 			"[.4 .45 .35]"
+	"$envmapsaturation" 		"1"
+
+	"$selfillum" 1
+	"$selfillumtint" "[ 1.0 0.2 0.2 ]"
+
+	//"$phong" 			"1"
+	//"$phongexponent" 		"8"
+	//"$phongboost" 			"2"
+	//"$phongfresnelranges"		"[0.2 0.6 1.8]"
+	//"$phongalbedotint" 		"1"
+
+$treeSway                         "0"
+   $treeSwayHeight                   "0"
+   $treeSwayStartHeight              "0"
+   $treeSwayRadius                   "15"
+   $treeSwayStartRadius              "1"
+   $treeSwaySpeed                    "0"
+   $treeSwayStrength                 "0"
+   $treeSwayScrumbleSpeed            "4"
+   $treeSwayScrumbleStrength         ".03"
+   $treeSwayScrumbleFrequency        "5"
+   $treeSwayFalloffExp               "6"
+   $treeSwayScrumbleFalloffExp       "6"
+   $treeSwaySpeedHighWindMultiplier  "0"
+   $treeSwaySpeedLerpStart           "1000.0"
+   $treeSwaySpeedLerpEnd             "2500.0"
+    "$model" 1
+}

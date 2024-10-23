@@ -1,0 +1,59 @@
+"VertexLitGeneric"
+{
+	"$model" 						"1"
+
+	"$color2" 						"[.2 1 .1]"
+
+	"$basetexture" 					"models/props_xen/interloper/int_ulcer_surface_darken_d"
+	"$bumpmap" 						"models/props_xen/plugplasma_n"
+
+//	"$detail" 						"detail/xen_bone2"
+//	"$detailscale" 					"1"
+//	"$detailblendfactor" 			".5"
+//	"$detailblendmode" 				"3"
+
+	"$envmap" 						"cubemaps/cubemap_sheen001"
+	//"$envmapcontrast" 				".5"
+	"$envmaptint" 					"[.1 1 .05]"
+
+	"$phong" 						"1"
+	"$phongexponent" 				"1"
+	"$phongboost" 					"5"
+	"$phongtint" 					"[.5 1 .3]"
+	"$phongfresnelranges" 			"[.35 .25 .05]"
+
+	"$selfillum" 					"1"
+	"$selfillumtint" 				"[1 1 1]"
+
+	//"$angle" 						"[0.0]"
+	//"$translate" 					"[0.0 0.0]"
+	//"$center" 						"[.5 .5]"
+
+	//"Proxies"
+	//{	
+		//"LinearRamp"
+	//{
+		//"rate" 6
+		//"initialValue" 0.0
+		//"resultVar" "$angle"
+	//}
+
+	//"TextureTransform"
+	//{
+		//"translateVar" "$translate" // we don't need this, but it's not optional
+		//"rotateVar" "$angle"
+		//"centerVar" "$center"
+		//"resultVar" "$basetexturetransform"
+	//}
+	
+	//"Sine" // a proxy which produces a sine wave
+	//{
+		//"resultVar"	"$detailscale" // The shader parameter to be manipulated
+		//"sineperiod"	"25"
+		//"sinemin"		".75"
+		//"sinemax"		"1"
+	//}
+	
+	//}
+}
+

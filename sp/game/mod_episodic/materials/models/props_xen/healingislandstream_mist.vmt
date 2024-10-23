@@ -1,0 +1,17 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_xen/healingislandstream_mist"
+	"$additive" 1
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar" "$baseTextureTransform"
+			"texturescrollrate" .7
+			"texturescrollangle" -90
+		}
+
+	}
+	
+	"$model" 1
+}

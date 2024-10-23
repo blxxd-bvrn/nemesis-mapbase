@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+
+//	$detail 				"detail/rock_lg"
+	$basetexture 			"xen/xen_c1a4a_rock_004a"
+	$bumpmap 				"xen/xen_c1a4a_rock_004a_normal"
+
+
+	"$phong" 				1
+	"$phongboost" 			"0.2"
+	"$phongexponent" 		"5"
+	"$phongfresnelranges" 	"[0.2 0.6 1.8]"
+
+//	 $detailtint 			"[0.5 0.5 0.5]"
+//	 $detailblendmode 		"0"
+//	 $detailblendfactor 	"0.7"
+    "$model" 1
+}

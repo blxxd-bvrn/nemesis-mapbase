@@ -1,0 +1,25 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/props_xen/foliage/interloper/greensponge"
+	"$bumpmap" "models/props_xen/foliage/interloper/greensponge_nm"
+
+	"$surfaceprop" "alienflesh"
+	"$multipass" 1
+	"$halflambert"	"1"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmaptint"					"[1 1 1]"
+	$phongtint "[ .15 0 .05 ]"
+	"$phong" "1"
+	"$phongalbedotint" "1"
+    $phongexponent 100
+        $phongboost 5
+        $phongfresnelranges "[.4 .1 1]"
+// Rim lighting parameters
+	"$rimlight" "1"				// To enable rim lighting (requires phong)
+	"$rimlightexponent" "50"             // Exponent for phong component of rim lighting
+	"$rimlightboost" "3"	               // Boost for ambient cube component of rim lighting
+	
+    "$model" 1
+
+}

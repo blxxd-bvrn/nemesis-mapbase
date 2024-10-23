@@ -1,0 +1,35 @@
+"VertexlitGeneric"
+{
+	"$basetexture" 						"models/props_office/oc_shelf"
+	"$bumpmap" 							"models/props_office/oc_shelf_nm"
+
+	"$model"							"1"
+	"$surfaceprop"						"MetalPanel"
+	"$halflambert"						"1"
+	"$multipass" 						"1"
+	
+//	EnvMap Parameters
+	
+	"$envmap"							"env_cubemap"
+	"$envmaptint"						"[.5 .5 .5]"
+	"$envmapsaturation"					"1"
+	"$normalmapalphaenvmapmask"			"1"
+	
+//	Phong Lighting Parameters
+	
+	"$phong"							"1"
+	"$phongexponent"					"7"
+	"$phongboost"						"1"
+	"$phongfresnelranges"				"[.4 .8 30]"
+
+
+//	Rim lighting parameters
+	"$rimlight"							"1"			// To enable rim lighting (requires phong)
+	"$rimlightexponent" 				"35"		// Exponent for phong component of rim lighting
+	"$rimlightboost"					".2"		// Boost for ambient cube component 
+
+	"$detail"							"detail/bm_metal_detail_01.vtf"
+	"$detailscale"						"5"
+	"$detailblendfactor"				".7"
+	"$detailblendmode"					"0"
+}

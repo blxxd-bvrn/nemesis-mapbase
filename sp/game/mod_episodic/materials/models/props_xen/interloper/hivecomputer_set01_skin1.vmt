@@ -1,0 +1,19 @@
+VertexLitGeneric
+{
+	$baseTexture models\props_xen\interloper\hivecomputer_set01
+	$bumpMap models\props_xen\interloper\hivecomputer_set01_normal
+	
+	$phong 1
+	$phongExponent 15
+	$phongBoost 2
+	$phongFresnelRanges "[0.25 0.5 1]"
+	
+	$emissiveBlendEnabled 1
+	$emissiveBlendTexture vgui\white
+	$emissiveBlendBaseTexture models\props_xen\interloper\hivecomputer_set01_emissivemask1
+	$emissiveBlendFlowTexture vgui\white
+	$emissiveBlendTint "{210 40 10}"
+	$emissiveBlendStrength .075
+	$emissiveBlendScrollVector "[0 0]"
+    "$model" 1
+}

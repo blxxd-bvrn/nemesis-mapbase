@@ -1,0 +1,41 @@
+"VertexLitGeneric"
+{
+   	"$basetexture" 							"models/props_xen/water/c4a2b_oc3_water2_d"
+	//"$bumpmap" 							"models/props_xen/water/c4a2b_oc3_water2_n"
+	//"$normalmapalphaenvmapmask" 			"1"
+	
+	"$additive" 							"1"
+	"$color2"								"{255 220 100}"
+	
+	"$translucent" 							"1"
+//	"$alphatest"							"1"
+
+	"$envmap"								"env_cubemap"
+	"$envmaptint" 							"[.5 .4 .25]"
+	"$envmapcontrast" 						".5"
+	"$envmapsaturation" 					"[.9 .9 .9]"
+	
+	"$detail" 								"models/props_xen/water/c4a2b_oc3_water2_mask"
+	"$detailScale" 							"1"
+	"$detailBlendFactor" 					"1"
+	"$detailBlendMode" 						"1"
+	
+	"$center" 								"[0.5 0.5]"
+	"$scale" 								"[1 1]"
+	"$angle" 								"0"
+	"$translate" 							"[0 0]"
+	
+	"$model" 1
+	
+	Proxies
+	{
+		TextureTransform
+		{
+			centerVar $center
+			scaleVar $scale
+			rotateVar $angle
+			translateVar $translate
+			resultVar $baseTextureTransform
+		}
+	}
+}

@@ -1,0 +1,9 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_xen/foliage/swamp_bush/swamp_gloweggs_a"
+	"$selfillum" "1"
+	"$additive" 1
+	"$nocull" 1
+    "$model" 1
+
+}

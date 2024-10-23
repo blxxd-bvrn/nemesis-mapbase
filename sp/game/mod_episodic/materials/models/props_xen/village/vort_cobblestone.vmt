@@ -1,0 +1,13 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "xen/xen_int_sandstone_05a"
+	"$bumpmap" "xen/xen_int_sandstone_05n"
+	"$color2" "[.87 .87 .87]"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmap" 	"env_cubemap"
+	"$envmaptint" 	"[.08 .08 .08]"
+	"$envmapsaturation" ".05"
+	"$surfaceprop" "Brick"
+    "$model" 1
+
+}

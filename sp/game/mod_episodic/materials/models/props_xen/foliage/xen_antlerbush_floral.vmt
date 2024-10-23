@@ -1,0 +1,37 @@
+"VertexLitGeneric"
+{
+
+"$SHADERNAME" 						"model_standard"
+
+	"$basetexture" 					"models/props_xen/foliage/xen_antlerbush_floral"
+	"$bumpmap" 						"models/props_xen/foliage/xen_antlerbush_floral_norm"
+
+	"$envmap" 						"env_cubemap"
+	"$normalmapalphaenvmapmask"		"1"	
+	"$envmaptint" 					"[ .1 .2 .2]"
+	"$envmapsaturation" 			"0.3"
+
+	"$model" 						"1"
+
+	"$selfillum"					"1"
+	"$selfillumtint" 				"[4 .5 1]"
+
+
+
+// Phong Schtuff
+"$phong" 				"1"
+"$phongexponent"		"5"
+"$phongboost" 			".5"
+"$phongfresnelranges"	"[0.1 .5 1.2]"
+
+
+// Rim lighting parameters
+"$rimlight" 			"1"
+"$rimlightexponent" 	"25"
+"$rimlightboost" 		"0.1"
+
+        //"$detail" 		"xen/detail/xen_leatherskin_detail"
+//	"$detailscale" 			"2"
+//	"$detailblendfactor" 	.8
+//	"$detailblendmode" 		0
+}

@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models\props_office\paper_box"
+    "$model" 1
+
+}

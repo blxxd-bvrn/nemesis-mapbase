@@ -1,0 +1,14 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_xen/interloper/int_lightstick_a"
+	"$bumpmap" "models/props_xen/interloper/int_lightstick_n"
+	$selfillum 1
+
+	$phong 1
+	$phongExponent 35
+	$phongBoost 3
+	$phongFresnelRanges "[0.25 0.5 1]"
+
+    "$model" 1
+
+}

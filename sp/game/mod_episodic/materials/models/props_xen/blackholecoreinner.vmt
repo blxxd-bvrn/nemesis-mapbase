@@ -1,0 +1,19 @@
+"UnlitGeneric"
+{
+	"$basetexture" "models/props_xen/blackHoleCoreInner"
+	"$nodecal" 1
+	"$flowmap" "models/props_lambda/superportal/superportal_flow"
+	$model 1
+	"$FLOWMAPTEXCOORDOFFSET" "1.0"
+	"$TempMin" 0.21
+	"$TempMax" 0.22
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar" "$baseTextureTransform"
+			"texturescrollrate" .075
+			"texturescrollangle" -90
+		}
+	}
+}

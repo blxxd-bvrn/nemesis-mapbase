@@ -1,0 +1,24 @@
+Refract
+{
+	$normalMap liquids\ripplingwater_normal
+	$dudvMap effects\flat_normal
+	$refractAmount 0.35
+	$blurAmount 0
+	$refractTint "{130 150 41}"
+	$model 1
+	$noCull 1
+	
+	$envMap env_cubemap
+	$envMapTint "[1 1 1]"
+	
+	
+	Proxies
+	{
+		AnimatedTexture
+		{
+			animatedTextureVar $normalMap
+			animatedTextureFrameNumVar $bumpFrame
+			animatedTextureFrameRate 28.00
+		}
+	}
+}

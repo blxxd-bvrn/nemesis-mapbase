@@ -1,0 +1,21 @@
+"VertexLitGeneric"
+{
+// File Created by Wall Worm Pro ( http://dev.wallworm.com )
+
+// BEGIN Textures
+	$basetexture "models/props_xen/foliage/int_floor_foliage/int_floor_spiral_plant_d"
+	$bumpmap "models/props_xen/foliage/int_floor_foliage/int_floor_spiral_plant_n"
+//	$selfillumtexture "models/props_xen/foliage/int_floor_foliage/int_floor_spiral_plant_d"
+//	$selfillummask "models/props_xen/foliage/int_floor_foliage/int_floor_spiral_plant_d"
+	"$normalmapalphaenvmapmask" 	"1"
+	"$envmap" 			"env_cubemap"
+	"$envmaptint" 			"[.5 .5 .5]"
+	"$envmapsaturation" 		"1"
+	"$phong" 			"1"
+	"$phongexponent" 		"8"
+	"$phongboost" 			"5"
+	"$phongfresnelranges"		"[0.2 0.6 1.8]"
+//	 $selfillum "1"
+	"$nocull" "1"
+    "$model" 1
+}

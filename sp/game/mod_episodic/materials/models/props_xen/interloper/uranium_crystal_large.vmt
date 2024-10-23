@@ -1,0 +1,28 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_xen/interloper/uranium_crystal_large_a"
+//	"$bumpmap" "models/props_xen/interloper/uranium_crystal_large_n"
+	$selfillum 1	
+	//
+	//"$nodecal" "1"
+//	"$halflambert" 1
+	"$multipass" "1"
+	"$model" "1"
+ 	"$emissiveBlendEnabled" "1"
+	"$emissiveBlendTint" "{255 255 255}"
+    	"$emissiveBlendTexture" "models\props_xen\glow_green1"
+	"$emissiveBlendBaseTexture" "models/props_xen/interloper/uranium_crystal_large_mask"
+	"$emissiveBlendFlowTexture" "models\dev\white" //Can use a flow mask that scrolls to create disruptive patterns. Use white for just basic glow.
+    	 //RGB/normal value of the glow colour you want.
+    	"$emissiveBlendStrength" 1 //Strength of glow. Can be controlled via proxy for variable glow.
+    	"$emissiveBlendScrollVector" "[0.1 0.1]" 
+
+	"$phong" "1"
+	"$phongboost"		"1"
+	$phongexponent 1
+	"$phongfresnelranges" "[0.05 .5 1]"
+
+	"$rimlight"               "1"
+	"$rimlightexponent"       "1"
+	"$rimlightboost"          "2"	
+}

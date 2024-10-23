@@ -1,0 +1,17 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 				"xen/xen_c1a4a_rock_001a"
+	"$bumpmap"					"models/props_xen/xen_spire_tubular_02_normal"
+	"$envmap"					"env_cubemap"
+	"$normalmapalphaenvmapmask"	"1"
+	"$envmaptint"				"[.1 .3 .4]"
+
+
+
+
+//$detail 						detail\rock_lg
+        //$detailscale 			25
+        //$detailblendfactor 	0.8
+        //$detailblendmode 		0
+    "$model" 1
+}

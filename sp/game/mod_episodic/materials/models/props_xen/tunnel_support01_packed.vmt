@@ -1,0 +1,11 @@
+VertexLitGeneric
+{
+	$baseTexture models\props_xen\tunnel_support01_packed
+	$bumpMap models\props_xen\tunnel_support01_normal
+	
+	$phong 1
+	$phongExponent 15
+	$phongBoost 6.5
+	$phongFresnelRanges "[0.25 0.5 1]"
+    "$model" 1
+}

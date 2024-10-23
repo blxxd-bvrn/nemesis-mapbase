@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	"$basetexture"  "models/props_xen/hub/ringhose_segmented_lights_off"
+	"$bumpmap" "models/props_xen/hub/ringhose_segmented_lights_nm"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[1 1 1]"
+	"$phong" "1"
+	"$phongexponent" "30"
+//	"$sellillum" "1"
+
+	"$phongboost" "1.0"
+	"$phongtint" 	"[.09 .08 .09]"
+	"$phongfresnelranges"	"[.7 2 7]"
+	"$phongalbedotint" "1"
+	
+    "$model" 1
+
+}

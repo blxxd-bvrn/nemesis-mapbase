@@ -1,0 +1,25 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_xen/seaweed/stalk02_d"
+	"$alphatest" "1"
+	"$nocull" "1"
+	"$selfillum" "1"
+	"$selfillummask" "models/props_xen/seaweed/stalk02_g"
+	"$bumpmap" "models/props_xen/seaweed/stalk02_n"
+	"$envmap" "env_cubemap" 
+	"$normalmapalphaenvmapmask" "1"
+	"$surfaceprop" "alienflesh" 
+	"$envmaptint" "[1 1 1]"
+	"$phong" 1
+        $phongexponent 7
+        $phongboost 2
+        $phongtint "[1 1 1]"
+        $halflambert 0
+        $phongfresnelranges "[.4 .8 30]"
+
+// Rim lighting parameters
+	"$rimlight" "1"				// To enable rim lighting (requires phong)
+	"$rimlightexponent" "80"             // Exponent for phong component of rim lighting
+	"$rimlightboost" ".3"	               // Boost for ambient cube component of rim lighting
+    "$model" 1
+}

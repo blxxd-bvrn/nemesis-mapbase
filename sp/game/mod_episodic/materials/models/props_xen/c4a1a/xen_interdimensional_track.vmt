@@ -1,0 +1,21 @@
+"UnlitGeneric"
+{
+	"$basetexture" "models/props_xen/c4a1a/xen_interdimensional_track"
+//ww	"$vertexalpha" "1"
+//	"$vertexcolor" 1
+	"%keywords" "bms"
+//	"$selfillum" "1"
+//	"$selfillumtint" "[ 2 2 2]"
+	"$model" 1
+
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar" "$baseTextureTransform"
+			"texturescrollrate" "0.5"
+			"texturescrollangle" "120"
+		}	
+	}
+
+}

@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+// File Created by Wall Worm Pro ( http://dev.wallworm.com )
+
+// BEGIN Textures
+	$basetexture "dev/dev_ram_512_int_c_floor_upper"
+// END Textures
+
+
+
+    "$model" 1
+}

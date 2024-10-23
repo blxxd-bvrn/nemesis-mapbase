@@ -1,0 +1,11 @@
+"vertexlitgeneric"
+{
+	"$basetexture"	"concrete\c1a4b_w3b_panel"
+	"$surfaceprop"  "concrete"
+	"$bumpmap"	"concrete\c1a4b_w3b_panel_normal"
+
+	
+	"%keywords" "bms, andrea"
+    "$model" 1
+
+}

@@ -1,0 +1,20 @@
+"VertexLitGeneric"
+{
+	$basetexture "models/props_xen/xen_steps/stepjoints_d"
+	$bumpmap "models/props_xen/xen_steps/stepjoints_normal"
+
+
+	"$phong" 1
+	"$phongboost" "2.0"
+	"$phongfresnelranges" "[0.0 0.5 1.0]"
+	"$basemapluminancephongmask" 1
+	"$rimlight" 1
+	"$rimexponent" "3"
+	"$rimboost" "1"
+	"$surfaceprop" "metal"
+
+	 $reflectivity "[0.29 0.29 0.29]"
+
+
+    "$model" 1
+}

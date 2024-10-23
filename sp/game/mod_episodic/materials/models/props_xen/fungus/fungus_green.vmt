@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+
+	$basetexture "models/props_xen/fungus/fungal_growths_d"
+	$bumpmap "models/props_xen/fungus/fungalGrowthsNormalsMap"
+
+
+
+    "$model" 1
+}

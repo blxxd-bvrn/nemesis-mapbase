@@ -1,0 +1,61 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props_xen/gonarch/gon_oil_d"
+	"$bumpmap" "models/props_xen/gonarch/gon_oil_n"
+	"$envmap" "cubemaps/cubemap_sheen001"
+	"$envmaptint" "[.05 .05 .05]"
+	"$normalmapalphaenvmapmask" "1"
+
+	
+	"$slide" "[0.0 0.0]"
+	"$offset" "0"
+	
+ 	"$emissiveBlendEnabled" "1"
+	"$emissiveBlendTint" "[2 1 2]"
+	"$emissiveBlendTexture" "models\props_xen\gonarch\gon_oil_exp"
+	"$emissiveBlendBaseTexture" "models\props_xen\gonarch\gon_oil_exp"
+	"$emissiveBlendFlowTexture" "models\props_xen\gonarch\gon_oil_glow" 	
+	"$emissiveBlendStrength" 1.0 
+	"$emissiveBlendScrollVector" "[0.01 0.008]" 
+
+	"$phong" "1"
+	"$phongboost" "1"
+	"$phongfresnelranges" "[0.05 0.2 0.5]"
+	$halflambert 1
+
+
+	Proxies
+	{
+		"EntityRandom"
+		{
+			"scale" "12"
+			"resultVar" $offset
+		}
+		
+		"Sine"
+		{
+			"sineperiod" 	"120"
+			"sinemin"		"-0.04"
+			"sinemax"		"0.04"
+			"timeoffset" 	"$offset"
+			"resultVar" 	"$slide[0]"
+		}
+		
+		"Sine"
+		{
+			"sineperiod" "80"
+			"sinemin"	"-0.04"
+			"sinemax"	"0.04"
+			"timeoffset" "$offset"	       
+			"resultVar" "$slide[1]"
+		}
+
+		"TextureTransform"
+		{
+			"translateVar" "$slide"
+			"resultVar" "$basetexturetransform"
+		}
+	}
+	
+	"$model" 1
+ }

@@ -1,0 +1,27 @@
+"VertexLitGeneric"
+{
+	"$model" 					"1"
+
+	"$color2" 					"[2 1 1]"
+
+	"$basetexture" 				"models/props_xen/interloper/int_ulcer_surface_darken_d"
+	"$bumpmap" 					"models/props_xen/interloper/int_ulcer_surface_n"
+
+//	"$detail" 					"detail/xen_bone2"
+//	"$detailscale" 				"4"
+//	"$detailblendfactor" 		".4"
+
+	"$envmap" 					"cubemaps/cubemap_sheen001"
+	//"$envmapcontrast" 			".5"
+	"$envmaptint" 				"[1 .5 .1]"
+
+	"$phong" 					"1"
+	"$phongexponent" 			"1"
+	"$phongboost" 				"2"
+	"$phongtint" 				"[1 .5 .1]"
+	"$phongfresnelranges" 		"[.35 .25 .05]"
+
+	"$selfillum" 				"1"
+	"$selfillumtint" 			"[.5 .4 .2]"
+
+}

@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	// Original shader: BaseTimesLightmap
+	"$basetexture" "Props/plasticceiling002a"
+	"$surfaceprop" "plastic"
+	"%keywords" "borealis"
+    "$model" 1
+
+}

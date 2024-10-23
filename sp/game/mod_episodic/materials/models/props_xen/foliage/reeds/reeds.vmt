@@ -1,0 +1,34 @@
+"VertexLitGeneric"
+{
+
+	"$basetexture" "models/props_xen/foliage/reeds/reeds"
+	"$envmapmask"	"models/props_xen/foliage/reeds/reeds_s"
+	
+	"$envmap" "env_cubemap"	
+	"$envmaptint" "[ .4 .4 .4 ]"
+
+	"$model" "1"
+	"$nocull" "1"
+	
+//	"$phong" "1"
+//	"$phongexponent" "10"
+//	"$phongboost" "4"
+//	"$phongfresnelranges"	"[.5 1 1]"
+//	"$phongalbedotint" "1"
+  $treeSway                         "1"
+   $treeSwayHeight                   "0"
+   $treeSwayStartHeight              "0"
+   $treeSwayRadius                   "5"
+   $treeSwayStartRadius              "1"
+   $treeSwaySpeed                    "0"
+   $treeSwayStrength                 "0"
+   $treeSwayScrumbleSpeed            "2"
+   $treeSwayScrumbleStrength         ".005"
+   $treeSwayScrumbleFrequency        "5"
+   $treeSwayFalloffExp               "6"
+   $treeSwayScrumbleFalloffExp       "6"
+   $treeSwaySpeedHighWindMultiplier  "0"
+   $treeSwaySpeedLerpStart           "1000.0"
+   $treeSwaySpeedLerpEnd             "2500.0"
+
+}

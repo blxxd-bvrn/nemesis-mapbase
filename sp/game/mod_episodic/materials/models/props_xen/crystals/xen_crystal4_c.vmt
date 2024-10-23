@@ -1,0 +1,14 @@
+"Refract"
+{
+
+	$basetexture "models/props_xen/crystals/xen_crystals4_normal"
+	$normalmap "models/props_xen/crystals/xen_crystals4_s_normal"
+	$refracttinttexture "models/props_xen/crystals/xen_crystals4_normal"
+	$lightwarptexture "models/props_xen/crystals/xen_crystals4_lw"
+
+
+	"$model" 1
+
+	 $bluramount "1.0"
+	 $refractamount "1.0"
+}

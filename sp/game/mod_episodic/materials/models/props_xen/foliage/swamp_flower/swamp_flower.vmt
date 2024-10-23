@@ -1,0 +1,45 @@
+"VertexLitGeneric"
+{
+// File Created by Wall Worm Pro ( http://dev.wallworm.com )
+
+// BEGIN Textures
+	$basetexture 				"models/props_xen/foliage/swamp_flower/swamp_flower"
+	$normalmap					"models/props_xen/foliage/swamp_flower/swamp_flower_nm"
+	"$envmap"					"env_cubemap"
+	"$normalmapalphaenvmapmask"	"1"
+	"$envmaptint"				"[ 0 0 0]"
+//	"$envmapcontrast" 			"1"
+//	"$selfillum"				"1"
+	"$halflambert" 				"1"
+	"$model" 					"1"
+	"$phong"					"1"
+ //       $phongexponent 		50
+ //       $phongboost 			10
+//        $phongfresnelranges 	"[.4 .1 1]"
+	$phongtint 					"[ 0 0 1 ]"
+	$rimlight 					"1"
+	$rimlightexponent 			"50"
+	$rimlightboost 				"5"
+	$basemapluminancephongmask 	"1"
+//	$detail 					"detail/detail_coral2.vtf"
+//	$detailscale 					1
+//	$detailblendfactor 				.25
+//	$detailblendmode				0
+
+  $treeSway                          "1"
+   $treeSwayHeight                   "0"
+   $treeSwayStartHeight              ".5"
+   $treeSwayRadius                   "25"
+   $treeSwayStartRadius              "0"
+   $treeSwaySpeed                    "0"
+   $treeSwayStrength                 "0"
+   $treeSwayScrumbleSpeed            "2"
+   $treeSwayScrumbleStrength         ".005"
+   $treeSwayScrumbleFrequency        "2"
+   $treeSwayFalloffExp               "6"
+   $treeSwayScrumbleFalloffExp       "2"
+   $treeSwaySpeedHighWindMultiplier  "0"
+   $treeSwaySpeedLerpStart           "1000.0"
+   $treeSwaySpeedLerpEnd             "2500.0"
+
+}

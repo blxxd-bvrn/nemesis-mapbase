@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	"$basetexture" 				"lab\insulation_ceiling01"
+	"$bumpmap" 					"lab\insulation_ceiling01_normal"
+	"$surfaceprop" 				"ceiling_tile"
+
+	"$phong"					"1"
+	"$phongexponent"			"5"		// either/or
+	"$phongboost"				"10.0"
+	"$phongfresnelranges"		"[1 3 8]"
+
+//	"$detail" 					"detail\bm_metal_detail_01"
+//	"$detailscale" 				"6.283"
+//	"$detailblendfactor" 		".8"
+//	"$detailblendmode" 			"0"
+		
+	"%keywords" 				"bms, Jenn0"
+    "$model" 1
+}

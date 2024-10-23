@@ -1,0 +1,20 @@
+"VertexlitGeneric"
+{
+	"$basetexture" 				"models/props_xen/village/vort_dorm_shelf_a"
+	"$bumpmap" 					"models/props_xen/village/vort_dorm_shelf_n"
+//	$detail 					"detail/detail_wood01_bm"
+//	$detailtexturetransform 	"center .5 .5 scale 1 1 rotate 90 translate 0 0"
+//	$detailscale 				8
+//	$detailblendmode 			0
+//	$detailblendfactor 			.69//nice
+	"$normalmapalphaenvmapmask" "1"
+	"$envmap" 					"env_cubemap"
+	"$envmaptint" 				"[1 1 1]"
+	"$envmapsaturation" 		".6"
+	$phong 						1
+	$phongexponent 				15
+	$phongBoost 				3
+	$phongFresnelRanges 		"[1 .5 1]"
+    "$model" 1
+
+}

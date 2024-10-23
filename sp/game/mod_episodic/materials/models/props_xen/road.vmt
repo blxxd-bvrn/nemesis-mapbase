@@ -1,0 +1,13 @@
+"VertexLitGeneric"
+{
+	"$baseTexture"			"models/props_xen/road"
+//	"$envmap"			"env_cubemap"
+//	"$bumpmap"			"models/props_xen/valley2_nm"
+//	"$normalmapalphaenvmapmask"	"1"
+//	"$halflambert" 			"1"
+//	"$model" 			"1"
+//	"$phong"			"1"
+//	"$phongexponent"		"100"
+//	"$phongboost"			"1"
+//	"$phongfresnelranges"		"[0.05 0.5 1]"
+}

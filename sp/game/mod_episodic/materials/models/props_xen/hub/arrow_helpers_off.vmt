@@ -1,0 +1,18 @@
+"UnLitGeneric"
+{
+	"$baseTexture" 	"models/props_xen/hub/arrow_helpers"
+	"$nocull" "1"
+	"$additive" "1"
+	
+//"Proxies"
+//	{
+//		"TextureScroll"
+//		{
+//			"texturescrollvar" 	"$baseTextureTransform"
+//			"texturescrollrate" 	1
+//			"texturescrollangle" 0
+//		}
+//	}
+	
+	"$model" 1
+}

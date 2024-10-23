@@ -1,0 +1,15 @@
+"VertexLitGeneric"
+{
+
+	$basetexture "models/props_xen/foliage/strawberry/strawberry_d"
+	$envmapmask "models/props_xen/foliage/strawberry/strawberry_normal"
+	$selfillumtexture "models/props_xen/foliage/strawberry/strawberry_d"
+	$bumpmap "models/props_xen/foliage/strawberry/strawberry_normal"
+
+
+
+	 $envmap "env_cubemap"
+	 $normalmapalphaenvmapmask "1"
+	 $selfillum "1"
+    "$model" 1
+}

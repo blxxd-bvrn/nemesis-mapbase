@@ -1,0 +1,136 @@
+UnlitGeneric
+{
+	$baseTexture 		models\props_xen\mist\mist_layer7
+	
+	$translucent 		1
+	
+//	$detail 			models\props_xen\mist\mist01_mask
+//	$detailScale 		1
+//	$detailBlendFactor 	1
+//	$detailBlendMode 	8
+	
+	//Mist parametres
+	$mistColour 		"{255 255 255}"
+	$mistBrightness 	0.125
+	$mistSpeed 			1
+	$mistRotateRate 	0.0 //Set to 0 if texture tiles
+	
+	//Do not change values below
+	$mistBaseBright 	4.4
+	$mistBrightMulti 	1
+	$mistWobble 		0.1 //0.07
+	$mistSpeedMulti 	0
+	$zero 				0
+	$mistSpeedNeg 		0
+	$sinePeriodX 		40
+	$sinePeriodY 		80
+	$sinePeriodXMulti 	0
+	$sinePeriodYMulti 	0
+	$sineX 				0
+	$sineY 				0
+	$flatSpeed 			0
+	$center 			"[0 0]"
+	$scale 				"[4 4]"
+	$angle 				0
+	$translate 			"[0 0]"
+	
+	"$model" 1
+	
+	Proxies
+	{
+		Multiply
+		{
+			srcVar1 $mistBrightness
+			srcVar2 $mistBaseBright
+			resultVar $mistBrightMulti
+		}
+		Multiply
+		{
+			srcVar1 $mistColour
+			srcVar2 $mistBrightMulti
+			resultVar $color2
+		}
+		Multiply
+		{
+			srcVar1 $mistSpeed
+			srcVar2 $mistWobble
+			resultVar $mistSpeedMulti
+		}
+		Subtract
+		{
+			srcVar1 $zero
+			srcVar2 $mistSpeedMulti
+			resultVar $mistSpeedNeg
+		}
+		Divide
+		{
+			srcVar1 $sinePeriodX
+			srcVar2 $mistSpeed
+			resultVar $sinePeriodXMulti
+		}
+		Divide
+		{
+			srcVar1 $sinePeriodY
+			srcVar2 $mistSpeed
+			resultVar $sinePeriodYMulti
+		}
+		Sine
+		{
+			sinePeriod $sinePeriodXMulti
+			sineMin $mistSpeedNeg
+			sineMax $mistSpeedMulti
+			resultVar $sineX
+		}
+		Sine
+		{
+			sinePeriod $sinePeriodYMulti
+			sineMin $mistSpeedNeg
+			sineMax $mistSpeedMulti
+			resultVar $sineY
+		}
+		LinearRamp
+		{
+			rate 0.02
+			resultVar $flatSpeed
+		}
+		Add
+		{
+			srcVar1 $sineX
+			srcVar2 $flatSpeed
+			resultVar "$translate[0]"
+		}
+		Add
+		{
+			srcVar1 $sineY
+			srcVar2 $flatSpeed
+			resultVar "$translate[1]"
+		}
+		Sine
+		{
+			sinePeriod 180
+			sineMin 0
+			sineMax 1
+			resultVar "$center[0]"
+		}
+		Sine
+		{
+			sinePeriod 240
+			sineMin 0
+			sineMax 1
+			resultVar "$center[1]"
+		}
+		LinearRamp
+		{
+			rate $mistRotateRate
+			resultVar $angle
+		}
+		TextureTransform
+		{
+			centerVar $center
+			scaleVar $scale
+			rotateVar $angle
+			translateVar $translate
+			resultVar $baseTextureTransform
+		}
+	}
+}

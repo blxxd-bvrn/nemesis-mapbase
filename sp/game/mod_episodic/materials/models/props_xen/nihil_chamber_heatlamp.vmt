@@ -1,0 +1,24 @@
+"VertexLitGeneric"
+{
+	"$basetexture"  "models/props_xen/nihil_chamber_heatlamp"
+	"$bumpmap" "models/props_xen/nihil_chamber_heatlamp_nm"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[1 1 1]"
+	"$envmapfresnel" 	"-.5"
+
+	"$selfillum" "1"
+
+
+	"$phong" "1"
+	"$phongexponent" "30"
+	"$phongexponentfactor" "4.5999970436"
+
+	"$phongboost" "5"
+	"$phongtint" 	"[.09 .08 .09]"
+	"$phongfresnelranges"	"[.7 2 7]"
+	"$phongalbedotint" "1"
+	
+    "$model" 1
+
+}

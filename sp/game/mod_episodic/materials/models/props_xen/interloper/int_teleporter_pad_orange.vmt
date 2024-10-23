@@ -1,0 +1,25 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 	"models/props_xen/interloper/int_teleporter_pad_orange"
+	"$bumpmap" 	"models/props_xen/interloper/int_teleporter_pad_nm"
+//	"$normalmapalphaenvmapmask" "1"
+	"$surfaceprop" 	"metal"
+
+//	"$envmap" 	"env_cubemap"
+//	"$envmaptint" 	"[.6 .2 .1]"
+//	"$envmapsaturation" "1"
+
+	$phong 1
+	$phongExponent 35
+	$phongBoost 1
+	$phongFresnelRanges "[0.25 0.5 1]"
+	
+	"$selfillum" 1
+	"$selfillummask" "models/props_xen/interloper/int_teleporter_pad_emissive"
+
+// Rim lighting parameters
+"$rimlight" "1"
+"$rimlightexponent" "10"
+"$rimlightboost" "1"
+    "$model" 1
+}

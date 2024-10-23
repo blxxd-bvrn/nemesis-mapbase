@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props_office/pictureframe03_back"
+    "$model" 1
+
+}

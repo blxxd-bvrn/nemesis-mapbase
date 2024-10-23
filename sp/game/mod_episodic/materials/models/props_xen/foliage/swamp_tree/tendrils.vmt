@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+
+	$basetexture "models/props_xen/foliage/swamp_tree/swamp_tree_tendrils"
+
+
+
+    "$model" 1
+}

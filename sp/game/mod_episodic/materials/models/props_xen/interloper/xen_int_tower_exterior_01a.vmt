@@ -1,0 +1,21 @@
+"vertexlitgeneric"
+{
+	"$basetexture" 				"xen/xen_int_tower_exterior_01a"
+	"$bumpmap" 					"xen/xen_int_tower_exterior_01a_normal"
+	"$normalmapalphaenvmapmask" "1"
+
+	"$surfaceprop" 				"flesh"
+
+	"$envmap" 					"env_cubemap"
+	"$envmaptint" 				"[.6 .5 .4]"
+	"$envmapsaturation" 		"1"
+
+        //"$detail" 			"detail\bm_metal_detail_02"
+//	"$detailscale" 				"6"
+//	"$detailblendfactor" 		"2"
+//	"$detailblendmode" 			"0"
+		
+	"%keywords" 				"bms, jenn0, xen"
+    "$model" 1
+
+}

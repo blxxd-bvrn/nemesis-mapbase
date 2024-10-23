@@ -1,0 +1,23 @@
+"VertexLitGeneric"
+{
+
+	$basetexture "models/props_xen/cave_assets/props_spires/spire7b"
+	$bumpmap "models/props_xen/cave_assets/Props_spires/spire7b_nm"
+
+	"$envmap" "env_cubemap"
+   	"$envmaptint" "{0.4 0.4 0.4}"    
+	"$normalmapalphaenvmapmask" 1	
+
+
+	$phong 1
+        $phongexponent 4
+        $phongboost .2
+        $phongtint "[.7 .7 1]"
+        $halflambert 0
+        $phongfresnelranges "[.4 .1 1]"
+	$rimlight "1"
+	$rimlightexponent "20"
+	$rimlightboost "0.2"
+
+    "$model" 1
+}

@@ -1,0 +1,27 @@
+	"VertexLitGeneric"
+{
+	"$baseTexture" "models/props_xen/hub/hubC_cap_middle"
+	"$bumpmap" "models/props_xen//hub/hubC_cap_middle_nm"
+	"$nocull" "1"
+	"$surfaceprop" "alienflesh"
+	"$multipass" 0
+
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmaptint" "[.5 .5 .5]"
+
+	"$phong" "1"
+	"$phongboost" "3"
+        "$phongexponent" "10"
+	"$phongalbedotint" "1"
+	"$phongfresnelranges" "[.18 .4 1]"
+	"$nodecal" "1"
+
+// Rim lighting parameters
+	"$rimlight" "1"				// To enable rim lighting (requires phong)
+	"$rimlightexponent" "30"             // Exponent for phong component of rim lighting
+	"$rimlightboost" ".0"	               // Boost for ambient cube component of rim lighting
+	
+
+    "$model" 1
+}

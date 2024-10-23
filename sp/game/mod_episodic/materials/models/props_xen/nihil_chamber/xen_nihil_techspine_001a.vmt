@@ -1,0 +1,30 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 				"models/props_xen/nihil_chamber/xen_nihil_techspine_001a"
+	"$bumpmap" 					"models/props_xen/nihil_chamber/xen_nihil_techspine_001a_normal"
+	"$normalmapalphaenvmapmask" "1"
+	"$selfillum" 				"1"
+
+	"$color2"					"[.7 .7 .7]"
+
+	"$surfaceprop" 				"rock"
+
+	"$envmap" 					"env_cubemap"
+	"$envmaptint" 				"[.4 .4 .4]"
+	"$envmapsaturation" 		"1"
+
+	"$phong" 					"1"
+	"$phongexponent" 			"2"
+	"$phongboost" 				".5"
+//	"$phongfresnelranges"		"[1 3 8]"
+	"$phongfresnelranges"		"[0.4 0.6 1.8]"
+	"$phongalbedotint" 			"1"
+
+//	$detail 					detail\rock_lg
+       // $detailscale 			10
+        //$detailblendfactor 	.1
+		
+	"%keywords" 				"bms, Jenn0, xen"
+    "$model" 1
+
+}

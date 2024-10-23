@@ -1,0 +1,28 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 	"xen/xen_gon_rock_eroded_001a"
+	"$bumpmap" 	"xen/xen_gon_rock_eroded_001a_normal"
+	
+	"$surfaceprop" 				"rock"
+
+	"$envmap" 					"env_cubemap"
+   	"$envmaptint" 				"[.075 .05 .065]"
+	"$basealphaenvmapmask" 		"1"
+	"$envmapcontrast" 			"1"
+
+
+	$phong 						1
+    $phongexponent 				4
+    $phongboost 				.2
+    $phongtint 					"[.7 .7 1]"
+    $halflambert 				0
+    $phongfresnelranges 		"[.4 .1 1]"
+		
+	$rimlight 					"1"
+	$rimlightexponent 			"20"
+	$rimlightboost 				"0.2"
+		
+	"%keywords" 			"bms, Jenn0, xen"
+    "$model" 1
+
+}

@@ -1,0 +1,14 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_xen/blackHoleClouds"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar" "$baseTextureTransform"
+			"texturescrollrate" .075
+			"texturescrollangle" -90
+		}
+	}
+	"$model" 1
+}

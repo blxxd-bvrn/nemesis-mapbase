@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_office/file_box"
+	"$surfaceprop" "Default"
+    "$model" 1
+
+}

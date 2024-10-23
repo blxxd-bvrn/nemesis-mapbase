@@ -1,0 +1,25 @@
+"vertexlitgeneric"
+{
+	"$model" "1"
+
+	"$basetexture" 	"models/props_xen/interloper/int_metal_weld_disc_d"
+	"$bumpmap" 	"models/props_xen/interloper/int_metal_weld_disc_n"
+
+	"$color2" "{78 75 55}"
+
+	"$normalmapalphaenvmapmask" "1"
+
+	"$surfaceprop" 	"metal"
+
+	"$envmap" 	"cubemaps/cubemap_sheen001"
+	"$envmaptint" 	"{250 145 40}"
+	"$envmapcontrast" ".75"
+
+	$fresnelreflection 1
+
+	$phong 1
+	$phongexponent 28
+	$phongboost 7
+	$phongfresnelranges "[.85 .25 1]"
+	$basemapluminancephongmask 1
+}

@@ -1,0 +1,13 @@
+"VertexLitGeneric"
+{	
+	"$model" "1"
+	"$baseTexture" 	"xen/xen_sludge_02a"
+	"$bumpmap" 	"xen/xen_sludge_02a_normal"
+	"$basealphaenvmapmask" "1"
+
+	"$surfaceprop" 	"rock"
+
+	"$envmap" 	"env_cubemap"
+	"$envmaptint" 	"[.6 .6 .6]"
+	"$envmapsaturation" "1"
+}

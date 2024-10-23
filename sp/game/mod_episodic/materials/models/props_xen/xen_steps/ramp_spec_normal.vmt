@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "models/props_xen/xen_steps/ramp_spec_normal"
+    "$model" 1
+
+}

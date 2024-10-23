@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props_office/paperfolder01_green"
+
+    "$model" 1
+
+}

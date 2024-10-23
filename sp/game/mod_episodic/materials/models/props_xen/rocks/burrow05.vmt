@@ -1,0 +1,21 @@
+"VertexLitGeneric"
+{
+	$baseTexture models\props_xen\rocks\burrow05
+	$bumpMap models\props_xen\rocks\burrow05_nm
+	"$normalmapalphaenvmapmask" "1"
+
+	"$surfaceprop" 	"rock"
+
+	"$envmap" 	"env_cubemap"
+	"$envmaptint" 	"[.08 .08 .08]"
+	"$envmapsaturation" "1"
+
+//	"$phong" "1"
+//	"$phongexponent" "80"
+//	"$phongboost" "2"
+//	"$phongfresnelranges"	"[0.2 0.6 2.8]"
+		
+	"%keywords" 			"bms, Jenn0, xen"
+    "$model" 1
+
+}

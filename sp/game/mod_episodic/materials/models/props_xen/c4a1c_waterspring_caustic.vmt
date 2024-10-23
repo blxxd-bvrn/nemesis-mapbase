@@ -1,0 +1,43 @@
+"UnlitGeneric"
+{
+	"$basetexture" "models/props_xen/c4a1c_waterspring_caustic_d"
+	"$additive" "1"
+	"$alpha" ".05"
+	"$angle" 0.0
+	"$translate" "[0.0 0.0]"
+	"$center" "[0.5 0.5]"
+	"$scale" "1.5 1.5"
+	
+	"$model" 1
+
+	$envmap "env_cubemap"
+	$normalmapalphaenvmapmask "1"
+	$envmapcontrast 1
+	$envmaptint "[.55 .55 .55]"
+	$phong 1
+ 
+	$phongexponent 8
+	$phongexponenttexture "models/props_xen/xen_crystalholder_base_s"
+	$phongboost 15
+	$phongfresnelranges "[0 .35 .55]"
+
+        "Proxies"
+        {
+            "LinearRamp"
+            {
+                "rate" 1.5
+                "initialValue" 0.0
+                "resultVar" "$angle"
+            }
+
+            "TextureTransform"
+            {
+                "translateVar" "$translate"
+                "rotateVar" "$angle"
+	"scaleVar" "$scale"
+                "centerVar" "$center"
+                "resultVar" "$basetexturetransform"
+            }
+        }
+}
+

@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	$model "1"
+	$basetexture "models\props_xen\instances\c_cliffs\c_upper_spring_d"	
+	$bumpmap "models\props_xen\instances\c_cliffs\c_upper_spring_n"
+
+	$phong 1
+   	$PhongExponent 12
+	$phongBoost 25
+	$phongFresnelRanges "[0 .5 .5]"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" .12 .12 .12
+
+	$rimlight "1"
+	$rimlightexponent "30"
+	$rimlightboost "16"
+}
+

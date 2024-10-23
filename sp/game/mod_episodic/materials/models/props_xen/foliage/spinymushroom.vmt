@@ -1,0 +1,46 @@
+"VertexLitGeneric"
+{
+
+	"$basetexture" "models/props_xen/foliage/xenplant_spinymushroom_d"
+	"$bumpmap" "models/props_xen/foliage/xenplant_spinymushroom_na"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmaptint" "[.1 .1 .1]"
+	"$envmapcontrast" "0"
+	"$envmapsaturation" "0" 
+	//"$halflambert" 1
+	//"$multipass" "1"
+	"$model" "1"
+	"$selfillum" "1"
+    	//$selfillummask "models/props_xen/foliage/xenplant_spinymushroom_em"
+	$selfillummaskscale 10
+ 	//"$emissiveBlendEnabled" "1"
+	//"$emissiveBlendTint" "{255 255 255}"
+    	//"$emissiveBlendTexture" "models/props_xen/glow_red3"
+	//"$emissiveBlendBaseTexture" "models/props_xen/foliage/xenplant_spinymushroom_em"
+   	//"$emissiveBlendStrength" 2.0 //Strength of glow. Can be controlled via proxy for variable glow.
+    	//"$emissiveBlendScrollVector" "[0.34 0.41]"
+	//"$phong" "1"
+	//"$phongboost"		"1"
+	//"$phongfresnelranges" "[.4 .8 30]"
+	
+	"$rimlight"               "1"
+	"$rimlightexponent"       "1"
+	"$rimlightboost"          "1"	
+
+  $treeSway                         "1"
+   $treeSwayHeight                   "0"
+   $treeSwayStartHeight              ".5"
+   $treeSwayRadius                   "10"
+   $treeSwayStartRadius              "0"
+   $treeSwaySpeed                    "0"
+   $treeSwayStrength                 "0"
+   $treeSwayScrumbleSpeed            "2"
+   $treeSwayScrumbleStrength         ".02"
+   $treeSwayScrumbleFrequency        "15"
+   $treeSwayFalloffExp               "6"
+   $treeSwayScrumbleFalloffExp       "2"
+   $treeSwaySpeedHighWindMultiplier  "0"
+   $treeSwaySpeedLerpStart           "1000.0"
+   $treeSwaySpeedLerpEnd             "2500.0"
+}

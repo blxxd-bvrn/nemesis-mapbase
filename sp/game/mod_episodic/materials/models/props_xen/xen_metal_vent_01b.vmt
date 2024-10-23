@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+
+
+
+	$basetexture "xen/xen_metal_vent_02a"
+	$bumpmap "xen/xen_metal_vent_02a_normal"
+
+	"$surfaceprop" "metal"
+
+    "$model" 1
+}

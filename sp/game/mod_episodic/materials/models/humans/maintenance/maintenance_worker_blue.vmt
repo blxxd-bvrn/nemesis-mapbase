@@ -1,0 +1,27 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\humans\maintenance/maintenance_worker_blue"
+        "$bumpmap"     "models\humans\maintenance/maintenance_worker_base_normal"
+//	blue because blue shift
+
+// -- From here down is new stuff which will only be applied if $phong is set to 1 --
+	"$phong" 						"1"
+	"$phongexponent"			"7"
+//	"$basemapalphaphongmask" "1"
+	"$phongboost"				"15"
+	"$phongfresnelranges"		"[2 0.8  50]"
+
+// Rim lighting parameters
+	"$rimlight" "1"				// To enable rim lighting (requires phong)
+	"$rimlightexponent" "256"             // Exponent for phong component of rim lighting
+	"$rimlightboost" ".01"	               // Boost for ambient cube component of rim lighting
+
+
+//	$detail "effects/models/model_blood_red.vtf"
+//	$detailscale 5
+//	$detailblendfactor 0.0
+//	$detailblendmode 0
+
+//	"$model" 1
+	
+}

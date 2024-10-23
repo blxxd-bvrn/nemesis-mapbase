@@ -1,0 +1,19 @@
+"vertexlitgeneric"
+{
+	"$basetexture" 	"xen/xen_int_membrane_01a"
+	"$bumpmap" 	"xen/xen_int_membrane_01a_normal"
+	"$normalmapalphaenvmapmask" "1"
+
+	"$translucent" "1"
+
+	
+
+	"$surfaceprop" 	"flesh"
+
+	"$envmap" 	"env_cubemap"
+	"$envmaptint" 	"[.15 .03 .08]"
+	"$envmapsaturation" "1"
+		
+	"%keywords" 			"bms, jenn0, xen"
+    "$model" 1
+}

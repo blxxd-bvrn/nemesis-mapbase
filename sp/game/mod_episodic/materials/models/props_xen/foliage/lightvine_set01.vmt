@@ -1,0 +1,19 @@
+VertexLitGeneric
+{
+	$baseTexture models\props_xen\foliage\lightvine_set01
+	$bumpMap models\props_xen\foliage\lightvine_set01_normal
+	
+	$phong 1
+	$phongExponent 14
+	$phongBoost 1
+	$phongFresnelRanges "[0.25 0.5 1]"
+	
+	"$model" "1"
+	
+	$emissiveBlendEnabled 1
+	$emissiveBlendTexture vgui\white
+	$emissiveBlendBaseTexture models\props_xen\foliage\lightvine_set01_emissivemask
+	$emissiveBlendFlowTexture vgui\white
+	$emissiveBlendStrength 1
+	$emissiveBlendScrollVector "[0 0]"
+}

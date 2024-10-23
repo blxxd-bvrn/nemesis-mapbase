@@ -1,0 +1,16 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_xen/gonarch/gon_web_tough_a"
+	"$bumpmap" "models/props_xen/gonarch/gon_web_tough_n"
+	"$alphatest" 1
+	"$nocull" 1
+	
+	"$color2" "{200 163 90}"
+
+	"$surfaceprop" "alien"
+	
+	"$envmap"								"env_cubemap"
+	"$envmaptint" 							"[1 1 1]"
+    "$model" 1
+
+}

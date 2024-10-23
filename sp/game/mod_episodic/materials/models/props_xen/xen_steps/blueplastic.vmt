@@ -1,0 +1,17 @@
+"VertexLitGeneric"
+{
+
+	$basetexture "models/props_xen/xen_steps/step_plastic_d"
+	$bumpmap "models/props_xen/xen_steps/blueplastic_normal"
+
+
+	"$phong" 1
+	"$phongboost" "4"
+	"$phongfresnelranges" "[0.02 0.5 1.0]"
+	$PhongExponent  "8"
+	"$basemapluminancephongmask" 1
+	"$surfaceprop" "rubber"
+
+
+    "$model" 1
+}

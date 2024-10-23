@@ -1,0 +1,25 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 			"models/props_xen/xen_barnacles/xen_barnacles_01a"
+	"$bumpmap" 				"models/props_xen/xen_barnacles/xen_barnacles_01a_normal"
+
+	"$alphatest"			"1"
+
+	"$envmap" 				"env_cubemap"
+	"$envmaptint" 			"[.25 .2 .15]"
+	"$envmapsaturation" 	"1"
+
+	"$phong" 				"1"
+	"$phongexponent" 		"4"
+	"$phongboost" 			"2"
+	"$phongfresnelranges"	"[0.4 0.6 1.8]"
+	"$phongtint"			"[.275 .2 .35]"
+
+//	$detail 				detail\rock_lg
+        //$detailscale 		10
+        //$detailblendfactor .1
+		
+	"%keywords" 			"bms, Jenn0, xen"
+    "$model" 1
+
+}

@@ -1,0 +1,41 @@
+VertexLitGeneric
+{
+	$baseTexture models\props_xen\water\water_flow
+	$bumpMap models\props_xen\water\water_refract
+	
+	$color2 "[0.8 0.5 0]"
+	
+	$envMap env_cubemap
+	$envMapTint "[0.5 0.25 0.1]"
+	$envMapFresnel 1
+	
+	$phong 1
+	$phongExponent 200
+	$phongBoost 10
+	$phongFresnelRanges "[0.4 0.8 1]"
+	$phongTint "[2 1 0.2]"
+	
+	$center "[0.5 0.5]"
+	$scale "[1 1]"
+	$angle 0
+	$translate "[0 0]"
+	
+	"$model" 1
+	
+	Proxies
+	{
+		LinearRamp
+		{
+			rate -0.5
+			resultVar "$translate[1]"
+		}
+		TextureTransform
+		{
+			centerVar $center
+			scaleVar $scale
+			rotateVar $angle
+			translateVar $translate
+			resultVar $baseTextureTransform
+		}
+	}
+}

@@ -1,0 +1,20 @@
+"VertexLitGeneric"
+{
+// File Created by Wall Worm Pro ( http://dev.wallworm.com )
+
+// BEGIN Textures
+	$basetexture "models/props_xen/foliage/int_floor_foliage/int_floor_anenome_d"
+	$bumpmap "models/props_xen/foliage/int_floor_foliage/int_floor_anenome_normal"
+// END Textures
+
+
+
+// BEGIN Transparency
+	"$alphatest" 1
+	"$AlphaTestReference" "0.5"
+	"$allowalphatocoverage" 1
+// END Transparency
+
+
+    "$model" 1
+}

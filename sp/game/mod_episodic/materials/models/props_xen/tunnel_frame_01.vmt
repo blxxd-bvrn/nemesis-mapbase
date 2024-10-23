@@ -1,0 +1,21 @@
+"VertexLitGeneric"
+{
+	"$basetexture" 				"models\props_xen\tunnel_frame_01_d"
+	"$bumpmap"					"models\props_xen\tunnel_frame_01_n"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmap" 					"env_cubemap"
+	"$envmapcontrast" 			".65"
+	"$envmapsaturation" 		".33"
+	
+	// masked detail blending only works with VertexLitGeneric shader!!
+	//$detail 					"detail/plastic_hexgrid"
+	//$detailscale 				"44"
+	//$detailblendfactor 		".33"
+	//$detailblendmode 			4
+	
+//	$detail 					"detail/c2a4_metal_detail"
+//	$detailscale 				"8"
+//	$detailblendfactor 			"0.13"
+//	$detailblendmode 			2
+    "$model" 1
+}

@@ -1,0 +1,13 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 					"xen/xen_iris_door2"
+	"$bumpmap" 					"xen/xen_iris_door2_nm"
+	"$model" "1"
+
+	"$surfaceprop" 					"metal"
+
+	"$envmap" 						"env_cubemap"
+	"$envmaptint" 					"[.45 .35 .15]"
+	"$envmapsaturation" 			"1"
+
+}

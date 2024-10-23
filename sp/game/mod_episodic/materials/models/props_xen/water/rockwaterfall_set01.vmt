@@ -1,0 +1,17 @@
+VertexLitGeneric
+{
+	$baseTexture 		models\props_xen\water\rockwaterfall_set01
+	$bumpMap 			models\props_xen\water\rockwaterfall_set01_normal
+	
+	$phong 				1
+	$phongExponent 		80
+	$phongBoost 		10
+	$phongFresnelRanges "[0.25 0.5 1]"
+	
+	"$model" 1
+	
+//	$detail				xen\xen_c1a4a_rock_001c
+//	$detailScale 		1
+//	$detailBlendFactor 	1
+//	$detailBlendMode 	4
+}

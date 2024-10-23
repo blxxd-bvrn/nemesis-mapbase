@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{	
+	"$baseTexture" 	"models/props_xen/gonarch/xen_gonarch_web_001a"
+	"$bumpmap"	"models/props_xen/gonarch/xen_gonarch_web_001a_normal"
+	"$translucent" 	"1"
+	"$model"	"1"
+}

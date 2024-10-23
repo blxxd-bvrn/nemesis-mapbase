@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+
+	$basetexture "models/props_xen/foliage/snakeplant/snakeplant_d"
+	$bumpmap "models/props_xen/foliage/snakeplant/snakeplant_normal"
+	"$surfaceprop" "flesh"
+	 $envmap "env_cubemap"
+	 $normalmapalphaenvmapmask "1"
+    "$model" 1
+}

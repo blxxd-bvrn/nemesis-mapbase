@@ -1,0 +1,40 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props_xen/Xen_plug_d_red"
+	"$bumpmap" "models/props_xen/Xen_plug_n"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmaptint" "[.5 .2 .2]"
+	"$envmapcontrast" "0"
+	"$envmapsaturation" "0" 	
+
+	//$detail detail\detail_coral2 
+	//$detailscale 7
+	//$detailblendfactor 0.8
+	//$detailblendmode 0
+
+	//"$nodecal" "1"
+	"$halflambert" 1
+	"$multipass" "1"
+	"$model" "1"
+ 	"$emissiveBlendEnabled" "1"
+	"$emissiveBlendTint" "{255 255 255}"
+    	"$emissiveBlendTexture" "models\props_xen\glow_red2"
+	"$emissiveBlendBaseTexture" "models\props_xen\Xen_plug_exp"
+	"$emissiveBlendFlowTexture" "models\props_xen\glow_red2" //Can use a flow mask that scrolls to create disruptive patterns. Use white for just basic glow.
+    	 //RGB/normal value of the glow colour you want.
+    	"$emissiveBlendStrength" 1.0 //Strength of glow. Can be controlled via proxy for variable glow.
+    	"$emissiveBlendScrollVector" "[0.3 0.3]" 
+	//"$sheenpassenabled" "1"
+	"$alphatest" "1"
+	"$nocull" "1"
+	"$alpha" "1"
+
+	"$phong" "1"
+	"$phongboost"		"2"
+	"$phongfresnelranges" "[.4 .8 30]"
+
+	"$rimlight"               "1"
+	"$rimlightexponent"       "5"
+	"$rimlightboost"          "1"		
+}

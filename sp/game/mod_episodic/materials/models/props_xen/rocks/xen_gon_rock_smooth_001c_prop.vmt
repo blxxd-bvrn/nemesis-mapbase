@@ -1,0 +1,26 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 				"xen/xen_gon_rock_smooth_001c"
+	"$bumpmap" 					"xen/xen_gon_rock_smooth_001c_normal"
+	
+	"$surfaceprop" 				"rock"
+
+	"$envmap" 					"env_cubemap"
+   	"$envmaptint" 				"[.025 .032 .026]"
+	"$basealphaenvmapmask" 		"1"
+	"$envmapcontrast"			"1"
+
+
+	$phong						1
+    $phongexponent 				4
+    $phongboost 				.2
+    $phongtint 					"[.7 .7 1]"
+    $halflambert 				0
+    $phongfresnelranges 		"[.4 .1 1]"
+		
+	$rimlight 					"1"
+	$rimlightexponent 			"20"
+	$rimlightboost 				"0.2"
+    "$model" 1
+
+}

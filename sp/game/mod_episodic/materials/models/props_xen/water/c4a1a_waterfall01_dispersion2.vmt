@@ -1,0 +1,41 @@
+VertexLitGeneric
+{
+	$baseTexture 		models\props_xen\water\water_flow
+	
+	$translucent 		1
+	$color2 			"[0.95 1 1.1]"
+	
+	$detail 			models\props_xen\water\waterfall_set01_mask
+	$detailScale 		1
+	$detailBlendFactor 	1.5
+	$detailBlendMode 	8
+	
+	$scale 				"[4 8]"
+	$angle 				0
+	$translate 			"[0 0]"
+	
+	"$model" 1
+	
+	Proxies
+	{
+		Sine
+		{
+			sinePeriod 15
+			sineMin -1.0
+			sineMax 1.0
+			resultVar $angle
+		}
+		LinearRamp
+		{
+			rate -0.22
+			resultVar "$translate[1]"
+		}
+		TextureTransform
+		{
+			scaleVar $scale
+			rotateVar $angle
+			translateVar $translate
+			resultVar $baseTextureTransform
+		}
+	}
+}

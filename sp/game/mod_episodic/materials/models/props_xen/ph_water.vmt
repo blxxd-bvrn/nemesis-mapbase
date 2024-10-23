@@ -1,0 +1,19 @@
+"Refract"
+{
+	"$model"				"1"
+	"$nocull"				"1"
+	
+	// 'base' refract map
+	"$normalmap" 			"models/props_bounce/waterfall_01r_N"
+	
+	// detail normal map
+//	"$normalmap2"			"models/props_bounce/waterfall_01r_N2"
+
+	// refract color map
+	"$refracttinttexture"	"models/props_bounce/waterfall_01r_D"
+	"$refracttint"			"[1 1.1 1.5]"
+
+	"$refractamount"		".2"
+	"$bluramount"			".1"
+
+}

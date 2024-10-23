@@ -1,0 +1,11 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_xen/interloper/filter_card_a"
+	"$alphatest" 1
+	"$alphatestreference" .225
+	"$nocull" 1
+	"$halflambert" 1
+
+    "$model" 1
+
+}

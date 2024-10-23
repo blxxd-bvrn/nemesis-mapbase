@@ -1,0 +1,37 @@
+VertexLitGeneric
+{
+	$baseTexture 		models\props_xen\water\water_mist
+	
+	"$model" 1
+	
+	$additive 			1
+	$noCull 			1
+	$color2 			"[0.24 0.32 0.36]"
+	
+	$detail 			models\props_xen\water\waterfall_set02_mask
+	$detailScale 		1
+	$detailBlendFactor 	1.25
+	$detailBlendMode 	7
+	
+	$center 			"[0.5 0.5]"
+	$scale 				"[4 4]"
+	$angle 				0
+	$translate 			"[0 0]"
+	
+	Proxies
+	{
+		LinearRamp
+		{
+			rate 1.2
+			resultVar $angle
+		}
+		TextureTransform
+		{
+			centerVar $center
+			scaleVar $scale
+			rotateVar $angle
+			translateVar $translate
+			resultVar $baseTextureTransform
+		}
+	}
+}

@@ -1,0 +1,15 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models\props_xen\airlock_door_01_d"
+//	"$bumpmap"		"models\props_xen\airlock_door_01_n"
+	"$normalmapalphaenvmapmask" 1	
+	"$envmap" env_cubemap
+	"$envmapsaturation" "0.5"
+	"$envmaptint" "[0.2 0.2 0.2]"
+	"$envmapcontrast" ".1"
+	
+	"$selfillum" 1
+	//"$selfillumtint" "[.2 .2 .2]"
+	
+    "$model" 1
+}

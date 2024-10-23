@@ -1,0 +1,24 @@
+"VertexLitGeneric"
+{
+// File Created by Wall Worm Pro ( http://dev.wallworm.com )
+
+// BEGIN Textures
+	$basetexture "xen/xen_metal_01c"
+	$envmapmask "xen/xen_metal_01a_normal"
+	$bumpmap "xen/xen_metal_01a_normal"
+// END Textures
+
+
+	"$surfaceprop" "metal"
+
+// BEGIN ENV and Reflections
+	"$envmap" "env_cubemap"
+
+	 $normalmapalphaenvmapmask "1"
+	"$envmaptint" "[0.6 0.4 0.1]"
+	"$envmapcontrast" "0.0"
+	"$envmapsaturation" "1.0"
+// END ENV and Reflections
+
+    "$model" 1
+}

@@ -1,0 +1,20 @@
+"VertexLitGeneric"
+{
+// File Created by Wall Worm Pro ( http://dev.wallworm.com )
+
+// BEGIN Textures
+	$basetexture "models/props_xen/foliage/bolbules/boubles_blue"
+	$envmapmask "models/props_xen/foliage/bolbules/Bolbules_spec_normal"
+	$bumpmap "models/props_xen/foliage/bolbules/Bolbules_spec_normal"
+// END Textures
+
+
+
+// BEGIN ENV and Reflections
+	"$envmap" "env_cubemap"
+
+	 $normalmapalphaenvmapmask "1"
+// END ENV and Reflections
+
+    "$model" 1
+}

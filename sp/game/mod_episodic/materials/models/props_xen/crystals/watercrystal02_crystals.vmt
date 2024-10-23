@@ -1,0 +1,11 @@
+VertexLitGeneric
+{
+	$baseTexture models\props_xen\crystals\watercrystal02_crystals
+	$bumpMap models\props_xen\crystals\xen_crystals_orange_nm
+	
+	$phong 1
+	$phongExponent 15
+	$phongBoost 20
+	$phongFresnelRanges "[0.25 0.5 1]"
+    "$model" 1
+}

@@ -1,0 +1,27 @@
+"vertexlitgeneric"
+{
+	"$model" "1"
+
+	"$basetexture" 	"models/props_xen/interloper/int_weld_card_d"
+	"$bumpmap" 	"models/props_xen/interloper/int_weld_card_n"
+
+	$alphatest 1
+	$alphatestreference .275
+
+	"$color2" "{50 50 25}"
+
+	"$surfaceprop" 	"metal"
+
+	"$envmap" 	"cubemaps/cubemap_sheen001"
+	"$envmaptint" 	"{23.25 13.5 3.75}"
+	"$envmapcontrast" ".075"
+
+	"$halflambert" "1"
+
+	$phong 1
+	$phongexponent 12
+	$phongboost 1
+	$phongfresnelranges "[-.5 3 .5]"
+
+}
+

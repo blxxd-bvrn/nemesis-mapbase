@@ -1,0 +1,17 @@
+"VertexLitGeneric"
+{
+	$model 1
+	$basetexture "models/props_xen/xen_crystalholder_misc_d"	
+	$bumpmap "models/props_xen/xen_crystalholder_misc_n"
+
+	$envmap "env_cubemap"
+	$normalmapalphaenvmapmask "1"
+	$envmapcontrast 1
+	$envmaptint "[.55 .55 .55]"
+	$phong 1
+ 
+	$phongexponent 8
+	$phongexponenttexture "models/props_xen/xen_crystalholder_misc_s"
+	$phongboost 15
+	$phongfresnelranges "[0 .35 .55]"
+}

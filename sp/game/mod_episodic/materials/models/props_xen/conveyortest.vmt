@@ -1,0 +1,31 @@
+"UnlitGeneric"
+{
+
+	$basetexture "models/props_xen/conveyortest_D"
+	$bumpmap "models/props_xen/conveyortest_N"
+	$translucent 1
+//	$alpha .75
+
+
+	"$envmap" "env_cubemap"
+   	"$envmaptint" "[.8 .9 1]"
+	$envmapmask "models/props_xen/conveyortest_s"
+	
+	"$model" 1
+
+Proxies
+{
+	TextureScroll
+	{
+		texturescrollvar $basetextureTransform
+		texturescrollrate .1
+		texturescrollangle 80
+	}
+	TextureScroll
+	{
+		texturescrollvar $envmapmaskTransform
+		texturescrollrate .1
+		texturescrollangle 80
+	}
+}
+}

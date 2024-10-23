@@ -1,0 +1,38 @@
+VertexLitGeneric
+{
+	$baseTexture 			models\props_xen\water\water_flow
+	//$bumpMap 				models\props_xen\water\water_flow_normal
+	
+	$translucent 			1
+	//$alphaTestReference 	0.1
+	$color2 				"[1.1 0.7 0]"
+	
+//	$detail 				models\props_xen\water\flow01_mask2
+//	$detailScale 			1
+//	$detailBlendFactor 		0.75
+//	$detailBlendMode		8
+	
+	$center 				"[0.5 0.5]"
+	$scale 					"[2 1]"
+	$angle 					0
+	$translate 				"[0 0]"
+	
+	"$model" 1
+	
+	Proxies
+	{
+		LinearRamp
+		{
+			rate -0.2
+			resultVar "$translate[1]"
+		}
+		TextureTransform
+		{
+			centerVar $center
+			scaleVar $scale
+			rotateVar $angle
+			translateVar $translate
+			resultVar $baseTextureTransform
+		}
+	}
+}

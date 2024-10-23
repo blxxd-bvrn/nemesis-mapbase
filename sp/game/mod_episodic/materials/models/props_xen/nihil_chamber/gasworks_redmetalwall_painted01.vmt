@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 				"gasworks\gasworks_RedMetalWall_Painted01"
+	"$bumpmap" 					"gasworks\gasworks_RedMetalWall_Painted01_normal"
+	"$surfaceprop" 				"metal"
+	"$envmap" 					"env_cubemap"
+   	"$envmaptint" 				"[.35 .35 .35]"
+	"$normalmapalphaenvmapmask"	"1"	
+
+
+        //"$detail" 			"detail\bm_metal_detail_01"
+//	"$detailscale" 				"8"
+//	"$detailblendfactor" 		.8
+//	"$detailblendmode" 			0
+
+	"%keywords" 				"bms, Jenn0"
+    "$model" 1
+
+}

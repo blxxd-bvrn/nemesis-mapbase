@@ -1,0 +1,29 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 	"models/props_xen/interloper/reactor_off"
+	"$bumpmap" 	"models/props_xen/interloper/reactor_nm"
+	"$normalmapalphaenvmapmask" "1"
+
+	"$surfaceprop" 	"metal"
+
+	"$envmap" 	"env_cubemap"
+	"$envmaptint" 	"[.6 .2 .1]"
+	"$envmapsaturation" "1"
+
+//	"$selfillum" 1
+//	"$selfillummask" "models/props_xen/interloper/reactor_illum"
+ //	"$selfillumtint" "[4 0 0]"
+
+	$phong 1
+	$phongExponent 35
+	$phongBoost 3
+	$phongFresnelRanges "[0.25 0.5 1]"
+	
+
+
+// Rim lighting parameters
+"$rimlight" "1"
+"$rimlightexponent" "10"
+"$rimlightboost" "1"
+    "$model" 1
+}

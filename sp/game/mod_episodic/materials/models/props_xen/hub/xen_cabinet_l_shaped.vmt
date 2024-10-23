@@ -1,0 +1,22 @@
+"VertexLitGeneric"
+{	
+	$model 1
+	$basetexture "models/props_xen/hub/L_shaped"
+	$bumpmap "models/props_xen/hub/L_shaped_nm"
+"$normalmapalphaenvmapmask" "1"
+"$envmap" "env_cubemap"
+$phongexponenttexture "models/props_xen/hub/xen_l_shaped_cabinet_exp"
+"$envmaptint"			"[0.2 0.2 0.2]"
+	"$selfillummask" "models/props_xen/hub/l_shaped_emissive"
+"$selfillum" 1
+$phong 1
+        $phongboost 1
+        $halflambert 1
+"$phongfresnelranges"	"[.4 .8 30]"
+
+// Rim lighting parameters
+	"$rimlight" "1"				// To enable rim lighting (requires phong)
+	"$rimlightexponent" "20"             // Exponent for phong component of rim lighting
+	"$rimlightboost" ".3"	               // Boost for ambient cube component of rim lighting
+
+}

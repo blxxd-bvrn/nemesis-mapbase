@@ -1,0 +1,15 @@
+"vertexlitgeneric"
+{
+	"$basetexture" 	"xen/c_hub_metal"
+	"$bumpmap" 	"xen/c_hub_metal_ssbump"
+	"$normalmapalphaenvmapmask" "1"
+
+	"$surfaceprop" 	"metal"
+
+	"$envmap" 	"env_cubemap"
+	"$envmaptint" 	"[1.3 1.3 .8]"
+	"$envmapsaturation" "1"
+
+    "$model" 1
+
+}

@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props_office/taxidermy_roadrunner"
+    "$model" 1
+
+}

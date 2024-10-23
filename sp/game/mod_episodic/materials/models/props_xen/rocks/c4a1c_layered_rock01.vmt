@@ -1,0 +1,27 @@
+"VertexLitGeneric"
+{
+	"$model" "1"
+	"$basetexture"  			"models\props_xen\rocks\c4a1c_layered_rock01_d"
+	"$bumpmap"  				"models\props_xen\rocks\c4a1c_layered_rock01_n"
+
+//	"$detail" 					"xen\detail\xen_detailmap_rock001"
+//	"$detailscale" 				"8"
+//	"$detailblendfactor" 		".95"
+
+	"$normalmapalphaenvmapmask" "1"
+	"$envmap" 					"env_cubemap"
+	"$envmapcontrast" 			".5"
+	"$envmaptint"				"[.11 .112 .108]"
+	"$nodecal" 					"1"
+	"$multipass" 				0
+
+	"$phong" 					"1"
+	"$phongexponent" 			"5"
+	"$phongboost" 				".2"
+	"$phongfresnelranges"		"[0.2 0.6 1.8]"
+	"$phongalbedotint" 			"1"
+
+	$rimlight 					"1"
+	$rimlightexponent 			"30"
+	$rimlightboost 				"1"
+}

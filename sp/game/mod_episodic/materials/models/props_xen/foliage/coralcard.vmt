@@ -1,0 +1,17 @@
+"UnlitGeneric"
+{
+
+	$basetexture "models/props_xen/foliage/Object001_card001DiffuseMap"
+	$phongexponenttexture "models/props_xen/foliage/Object001_card001SpecularMap"
+	$normalmap "models/props_xen/foliage/Object001_card001NormalsMap"
+	$bumpmap "models/props_xen/foliage/Object001_card001NormalsMap"
+
+
+	"$model" 1
+	"$alphatest" 1
+	"$AlphaTestReference" "0.5"
+
+	 $phong "1"
+	 $phongexponent "5"
+	 $nocull "1"
+}

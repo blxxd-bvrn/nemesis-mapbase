@@ -1,0 +1,15 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_xen/village/vort_step_planter_a"
+	"$bumpmap" "models/props_xen/village/vort_step_planter_n"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmap" 	"env_cubemap"
+	"$envmaptint" 	"[1 1 1]"
+	"$envmapsaturation" ".3"
+	$phong 1
+	$phongexponent 2
+	$phongBoost 1
+	$phongFresnelRanges "[0.05 .5 1]"
+    "$model" 1
+
+}

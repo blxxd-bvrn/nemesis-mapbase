@@ -1,0 +1,22 @@
+
+"vertexlitgeneric"
+{
+	"$basetexture" 				"xen/xen_metal_trim_02a"
+	"$bumpmap" 					"xen/xen_metal_trim_02a_normal"
+	"$normalmapalphaenvmapmask" "1"
+
+	"$surfaceprop" 				"metal"
+
+	"$envmap" 					"env_cubemap"
+	"$envmaptint" 				"[.6 .4 .1]"
+	"$envmapsaturation" 		"1"
+
+        //"$detail" 			"detail\bm_metal_detail_02"
+//	"$detailscale" 				"6"
+//	"$detailblendfactor" 		"2"
+//	"$detailblendmode" 			"0"
+		
+	"%keywords" 				"bms, jenn0, xen"
+    "$model" 1
+
+}

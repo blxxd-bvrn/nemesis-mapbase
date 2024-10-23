@@ -1,0 +1,21 @@
+"vertexlitgeneric"
+{
+	"$basetexture" 	"xen/xen_metal_fence_02a"
+	"$bumpmap" 	"xen/xen_metal_fence_02a_normal"
+	"$normalmapalphaenvmapmask" "1"
+
+	"$alphatest" 1
+        "$alphatestreference" .5
+
+
+	"$surfaceprop" 	"metal"
+
+	"$envmap" 	"env_cubemap"
+	"$envmaptint" 	"[.23 .23 .23]"
+	"$envmapsaturation" "1"
+		
+	"%keywords" 			"bms, jenn0, xen"
+    "$model" 1
+
+
+}

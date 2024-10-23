@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$model" "1"
+	"$color2" "{96 96 6}"
+	"$basetexture" "models/props_xen/Xen_Barrel_Cactus_purple"
+	"$bumpmap" "models/props_xen/Xen_Barrel_Cactus_bump"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmaptint" "[.1 .1 .1]"
+	"$envmapcontrast" "0"
+	"$envmapsaturation" "0" 	
+}

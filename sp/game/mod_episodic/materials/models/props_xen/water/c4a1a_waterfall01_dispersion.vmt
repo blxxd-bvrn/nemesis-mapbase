@@ -1,0 +1,32 @@
+VertexLitGeneric
+{
+	$baseTexture 		models\props_xen\water\water_dispersion
+	
+	$translucent 		1
+	$color2 			"[0.8 0.9 1]"
+	
+	$detail 			models\props_xen\water\waterfall_set01_mask
+	$detailScale 		1
+	$detailBlendFactor 	1.25
+	$detailBlendMode 	8
+	
+	$scale 				"[8 8]"
+	$translate 			"[0 0]"
+	
+	"$model" 1
+	
+	Proxies
+	{
+		LinearRamp
+		{
+			rate -0.4
+			resultVar "$translate[1]"
+		}
+		TextureTransform
+		{
+			scaleVar $scale
+			translateVar $translate
+			resultVar $baseTextureTransform
+		}
+	}
+}

@@ -1,0 +1,112 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props_office/light_strip01_on"
+	"$bumpmap" "models/props_office/light_strip01_normal"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmaptint" "[ .5 .5 .5]"
+	"$envmapsaturation" "0.6"
+	"$halflambert" "1"
+	"$selfillum" "1"
+	"$selfillumtint" "[ .165 .1125 .1 ]"
+	"$model" 1
+
+
+	// $selfillumtint "[ 0 0 0 ]"
+	// $flickFracTime 2
+	// $flickFracSpd 1
+	// $flickFracVal 0
+	// $flickFracResult 0
+	// $flickFracMult 4
+	// $flickVar 0
+	
+	// $sin1y 3
+	// $sin1period 0
+	// $sin1 0
+	// $sin2x 0
+	// $sin2y 5
+	// $sin2om 1
+	// $sin2period 0
+	// $sin2 0
+	// $sinProduct 0
+	
+	// $illumTemp "[.9 .65 .65]" // tint selfillum before applying luminance multiplier
+	
+	// Proxies 
+	// {
+		// Multiply
+		// {
+			// srcVar1	"$flickFracTime"
+			// srcVar2	"$flickFracSpd"
+			// resultVar "$flickFracVal"
+		// }
+	
+		// Frac
+		// {
+			// srcVar1	"$flickFracVal"
+			// resultVar "$flickFracResult"
+		// }
+		
+		// Multiply
+		// {
+			// srcVar1	"$flickFracMult"
+			// srcVar2 "$flickFracResult"
+			// resultVar "$flickVar"
+		// }
+		
+		// Divide // mult / flickvar => period
+		// {
+			// srcVar1	"$sin1y"
+			// srcVar2 "$flickVar"
+			// resultVar "$sin1period"
+		// }
+		
+		// Sine // sin1
+		// {
+			// sineperiod "$sin1period"
+			// resultVar	"$sin1"
+		// }
+		
+		// Subtract
+		// {
+			// srcVar1 "$sin2om"
+			// srcVar2 "$flickVar"
+			// resultVar "$sin2x"
+		// }
+		
+		// Divide // mult / 1-flickvar => period
+		// { 
+			// srcVar1 "$sin2y"
+			// srcVar2 "$sin2x"
+			// resultVar "$sin2period"
+		// }
+		
+		// Sine // sin2
+		// {
+			// sinePeriod "$sin2period"
+			// resultVar "$sin2"
+		// }
+		
+		// Multiply
+		// {
+			// srcVar1	"$sin1"
+			// srcVar2	"$sin2"
+			// resultVar "$sinProduct"
+		// }
+		
+		// Clamp
+		// {
+			// min 0.002
+			// max 0.003
+			// srcVar1 "$sinProduct"
+			// resultVar "$sinProduct"
+		// }
+		
+		// Multiply
+		// {
+			// srcVar1		"$sinProduct"
+			// srcVar2		"$illumTemp"
+			// resultVar	"$selfIllumTint"
+		// }
+	// }
+}

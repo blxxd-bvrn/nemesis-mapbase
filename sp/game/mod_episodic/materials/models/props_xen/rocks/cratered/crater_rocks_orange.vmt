@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+
+	"$baseTexture" 	"xen/xen_c1a4a_rock_001a"
+	$bumpmap "models/props_xen/rocks/cratered/crater_rocks_s_normal"
+
+
+	"$surfaceprop" "rock"
+
+	 $envmap "env_cubemap"
+	 $normalmapalphaenvmapmask "1"
+	 $selfillum "1"
+    "$model" 1
+}

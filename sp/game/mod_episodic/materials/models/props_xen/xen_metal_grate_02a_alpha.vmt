@@ -1,0 +1,15 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 	"xen/xen_metal_grate_02a"
+	"$bumpmap" 	"xen/xen_metal_grate_02a_normal"
+	"$normalmapalphaenvmapmask" "1"
+
+	"$model" 1
+
+	"$alphatest" 1
+	"$alphaTestReference" "0.65"
+
+	"$envmap" 	"env_cubemap"
+	"$envmaptint" 	"[1 .8 .4]"
+	"$envmapsaturation" "1"
+}

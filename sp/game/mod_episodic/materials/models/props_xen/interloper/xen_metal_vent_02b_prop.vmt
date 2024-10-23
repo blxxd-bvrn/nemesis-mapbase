@@ -1,0 +1,22 @@
+"vertexlitgeneric"
+{
+	"$baseTexture" 	"xen/xen_metal_vent_02b"
+	"$bumpmap" 	"xen/xen_metal_vent_02a_normal"
+	"$normalmapalphaenvmapmask" "1"
+
+//	"$basetexturetransform" "center .5 .5 scale 2 2 rotate 0 translate 0 0"
+
+	"$alphatest" 1
+	"$alphaTestReference" ".775"
+	"$nocull" "1"
+	"$surfaceprop" 	"metal"
+
+	"$envmap" 	"env_cubemap"
+	"$envmaptint" 	"[.6 .6 .6]"
+	"$envmapsaturation" "1"
+		
+	"%keywords" 			"bms, Jenn0, xen"
+    "$model" 1
+
+
+}

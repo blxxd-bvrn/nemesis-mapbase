@@ -1,0 +1,32 @@
+"VertexLitGeneric"
+{
+// File Created by Wall Worm Pro ( http://dev.wallworm.com )
+
+// BEGIN Textures
+	$basetexture "models/props_xen/gonarch/web-tile"
+	$bumpmap "models/props_xen/gonarch/web-tile_normal"
+// END Textures
+
+
+	//$additive 1
+// BEGIN ENV and Reflections
+	"$envmap" "env_cubemap"
+	$envmaptint "[.5 .5 .5]"
+
+	 //$basealphaenvmapmask "1"
+
+	"$phong" 			"1"
+	"$phongexponent" 			"16"
+	"$phongboost" 			"20"
+	"$phongfresnelranges"		"[0 0 0]"
+
+// END ENV and Reflections
+
+// BEGIN Transparency
+	
+	"$translucent" 1
+// END Transparency
+
+
+    "$model" 1
+}

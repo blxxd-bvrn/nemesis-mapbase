@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "tile/fifties_ceiling_3square_smstain"
+	"$bumpmap" "tile/fifties_ceiling_2squarenorm"
+	"%keywords" "bms"
+	"$normalmapalphaenvmapmask" 1
+    "$model" 1
+
+}

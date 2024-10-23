@@ -1,0 +1,26 @@
+"VertexLitGeneric"
+{
+// File Created by Wall Worm Pro ( http://dev.wallworm.com )
+
+// BEGIN Textures
+	$basetexture "models/props_xen/hub/tunnel_rings_off"
+	$bumpmap "models/props_xen/hub/tunnel_rings_nm"
+// END Textures
+"$normalmapalphaenvmapmask" "1"
+"$envmap" "env_cubemap"
+
+"$envmaptint"			"[0.3 0.3 0.3]"
+"$selfillum" 1
+$phong 1
+        $phongexponent 20
+        $phongboost 1
+        $halflambert 0
+"$phongfresnelranges"	"[.6 0.8 2]"
+
+// Rim lighting parameters
+	"$rimlight" "1"				// To enable rim lighting (requires phong)
+	"$rimlightexponent" "20"             // Exponent for phong component of rim lighting
+	"$rimlightboost" ".3"	               // Boost for ambient cube component of rim lighting
+
+    "$model" 1
+}

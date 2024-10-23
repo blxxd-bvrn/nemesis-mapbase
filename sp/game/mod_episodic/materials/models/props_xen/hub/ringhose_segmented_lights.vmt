@@ -1,0 +1,41 @@
+"VertexLitGeneric"
+{
+	"$basetexture"									"models/props_xen/hub/ringhose_segmented_lights"
+	"$bumpmap"										"models/props_xen/hub/ringhose_segmented_lights_nm"
+	"$halflambert"									"1"
+	"$sellillum" "1"
+
+	"$normalmapalphaenvmapmask"						"1"
+	"$envmap"										"env_cubemap"
+	"$envmaptint"									"[1 1 1]"
+
+	"$phong"										"1"
+	"$phongexponent"								"30"
+	"$phongboost"									"1.0"
+//	"$phongtint"									"[.09 .08 .09]"
+	"$phongfresnelranges"							"[.7 2 7]"
+//	"$phongalbedotint"								"1"
+
+
+ 	"$emissiveBlendEnabled"							"1"
+	"$emissiveBlendTint"							"{243 184 143}"
+ 	"$emissiveBlendTexture"							"models\props_xen\glow_blue1"
+	"$emissiveBlendBaseTexture"						"models/props_xen/hub/ringhose_segmented_lights_exp"
+	"$emissiveBlendFlowTexture"						"models\props_xen\glow_blue2"	//Can use a flow mask that scrolls to create disruptive patterns. Use white for just basic glow.
+	"$emissiveBlendStrength"						"4"							//Strength of glow. Can be controlled via proxy for variable glow.
+	"$emissiveBlendScrollVector"					"[.05 .19 .15]" 
+	"$sheenpassenabled"								"1"
+
+	"Proxies"																	// proxies are listed inside this block
+	{
+		"Sine"																	// a proxy which produces a sine wave
+		{
+			"resultVar"								"$emissiveBlendStrength"	// The shader parameter to be manipulated
+			"sineperiod"							"5"
+			"sinemin"								".15"
+			"sinemax"								"1"
+		}
+	}
+	
+	"$model" 1
+}

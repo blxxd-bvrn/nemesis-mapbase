@@ -1,0 +1,26 @@
+"VertexLitGeneric"
+{
+
+	//"$baseTexture" 	"xen/xen_c1a4a_rock_001a"
+	"$baseTexture" 	"models/props_xen/volcanic_vents/vents3_large_d"
+	$bumpmap "models/props_xen/volcanic_vents/Vents3_Large_s_normal"
+
+
+
+	 $envmap "env_cubemap"
+
+	 $envmapcontrast "0.1"
+	 $envmapsaturation "0.1"
+	 $normalmapalphaenvmapmask "1"
+	 
+	 
+	"$halflambert" 1
+	"$phong" 1
+	"$phongboost" "1.0"
+	"$phongexponent" "5"
+	"$phongfresnelranges" "[0.0 0.5 1.0]"
+	"$surfaceprop" "rock"
+
+
+    "$model" 1
+}

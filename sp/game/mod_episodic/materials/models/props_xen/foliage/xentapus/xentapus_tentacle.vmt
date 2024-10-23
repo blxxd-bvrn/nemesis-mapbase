@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+
+	$basetexture "models/props_xen/foliage/xentapus/xentapus_tentacle_Diffuse"
+	$bumpmap "models/props_xen/foliage/xentapus/xentapus_tentacle_Normal"
+
+
+
+    "$model" 1
+}

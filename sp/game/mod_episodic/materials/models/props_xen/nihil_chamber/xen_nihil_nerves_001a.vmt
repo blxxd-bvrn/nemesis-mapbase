@@ -1,0 +1,29 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 			"models/props_xen/nihil_chamber/xen_nihil_nerves_001a"
+	"$bumpmap" 				"models/props_xen/nihil_chamber/xen_nihil_nerves_001a_normal"
+
+//	"$color2"				"[.7 .7 .7]"
+
+	"$envmap" 				"env_cubemap"
+	"$envmaptint" 			"[.4 .4 .4]"
+	"$envmapsaturation" 	"1"
+
+	"$phong" 				"1"
+	"$phongexponent" 		"4"
+	"$phongboost" 			"2"
+//	"$phongfresnelranges"	"[1 3 8]"
+	"$phongfresnelranges"	"[0.4 0.6 1.8]"
+
+	"$lightwarptexture" 	"xen/effects/xen_lightwarp_nerves"
+
+	"$phongtint"			"[.275 .2 .35]"
+
+//	$detail 					detail\rock_lg
+       // $detailscale 			10
+       // $detailblendfactor	.1
+		
+	"%keywords" 				"bms, Jenn0, xen"
+    "$model" 1
+
+}

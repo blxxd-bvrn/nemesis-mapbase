@@ -1,0 +1,23 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 	"models/props_xen/nihil_chamber/xen_nihil_cables_001a"
+	"$bumpmap" 	"models/props_xen/nihil_chamber/xen_nihil_cables_001a_normal"
+	"$normalmapalphaenvmapmask" "1"
+
+	"$color2"	"[.7 .7 .7]"
+
+	"$surfaceprop" 	"rock"
+
+	"$phong" "1"
+	"$phongexponent" "8"
+	"$phongboost" ".75"
+	"$phongfresnelranges"	"[0.3 0.6 1.8]"
+
+	"$envmap" 	"env_cubemap"
+	"$envmaptint" 	"[.7 .7 .7]"
+	"$envmapsaturation" "1"
+		
+	"%keywords" 			"bms, Jenn0, xen"
+    "$model" 1
+
+}

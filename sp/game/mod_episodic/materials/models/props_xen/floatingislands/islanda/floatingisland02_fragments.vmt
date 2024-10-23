@@ -1,0 +1,17 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_xen/floatingislands/islandA/FloatingIsland02_Fragments"
+	"$bumpmap" "models/props_xen/floatingislands/islandA/FloatingIsland02_Fragments_normal"
+	
+	"$envmap" "env_cubemap"
+   	"$envmaptint" "[.8 .8 .8]"
+	"$normalmapalphaenvmapmask" 1	
+	"$envmapcontrast" "1"
+	
+//	$phong 1
+//	$phongExponent 60
+//	$phongBoost 10
+//	$phongFresnelRanges "[0.3 0.6 1]"
+    "$model" 1
+
+}

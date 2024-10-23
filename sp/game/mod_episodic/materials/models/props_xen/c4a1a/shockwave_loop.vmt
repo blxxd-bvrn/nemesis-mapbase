@@ -1,0 +1,26 @@
+"UnlitTwoTexture"
+{
+	"$basetexture" "models/props_xen/c4a1a/shockwave_loop"
+	"$texture2" "models/props_xen/c4a1a/shockwave_edge"
+	"$additive" "1"
+	//"$vertexalpha" "1"
+	//"$vertexcolor" 1
+	"%keywords" "bms"
+	"Proxies"
+	{
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$basetexture"
+			"animatedtextureframenumvar" "$frame"
+			"animatedtextureframerate" 30
+		}
+		"TextureScroll"
+		{
+			"texturescrollvar" "$baseTextureTransform"
+			"texturescrollrate" 0.8
+			"texturescrollangle" -90
+		}
+	}
+	"$model" 1
+	
+}

@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+
+	$basetexture "models/props_xen/foliage/frilltendril/friltendril_d"
+
+
+
+    "$model" 1
+}

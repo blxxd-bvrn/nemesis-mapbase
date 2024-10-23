@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+	"$basetexture" 			"models/props_xen/xen_RockHenge_d"
+	"$bumpmap" 			"models/props_xen/xen_rockhenge_n"
+	"$surfaceprop" 			"rock"
+
+	$phong "1"
+//	$phongexponent "10"
+	$phongboost ".5"
+	$phongfresnelranges	"[0.1 0.5 0.5]"
+	$rimlight "1"
+	$rimlightexponent "20"
+	$rimlightboost "0.5"
+
+    "$model" 1
+}

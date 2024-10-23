@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 	"models/props_xen/xen_tech/xen_nihil_membrane_001a"
+	"$bumpmap" 	"models/props_xen/xen_tech/xen_nihil_membrane_001a_normal"
+	"$normalmapalphaenvmapmask" "1"
+	"$ssbump"	"1"
+
+	"$color2"	"[3.2 3.2 3.2]"
+
+	"$surfaceprop" 	"flesh"
+
+	"$envmap" 	"env_cubemap"
+	//"$envmaptint" 	"[.6 .6 .6]"
+	//"$envmapsaturation" "1"
+		
+	"%keywords" 			"bms, Morloc, xen"
+    "$model" 1
+}

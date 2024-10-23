@@ -1,0 +1,12 @@
+VertexLitGeneric
+{
+	$baseTexture models\props_xen\interloper\organic_monitor
+	$bumpMap models\props_xen\interloper\organic_monitor_nm
+	
+	$phong 1
+	$phongExponent 15
+	$phongBoost 3
+	$phongFresnelRanges "[0.25 0.5 1]"
+	
+    "$model" 1
+}

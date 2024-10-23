@@ -1,0 +1,21 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\humans\maintenance/gloves_base"
+        "$bumpmap"     "models\humans\maintenance/gloves_normal"
+	"$surfaceprop" "flesh"
+
+//	$detail "effects/models/model_blood_red.vtf"
+	$detailscale 5
+	$detailblendfactor 0.0
+	$detailblendmode 0
+	Proxies
+	{
+		ModelDetailFx
+		{
+		}
+	}
+	
+	
+	"$model" 1
+	
+}

@@ -1,0 +1,36 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 				"xen/xen_metal_vent_01a" 
+	"$bumpmap" 					"xen/xen_metal_vent_01a_normal"
+	"$normalmapalphaenvmapmask" "1"
+
+	"$surfaceprop" 				"metal"
+
+	"$envmap" 					"env_cubemap"
+	"$envmaptint" 				"[.3 .3 .3]"
+	"$envmapsaturation" 		"1"
+
+	"$selfillum" 				1
+	"$selfillumtint" 			"[ 16 5 0 ]"
+
+        //"$detail" 			"detail\bm_metal_detail_02"
+//	"$detailscale" 				"6"
+//	"$detailblendfactor" 		"2"
+//	"$detailblendmode" 			"0"
+		
+// Phong Schtuff
+"$phong" 						"1"
+"$phongexponent" 				"10"
+"$phongboost" 					"4"
+"$phongfresnelranges"			"[0.2 0.8 1.6]"
+"$phongalbedotint" 				"1"
+
+
+// Rim lighting parameters
+"$rimlight" 					"1"
+"$rimlightexponent" 			"25"
+"$rimlightboost" 				"0.5"
+
+"%keywords" 					"bms, Craig, xen"
+    "$model" 1
+}

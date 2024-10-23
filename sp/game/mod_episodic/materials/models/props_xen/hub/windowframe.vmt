@@ -1,0 +1,26 @@
+"VertexLitGeneric"
+{	
+	"$basetexture" 					"models/props_xen/hub/windowframe"
+	"$bumpmap" 						"models/props_xen/hub/windowframe_nm"
+	"$normalmapalphaenvmapmask" 	"1"
+	
+	"$envmap" 						"env_cubemap"
+	"$envmaptint"					"[0.2 0.2 0.2]"
+	
+	"$phong" 						"1"
+	"$phongexponenttexture" 		"models\props_xen\hub\windowframe_exp"
+	"$phongboost" 					"1"
+	"$phongalbedotint" 				"1"
+	
+	
+    "$phongexponent" 					"7"
+    "$phongtint" 						"[1 1 1]"
+    "$halflambert" 					"0"
+    "$phongfresnelranges" 			"[.4 .8 30]"
+
+	"$rimlight" 					"1"
+	"$rimlightexponent" 			"80"
+	"$rimlightboost" 				".3"
+
+    "$model" 1
+}

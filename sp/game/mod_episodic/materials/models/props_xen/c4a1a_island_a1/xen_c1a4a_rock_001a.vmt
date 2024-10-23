@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+
+	$basetexture "xen/xen_c1a4a_rock_001a"
+
+
+	"$surfaceprop" "rock"
+
+    "$model" 1
+}

@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models\props_xen\c4a1a\stalag_formation00"
+	"$surfaceprop" "rock"
+	"$ssbump" "1"
+	"$bumpmap" "xen/xen_rock_wall05_n"
+	"$normalmapalphaenvmapmask" "1"
+	"$SSBumpMathFix" "1"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.3 .5 .3]"
+	"$envmapsaturation" 1
+    "$model" 1
+}

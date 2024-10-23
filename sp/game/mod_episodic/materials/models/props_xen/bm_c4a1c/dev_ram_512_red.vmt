@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+
+	"$model" 1
+
+	$basetexture "dev/dev_ram_512_red"
+
+
+	"%keywords" "bms"
+
+}

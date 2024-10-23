@@ -1,0 +1,25 @@
+"vertexlitgeneric"
+{
+	"$model" "1"
+
+	"$basetexture" 	"models/props_xen/interloper/int_controller_sphere_metal_d"
+	"$bumpmap" 	"models/props_xen/interloper/int_controller_sphere_metal_n"
+
+	"$color2" "{65 65 35}"
+
+	"$normalmapalphaenvmapmask" "1"
+
+	"$surfaceprop" 	"metal"
+
+	"$envmap" 	"cubemaps/cubemap_sheen001"
+	"$envmaptint" 	"{250 140 40}"
+	"$envmapcontrast" ".5"
+
+	$fresnelreflection 1
+
+	$phong 1
+	$phongexponent 32
+	$phongboost 2
+	$phongfresnelranges "[.5 .25 1]"
+	$basemapluminancephongmask 1
+}

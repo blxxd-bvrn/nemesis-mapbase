@@ -1,0 +1,44 @@
+"VertexLitGeneric"
+{	
+	$model 1
+	$basetexture "models/props_xen/hub/ceiling_tubes_d"
+	$bumpmap "models/props_xen/hub/ceiling_tubes_n"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.3 .3 .3]"
+
+"$phong" "1"
+"$phongboost" "2"
+"$phongfresnelranges"	"[0.4 0.6 1.6]"
+"$phongalbedotint" "1"
+
+
+// Rim lighting parameters
+"$rimlight" "1"
+"$rimlightexponent" "25"
+"$rimlightboost" "0.5"
+	$envmapcontrast .15
+	$selfillum 1
+	$halflambert 1
+
+ 	"$emissiveBlendEnabled" 	"1"
+	"$emissiveBlendTint" 	"{243 184 143}"
+ 	"$emissiveBlendTexture" 	"models\props_xen\glow_blue1"
+	"$emissiveBlendBaseTexture" "models/props_xen/hub/ceiling_tubes_exponent"
+	"$emissiveBlendFlowTexture" "models\props_xen\glow_blue2" //Can use a flow mask that scrolls to create disruptive patterns. Use white for just basic glow.
+    	"$emissiveBlendStrength" 	4 //Strength of glow. Can be controlled via proxy for variable glow.
+    	"$emissiveBlendScrollVector" "[.05 .19 .15]" 
+	"$sheenpassenabled" 	"1"
+
+	Proxies // proxies are listed inside this block
+	{
+		Sine // a proxy which produces a sine wave
+		{
+			resultVar	"$emissiveBlendStrength" // The shader parameter to be manipulated
+			sineperiod	5
+			sinemin		.15
+			sinemax		1
+		}
+	}
+
+}

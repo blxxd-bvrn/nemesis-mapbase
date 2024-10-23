@@ -1,0 +1,8 @@
+"UnlitGeneric"
+{
+
+	$basetexture "models/props_xen/c5a1a/skydome/endgameSkyDome"
+
+
+    "$model" 1
+}

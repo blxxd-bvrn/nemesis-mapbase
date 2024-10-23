@@ -1,0 +1,14 @@
+"VertexlitGeneric"
+{
+	"$basetexture" 		"models/props_xen/interloper/int_exterior_elevator_a"
+	"$bumpmap" 			"models/props_xen/interloper/int_exterior_elevator_n"
+//	$detail 			"detail/bm_metal_detail_02"
+//	$detailscale 		2
+	"$surfaceprop" 		"Metal"
+	$phong 				1
+	$phongExponent 		2
+	$phongBoost 		1
+	$phongFresnelRanges "[0.25 0.25 .5]"
+    "$model" 1
+
+}

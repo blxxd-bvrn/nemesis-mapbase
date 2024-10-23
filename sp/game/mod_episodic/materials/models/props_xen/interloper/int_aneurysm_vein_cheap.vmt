@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_xen/interloper/int_aneurysm_vein_cheap_d"
+//	$selfillum 1
+    "$model" 1
+
+}

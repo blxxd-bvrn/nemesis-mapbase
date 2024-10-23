@@ -1,0 +1,13 @@
+VertexLitGeneric
+{
+	$baseTexture models\props_xen\web\gonarchweb01_plane
+	$bumpMap models\props_xen\web\gonarchweb01_plane_normal
+	
+	$alphaTest 1
+	
+	$phong 1
+	$phongExponent 30
+	$phongBoost 0.5
+	$phongFresnelRanges "[0.3 0.6 1]"
+    "$model" 1
+}

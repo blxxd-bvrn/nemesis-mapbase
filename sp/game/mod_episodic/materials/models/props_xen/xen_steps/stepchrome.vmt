@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+
+	$basetexture "models/props_xen/xen_steps/shinymetal1"
+	$bumpmap "models/props_xen/xen_steps/shinymetal1_nm"
+	 $envmap "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	 $envmapcontrast 0.5
+	 $envmapsaturation 0.25
+
+	"$phong" "1"
+	"$phongexponent" "8"
+	"$phongboost" ".75"
+	"$phongfresnelranges"	"[0.3 0.6 1.8]"
+	"$envmaptint" 	"[.7 .7 .7]"
+
+    "$model" 1
+}

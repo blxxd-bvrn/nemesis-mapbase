@@ -1,0 +1,33 @@
+"VertexLitGeneric"
+{	
+	$model 1
+	$basetexture "models/props_xen/hub/tube_lava"
+	"$selfillum" 1
+	
+	"$emissiveBlendEnabled" 	"1"
+	"$emissiveBlendTint" 	"{255 191 53}"
+ 	"$emissiveBlendTexture" 	"models\props_xen\glow_red3"
+	"$emissiveBlendBaseTexture" "models\props_xen\hub\tube_lava_exp"
+	"$emissiveBlendFlowTexture" "models\props_xen\glow_red2" 
+	"$emissiveBlendStrength" 	1 
+	"$emissiveBlendScrollVector" "[-0.1 -0.1]" 
+	"$sheenpassenabled" "1"	
+	
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$baseTextureTransform"
+			"texturescrollrate" 	0.233
+			"texturescrollangle" 	-90
+		}
+		
+		Sine
+		{
+			resultVar	"$emissiveBlendStrength"
+			sineperiod	2.6
+			sinemin		0.33
+			sinemax		1
+		}
+	}
+}

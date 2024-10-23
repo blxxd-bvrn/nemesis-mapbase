@@ -1,0 +1,26 @@
+"VertexLitGeneric"
+{
+	"$baseTexture"						"models/props_xen/xenslime"
+	"$bumpmap"							"models/props_xen/xenslime_nm"
+	"$normalmapalphaenvmapmask" 		"1"
+	"$envmap"							"env_cubemap"
+	"$envmaptint" 						"[1 .0 .0]"
+	"$alphatest" 						"1"
+	"$alphatestreference"				"0.1"
+	//"$nocull" 							"1"
+	//"$allowalphatocoverage"  			"1"
+	//"$additive" ".3"
+	//"$phong" "1"
+	//"$phongexponent" "35"
+	//"$phongboost" "1.5"
+	//"$phongfresnelranges"	"[0.4 0.9 2.6]"
+	//"$phongalbedotint" "1"
+
+	// Rim lighting parameters
+	//"$rimlight" "1"
+	//"$rimlightexponent" "25"
+	//"$rimlightboost" "0.5"
+	//"$phongwarptexture"  "models/effects/phongwarp_library/iridescence019"
+
+    "$model" 1
+}

@@ -1,0 +1,10 @@
+vertexlitgeneric
+{
+	"$basetexture"	"metal\generic015s_catwalk"
+	"$surfaceprop" "metal"
+	"$bumpmap"	"metal\generic015s_catwalk_normal"
+
+	"%keywords" "bms, andrea"
+    "$model" 1
+
+}

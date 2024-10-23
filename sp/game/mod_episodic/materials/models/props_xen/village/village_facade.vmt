@@ -1,0 +1,13 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_xen/village/village_facade_a"
+	"$bumpmap" "models/props_xen/village/village_facade_n"
+	"$color2" "[.86 .86 .86]"
+	"$alphatest" 1
+	$phong 1
+	$phongexponent 2
+	$phongBoost 1
+	$phongFresnelRanges "[0.05 .5 1]"
+    "$model" 1
+
+}

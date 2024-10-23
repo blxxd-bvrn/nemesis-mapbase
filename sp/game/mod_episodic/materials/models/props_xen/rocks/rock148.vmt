@@ -1,0 +1,13 @@
+"VertexLitGeneric"
+{
+
+	$basetexture "rocks/coroded/rock148_d"
+	$envmapmask "rocks/coroded/rock148_s_normal"
+	$bumpmap "rocks/coroded/rock148_s_normal"
+
+
+
+	 $envmap "env_cubemap"
+	 $normalmapalphaenvmapmask "1"
+    "$model" 1
+}

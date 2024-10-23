@@ -1,0 +1,11 @@
+VertexLitGeneric
+{
+	$baseTexture models\props_xen\airlock_frame02
+	$bumpMap models\props_xen\airlock_frame02_normal
+	
+	$phong 1
+	$phongExponent 15
+	$phongBoost 2
+	$phongFresnelRanges "[1 1 1]"
+    "$model" 1
+}

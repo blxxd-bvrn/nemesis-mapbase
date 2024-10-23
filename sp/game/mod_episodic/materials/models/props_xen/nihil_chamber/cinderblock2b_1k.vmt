@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+	"$basetexture" 			"concrete/cinderblock2b_1k"
+	"$surfaceprop" 			"concrete"
+	"$bumpmap" 				"concrete/Cinderblock2_normals_1k"
+
+	$basetexturetransform 	"center 0 0 scale 2 2 rotate 0 translate 0 0"
+	$bumptransform  		"center 0 0 scale 2 2 rotate 0 translate 0 0"
+
+        //"$detail" 		"detail\bm_cinderblock_detail_01"
+//	"$detailscale" 			"6.283"
+//	"$detailblendfactor" 	.8
+//	"$detailblendmode" 		0
+	
+	
+	"%keywords" 			"bms,fleistad"
+    "$model" 1
+}

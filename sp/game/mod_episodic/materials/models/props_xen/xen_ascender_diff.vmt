@@ -1,0 +1,26 @@
+"VertexLitGeneric"
+{
+	"$basetexture"					"models/props_xen/xen_ascender_diff"
+	"$bumpmap"						"models/props_xen/xen_ascender_nml"
+	
+	"$envmap" 						"env_cubemap"
+	"$normalmapalphaenvmapmask" 	"1"
+	
+	"$envmapcontrast" 				"1.0"
+	"$envmaptint" 					"[1.0 1.0 1.0]"
+	"$model" 						"1"
+	"$halflambert" 					"1"
+	
+	"$surfaceprop" 					"metal"
+
+	"$phong" 						"1"
+	//"$phongexponent" 				"1"
+	//"$phongexponenttexture" 		"models/props_xen/xen_ascender_exp"
+	"$phongboost" 					"6"
+	"$phongFresnelRanges" 			"[0.5 0.8 1]"
+	
+	// Rim lighting parameters
+	"$rimlight" 					"1"
+	"$rimlightexponent" 			"10"
+	"$rimlightboost" 				"0.125"
+}

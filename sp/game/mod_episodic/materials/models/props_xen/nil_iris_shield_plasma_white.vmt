@@ -1,0 +1,24 @@
+"nihi_vortex_Shield"
+{
+	"$basetexture" 	"models\props_xen\nil_iris_shield_plasma_white"
+	"$BURN_NOISE" 	"dev/xognoise"	
+	"$BURN_GRAD" 	"dev/vortex_burn_grad_1d"	
+	// "$translucent" 1
+	// "$additive" 1
+	// "$nocull"	1
+
+"$model" 1
+	
+    // "Proxies"
+    // {
+
+            // "TextureScroll"
+            // {
+                // "textureScrollVar" "$basetexturetransform"
+                // "textureScrollRate" 0.45
+                // "textureScrollAngle" -90
+            // }
+
+
+	// }
+}

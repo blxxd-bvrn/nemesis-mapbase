@@ -1,0 +1,29 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/props_xen/foliage/prickly_bulb"
+	"$bumpmap" "models/props_xen/foliage/prickly_bulb_nm"
+
+	"$surfaceprop" "alienflesh"
+
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmaptint" "[.6 .6 .6]"
+
+	"$halflambert" 1
+	"$multipass" 1
+"$phongwarptexture"  "models/effects/phongwarp_library/iridescence008"
+
+	$phong "1"
+        $phongexponent "4"
+        $phongboost "1"
+        $phongtint "[1 1 1]"
+        $phongfresnelranges "[.4 .1 1]"
+	$rimlight "1"
+	$rimlightexponent "20"
+	$rimlightboost "1"	
+	
+	"$selfillum" 1
+//	"$selfillumtint" "[ 0 0 0 ]"
+    "$model" 1
+
+}

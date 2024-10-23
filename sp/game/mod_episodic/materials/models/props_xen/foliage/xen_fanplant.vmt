@@ -1,0 +1,31 @@
+"VertexLitGeneric"
+{
+
+"$SHADERNAME" "model_standard"
+
+	"$basetexture" "models/props_xen/foliage/xen_fanplant"
+	"$bumpmap" "models/props_xen/foliage/xen_fanplant_norm"
+
+	"$envmap" "env_cubemap"	
+	"$envmaptint" "[ 1 1 1]"
+	"$envmapsaturation" "0.6"
+
+	"$model" "1"
+
+	"$selfillum"	"1"
+	"$selfillumtint" "[2 6 1]"
+
+
+// Phong Schtuff
+"$phong" "1"
+"$phongexponent" "5"
+"$phongboost" ".5"
+"$phongfresnelranges"	"[0 .5 2]"
+
+
+// Rim lighting parameters
+"$rimlight" "1"
+"$rimlightexponent" "25"
+"$rimlightboost" "0.1"
+
+}

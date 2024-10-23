@@ -1,0 +1,25 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 	"xen/xen_nihil_rock_smooth_001a"
+	"$bumpmap" 	"xen/xen_nihil_rock_smooth_001a_normal"
+	"$basealphaenvmapmask" 				"1"
+
+	"$surfaceprop" 	"rock"
+
+	"$envmap" 	"env_cubemap"
+	"$envmaptint" 	"[.08 .08 .08]"
+	"$envmapsaturation" "1"
+
+	"$phong" "1"
+	"$phongexponent" "8"
+	"$phongboost" "2"
+	"$phongfresnelranges"	"[0.2 0.6 2.8]"
+
+//	$detail detail\rock_lg
+//        $detailscale 10
+//        $detailblendfactor .4
+		
+	"%keywords" 			"bms, Jenn0, xen"
+    "$model" 1
+
+}

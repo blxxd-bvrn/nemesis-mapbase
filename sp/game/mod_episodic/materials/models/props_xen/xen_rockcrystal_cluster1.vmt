@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+
+{
+	"$baseTexture"			"models/props_xen/xen_rockcrystal_cluster1"
+	"$envmap"			"env_cubemap"
+	"$bumpmap"			"models/props_xen/xen_rockcrystal_cluster1_norm"
+	"$normalmapalphaenvmapmask"	"1"
+	"$envmaptint"			"[.6 .45 .35]"
+	"$model"			"1" 
+}

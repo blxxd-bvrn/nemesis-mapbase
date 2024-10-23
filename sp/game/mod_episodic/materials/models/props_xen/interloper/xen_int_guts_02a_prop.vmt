@@ -1,0 +1,20 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 	"xen/xen_int_guts_02a"
+	"$bumpmap" 	"xen/xen_int_guts_02a_normal"
+	"$normalmapalphaenvmapmask" 1
+	"$surfaceprop" 	"flesh"
+
+	"$envmap" 	"env_cubemap"
+	"$envmaptint" 	"[.6 .6 .6]"
+	"$envmapsaturation" "1"
+
+	$phong 							1
+	$phongboost 					40
+	$phongexponent 					16
+	$phongfresnelranges 			"[.25 .5 0]"
+		
+	"%keywords" 			"bms, Jenn0, xen"
+    "$model" 1
+
+}

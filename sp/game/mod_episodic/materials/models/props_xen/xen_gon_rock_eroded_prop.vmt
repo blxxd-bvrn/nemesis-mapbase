@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 	"xen/xen_gon_rock_eroded_001a"
+	"$bumpmap" 	"xen/xen_gon_rock_eroded_001a_ssbump"
+	"$normalmapalphaenvmapmask" "1"
+
+	"$color2"	"[3.2 3.2 3.2]"
+
+	"$surfaceprop" 	"rock"
+
+	"$envmap" 	"env_cubemap"
+	"$envmaptint" 	"[.6 .6 .6]"
+	"$envmapsaturation" "1"
+}

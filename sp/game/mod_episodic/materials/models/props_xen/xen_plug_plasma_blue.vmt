@@ -1,0 +1,33 @@
+"VertexLitGeneric"
+{
+	"$basetexture"									"models/props_xen/plugplasma_d_blue"
+	"$bumpmap"										"models/props_xen/plugplasma_n"
+	"$envmap"										"cubemaps\cubemap_sheen001" 
+   	"$envmaptint"									"[.1 1.8 2.6]"
+	//"$normalmapalphaenvmapmask"						"1"
+
+	"$model"										"1"
+
+	"$scale"										".5"
+	"$angle"										"0.0"
+	"$translate"									"[0.0 0.0]"
+	"$center"										"[.5 .5]"
+
+	"Proxies"
+	{
+		"LinearRamp"
+		{
+			"rate"									"22.5"
+			"initialValue"							"45"
+			"resultVar"								"$angle"
+		}
+		"TextureTransform"
+		{
+			"translateVar"							"$translate"				// we don't need this, but it's not optional
+			"rotateVar"								"$angle"
+			"centerVar"								"$center"
+			"scaleVar"								"$scale"
+			"resultVar"								"$basetexturetransform"
+		}	
+	} 
+}

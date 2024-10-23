@@ -1,0 +1,24 @@
+"VertexLitGeneric"
+{
+// File Created by Wall Worm Pro ( http://dev.wallworm.com )
+
+// BEGIN Textures
+//	$ambientocclusion "models/props_xen/interd/base1_Mixed_AO"
+	$basetexture "models/props_xen/interd/base1_Base_Color"
+	$phongexponenttexture "models/props_xen/interd/base1_Roughness"
+	$bumpmap "models/props_xen/interd/base1_Normal_OpenGL"
+// END Textures
+
+
+
+// BEGIN Phong
+	"$phong" 1
+	"$phongboost" "1.0"
+	"$phongexponent" "5"
+	"$phongfresnelranges" "[0.0 0.5 1.0]"
+// END Phong
+
+
+	 $AmbientOcclusion "1"
+    "$model" 1
+}

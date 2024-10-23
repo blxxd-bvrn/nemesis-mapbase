@@ -1,0 +1,40 @@
+"VertexLitGeneric"
+{
+	$model "1"
+	$envmap "env_cubemap"
+	$envmapcontrast ".5 .5 .5"
+	$envmapfresnel 1
+
+	"$phong" "1"
+	"$phongboost" "2"
+    	"$phongexponent" "50"
+	"$phongalbedotint" "1"
+	"$phongfresnelranges" "[.2 .5 1]"
+	"$nodecal" "1"
+
+	$basetexture "models/props_xen/gonarch_bomb_d"
+	$bumpmap "models/props_xen/gonarch_bomb_n"
+
+	$selfillum 1
+	$halflambert 1
+
+ 	"$emissiveBlendEnabled" 	"1"
+	"$emissiveBlendTint" 	"{56 255 129}"
+ 	"$emissiveBlendTexture" 	"models\props_xen\glow_green"
+	"$emissiveBlendBaseTexture" "models\props_xen\gonarch_bomb_exp"
+	"$emissiveBlendFlowTexture" "models\props_xen\glow_red5" //Can use a flow mask that scrolls to create disruptive patterns. Use white for just basic glow.
+    	"$emissiveBlendStrength" 	6 //Strength of glow. Can be controlled via proxy for variable glow.
+    	"$emissiveBlendScrollVector" "[.45 .59 .45]" 
+	"$sheenpassenabled" 	"1"
+
+	Proxies // proxies are listed inside this block
+	{
+		//Sine // a proxy which produces a sine wave
+		//{
+		//	resultVar	"$emissiveBlendStrength" // The shader parameter to be manipulated
+		//	sineperiod	2
+		//	sinemin		.1
+		//	sinemax		4
+		//}
+	}
+}

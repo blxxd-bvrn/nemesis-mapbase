@@ -1,0 +1,18 @@
+"vertexlitgeneric"
+{
+	"$basetexture" 	"xen/xen_int_guts_01a"
+	"$bumpmap" 	"xen/xen_int_guts_01a_ssbump"
+	"$basealphaenvmapmask" "1"
+
+	"$color2"	"[3.2 3.2 3.2]"
+
+	"$surfaceprop" 	"flesh"
+
+	"$envmap" 	"env_cubemap"
+	"$envmaptint" 	"[.6 .6 .6]"
+	"$envmapsaturation" "1"
+		
+	"%keywords" 			"bms, jenn0, xen"
+    "$model" 1
+
+}

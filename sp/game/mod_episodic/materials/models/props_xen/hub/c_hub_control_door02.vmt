@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+	"$basetexture"  "models/props_xen/c_hub_control_door"
+	"$bumpmap" "models/props_xen/c_hub_control_door_nm"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.1 .1 .1]"
+	"$envmapfresnel" 	"-1"
+
+	"$phong" "1"
+	"$phongexponent" "5"
+	"$phongboost" "1.5"
+	"$phongfresnelranges"	"[0.8 0.9 2.6]"
+	"$phongalbedotint" "1"
+	
+    "$model" 1
+
+}

@@ -1,0 +1,13 @@
+"VertexLitGeneric"
+{
+
+	$basetexture 			"models/props_xen/foliage/plants_DiffuseMap_0"
+	$bumpmap 				"models/props_xen/foliage/plants_NormalsMap_0"
+
+//	$detail 				"detail/detail_coral2.vtf"
+//	$detailscale 			10
+//	$detailblendfactor 		1
+//	$detailblendmode 		0
+
+    "$model" 1
+}

@@ -1,0 +1,43 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 	"models/props_xen/interloper/heart_pump_pipes"
+	"$bumpmap" 	"models/props_xen/interloper/heart_pump_pipes_nm"
+	"$normalmapalphaenvmapmask" "1"
+
+	"$surfaceprop" 	"metal"
+
+	"$envmap" 	"env_cubemap"
+	"$envmaptint" 	"[1 0 0]"
+	"$envmapsaturation" "1"
+
+	"$selfillum" 1
+	"$phongExponent" "35"
+"$phongboost" "10"
+"$phongfresnelranges"	"[0.4 0.6 1.6]"
+"$phongalbedotint" "1"
+
+//"$lightwarptexture"	"models\props_am\am_ams_lightwarp"
+
+// Rim lighting parameters
+"$rimlight" "1"
+"$rimlightexponent" "25"
+"$rimlightboost" "5"
+    "$model" 1
+"Proxies"
+   {
+      "AnimatedTexture"
+      {
+         "animatedtexturevar" "$basetexture"
+         "animatedtextureframenumvar" "$frame"
+         "animatedtextureframerate" "3"
+}
+		"Sine"
+		{
+			"resultVar" "$selfillumtint"
+			"sineperiod" "0.05"
+			"sinemin"	"0.85"
+			"sinemax" "1"
+		}
+	}
+
+}

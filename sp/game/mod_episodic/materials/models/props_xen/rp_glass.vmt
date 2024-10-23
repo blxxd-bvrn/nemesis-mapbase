@@ -1,0 +1,14 @@
+VertexLitGeneric
+{
+	$baseTexture models\props_xen\rp_pad_glass
+	$translucent 1
+	$phong 1
+	$phongExponent 28
+	$phongBoost 2.6
+	$phongFresnelRanges "[0.3 0.6 1]"
+	
+	$rimLight 1
+	$rimLightExponent 4
+	$rimLightBoost 0.2
+    "$model" 1
+}

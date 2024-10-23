@@ -1,0 +1,42 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_xen/gonarch/gon_web_tough_a"
+	//"$basetexturetransform" "center .5 .5 scale 2 2 rotate 0 translate 0 0"
+	"$bumpmap" "models/props_xen/gonarch/gon_web_tough_n"
+	"$alphatest" 1
+	"$nocull" 1
+	"$color2" "{200 163 90}"
+
+	"$surfaceprop" "alien"
+	
+	"$envmap"								"env_cubemap"
+	"$envmaptint" 							"[.2 .2 .2]"
+	
+	"$phong" 								"1"
+	"$phongboost" 							"2"
+	"$phongexponent" 						"10"
+	"$phongfresnelranges" 					"[1 0.5 0]"
+	"$halflambert" 							"0"
+	"$phongwarptexture"  					"models/effects/phongwarp_library/iridescence001"
+
+	"$WEB_SHADER" "1"
+	"$WEB_MASK_TEXTURE" 	"dev/BurnableWeb_Mask"
+	"$WEB_BURN_FACTOR" "0"
+	"$WEB_GLOW_THRESHOLD" ".85"
+	"$WEB_GLOW_COLOR" "[2 0.54 0.21]"
+	
+	Proxies
+	{
+		ModelDetailFx
+		{
+		}
+		WebBurnFactorProxy
+		{
+			resultVar $WEB_BURN_FACTOR
+		}
+		
+	}
+	
+	"$model" 1
+
+}

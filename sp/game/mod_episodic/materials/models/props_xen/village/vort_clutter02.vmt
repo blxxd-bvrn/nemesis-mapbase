@@ -1,0 +1,15 @@
+"VertexlitGeneric"
+{
+	"$basetexture" 		"models/props_xen/village/vort_clutter02_a"
+	"$bumpmap" 			"models/props_xen/village/vort_clutter02_n"
+	"$color2" 			"[.86 .86 .86]"
+//	$detail 			"detail/bm_paint_detail_04"
+//	$detailscale 		2
+//	$detailblendfactor 	1
+	$phong 				1
+	$phongexponent 		1
+	$phongBoost 		.75
+	$phongFresnelRanges "[0.05 .25 1]"
+    "$model" 1
+
+}

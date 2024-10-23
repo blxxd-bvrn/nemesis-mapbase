@@ -1,0 +1,11 @@
+"VertexlitGeneric"
+{
+	"$basetexture"					"models/props_office/oc_freezer_door"
+	"$bumpmap"						"models/props_office/oc_freezer_door_nm"
+	
+	"$model"						"1"
+	"$surfaceprop"					"MetalPanel"
+	
+	"$envmap"						"env_cubemap"
+	"$normalmapalphaenvmapmask"		"1"
+}

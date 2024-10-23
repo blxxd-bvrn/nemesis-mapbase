@@ -1,0 +1,19 @@
+"UnlitGeneric"
+{
+	"$basetexture" "models/props_xen/healingislandpools"
+	"$additive" 1
+	"$translucent" 1
+	"$nocull" 1
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar" "$basetexturetransform"
+			"texturescrollrate" .025
+			"texturescrollangle" 0
+		}
+		
+	}
+	
+	"$model" 1
+}

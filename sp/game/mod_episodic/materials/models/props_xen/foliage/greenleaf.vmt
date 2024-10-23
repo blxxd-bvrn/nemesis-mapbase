@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+
+	$basetexture "props_xen/foliage/greenleaf_d"
+	 $nocull "1"
+    "$model" 1
+}

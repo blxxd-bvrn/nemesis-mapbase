@@ -1,0 +1,15 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 	"xen/xen_int_bioweb_trunk_01a_diffuse"
+	"$bumpmap" 	"xen/xen_int_bioweb_trunk_01a_normal"
+
+	"$surfaceprop" 	"wood"
+
+	"$envmap" 	"env_cubemap"
+	"$envmaptint" 	"[.2 .2 .2]"
+	"$envmapsaturation" "1"
+		
+	"%keywords" 			"bms, Jenn0, xen"
+    "$model" 1
+
+}

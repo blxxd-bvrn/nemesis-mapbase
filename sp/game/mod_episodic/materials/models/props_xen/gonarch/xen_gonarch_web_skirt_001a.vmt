@@ -1,0 +1,25 @@
+"VertexLitGeneric"
+{	
+	"$baseTexture" 	"models/props_xen/gonarch/xen_gonarch_web_skirt_001a"
+	"$bumpmap"	"models/props_xen/gonarch/xen_gonarch_web_skirt_001a_normal"
+	"$translucent" 	"1"
+	
+	//$alphatest "1"
+	//$alphaTestReference "0.7"
+	"$model"	"1"
+	"$nocull"	"1"
+	
+	"$color2" "{200 163 90}"
+
+	"$surfaceprop" "alien"
+	
+	"$envmap"								"env_cubemap"
+	"$envmaptint" 							"[.2 .2 .2]"
+	
+	"$phong" 								"1"
+	"$phongboost" 							"2"
+	"$phongexponent" 						"10"
+	"$phongfresnelranges" 					"[1 0.5 0]"
+	"$halflambert" 							"0"
+	"$phongwarptexture"  					"models/effects/phongwarp_library/iridescence001"
+}

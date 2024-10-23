@@ -1,0 +1,26 @@
+"UnlitGeneric"
+{
+	"$basetexture" "models/props_xen/healingislandstream"
+	//"$translucent" 1
+	"$additive" 1
+	//$color "{0 251 243}"
+	//"$selfillum" 1
+	//$selfillummaskscale .45
+	//$detail models\props_xen\water\flow01_mask1
+	//$detailScale 1
+	//$detailBlendFactor 1
+	//$detailBlendMode 8
+	"$nocull"	1
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar" "$baseTextureTransform"
+			"texturescrollrate" .5
+			"texturescrollangle" -90
+		}
+
+	}
+	
+	"$model" 1
+}

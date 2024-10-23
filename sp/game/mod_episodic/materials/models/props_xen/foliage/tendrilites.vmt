@@ -1,0 +1,23 @@
+"VertexLitGeneric"
+{
+	$basetexture "models/props_xen/foliage/xenplant_tendrilite00DiffuseMap"
+	$bumpmap "models/props_xen/foliage/xenplant_tendrilite_s_normal"
+	$envmap "env_cubemap"
+	$normalmapalphaenvmapmask "1"
+	$envmaptint "[.1 .1 .1]"
+	$envmapcontrast "0"
+	//"$selfillum"	"1"
+	"$model"	"1"
+	"$phong" 	"1"
+	"$phongboost" 	"1"
+	"$phongexponent" 7
+	"$phongfresnelranges" "[.2 .4 30]"
+	"$halflambert" "1"
+	"$multipass" "1"
+	"$emissiveBlendEnabled" "1"
+	"$emissiveBlendTint" "{100 150 155}"
+    	"$emissiveBlendTexture" "models\props_xen\glow_red6"
+	"$emissiveBlendBaseTexture" "models/props_xen/foliage/xenplant_tendrilite_s_emis"
+    	"$emissiveBlendStrength" 4 //Strength of glow. Can be controlled via proxy for variable glow.
+    	"$emissiveBlendScrollVector" "[0.11 0.07]" 
+}

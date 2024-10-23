@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 	"models/props_xen/nihil_chamber/nihilanth_office_textureatlas"
+    "$model" 1
+
+}

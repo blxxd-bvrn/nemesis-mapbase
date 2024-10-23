@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_xen/village/vort_door"
+	"$bumpmap" "models/props_xen/village/vort_door_n"
+    "$model" 1
+
+}

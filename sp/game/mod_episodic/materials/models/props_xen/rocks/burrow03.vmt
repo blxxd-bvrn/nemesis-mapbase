@@ -1,0 +1,17 @@
+VertexLitGeneric
+{
+	$baseTexture models\props_xen\rocks\burrow03
+	$bumpMap models\props_xen\rocks\burrow03_normal
+	$baseTextureTransform "center 0 0 scale 1 2 rotate 0 translate 0 0"
+	
+	"$envmap" "env_cubemap"
+   	"$envmaptint" "[.5 .5 .5]"
+	"$normalmapalphaenvmapmask" 1	
+	"$envmapcontrast" "1"
+	
+//	$phong 1
+//	$phongExponent 15
+//	$phongBoost 2
+//	$phongFresnelRanges "[0.25 0.5 1]"
+    "$model" 1
+}

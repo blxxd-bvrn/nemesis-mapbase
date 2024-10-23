@@ -1,0 +1,19 @@
+VertexLitGeneric
+{
+	$baseTexture models\props_xen\polytunnel_dome01
+	$bumpMap models\props_xen\polytunnel_dome01_normal
+	
+	"$envmap" "env_cubemap"
+   	"$envmaptint" "[1 1 .1]"
+	"$normalmapalphaenvmapmask" 1	
+	"$envmapcontrast" "1"
+	//"$envmapfresnel" 1
+	
+	$phong 1
+	$phongExponent 18
+	$phongBoost 4.5
+	$phongFresnelRanges "[0.3 0.6 1]"
+	
+	$HALFLAMBERT_GBUFFER_OFF 1
+    "$model" 1
+}

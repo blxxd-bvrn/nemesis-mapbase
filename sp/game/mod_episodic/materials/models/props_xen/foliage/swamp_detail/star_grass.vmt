@@ -1,0 +1,24 @@
+"VertexLitGeneric"
+{
+
+	$basetexture "models/props_xen/foliage/swamp_detail/star_grass"
+	"$nocull"	"1"
+	"$selfillum"			"1"
+$treeSway                         "1"
+$treeSwayHeight                   "0"
+$treeSwayStartHeight              ".5"
+$treeSwayRadius                   "5"
+$treeSwayStartRadius              "0.0"
+$treeSwaySpeed                    "2"
+$treeSwayStrength                 "0"
+$treeSwayScrumbleSpeed            "5"
+$treeSwayScrumbleStrength         ".015"
+$treeSwayScrumbleFrequency        "60"
+$treeSwayFalloffExp               "6"
+$treeSwayScrumbleFalloffExp       "3"
+$treeSwaySpeedHighWindMultiplier  ".1"
+$treeSwaySpeedLerpStart           "1000.0"
+$treeSwaySpeedLerpEnd             "2500.0"
+    "$model" 1
+
+}

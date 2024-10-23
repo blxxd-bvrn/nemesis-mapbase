@@ -1,0 +1,26 @@
+"VertexLitGeneric"
+{
+	"$basetexture" 				"xen/xen_nihil_rock_001a"
+	"$bumpmap" 					"xen/xen_nihil_rock_001a_normal"
+	
+	"$surfaceprop" 				"rock"
+
+	"$envmap" 					"env_cubemap"
+   	"$envmaptint" 				"[.04 .045 .035]"
+	"$basealphaenvmapmask" 		"1"
+	"$envmapcontrast" 			"1"
+
+
+	$phong 						1
+	$phongExponent				8
+	$phongBoost 			2
+	$phongFresnelRanges 		"[0.3 0.6 1]"
+		
+	$rimlight 					"1"
+	$rimlightexponent 			"20"
+	$rimlightboost 				"8"
+		
+	"%keywords" 				"bms, Jenn0, xen"
+    "$model" 1
+
+}

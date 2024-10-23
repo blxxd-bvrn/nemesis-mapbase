@@ -1,0 +1,17 @@
+"VertexLitGeneric"
+{
+// File Created by Wall Worm Pro ( http://dev.wallworm.com )
+
+// BEGIN Textures
+	$basetexture "dev/dev_ram_512_red_50_transparent"
+// END Textures
+
+
+
+// BEGIN Transparency
+	"$translucent" 1
+// END Transparency
+
+
+    "$model" 1
+}

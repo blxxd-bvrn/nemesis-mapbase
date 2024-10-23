@@ -1,0 +1,10 @@
+"UnlitGeneric"
+{
+	"$basetexture" 	"models\props_xen/hub/oval_screen_off"
+	"$translucent" 1
+	"$additive" 1
+	"$nocull"	1
+    "$model" 1
+
+
+}

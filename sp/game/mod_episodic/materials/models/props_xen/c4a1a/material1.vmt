@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+// File Created by Wall Worm Pro ( http://dev.wallworm.com )
+
+// BEGIN Textures
+	$basetexture "models/props_xen/c4a1a/warningtape"
+// END Textures
+
+
+
+    "$model" 1
+}

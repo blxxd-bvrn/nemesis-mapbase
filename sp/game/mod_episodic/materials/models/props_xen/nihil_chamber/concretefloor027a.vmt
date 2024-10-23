@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "concrete\concretefloor027a"
+	"$surfaceprop" "concretegrit"
+    "$model" 1
+
+}

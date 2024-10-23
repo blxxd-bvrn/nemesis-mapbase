@@ -1,0 +1,21 @@
+VertexLitGeneric
+{
+	$baseTexture 				models\props_xen\tunnel_sheet_ripped_02
+	$bumpMap 					models\props_xen\tunnel_sheet_ripped_02_normal
+	
+	$envMap 					env_cubemap
+	$normalMapAlphaEnvMapMask 	1
+	$envMapTint 				"[0.1 0.1 0.1]"
+	$envMapFresnel 				1
+	
+	$phong 						1
+	$phongExponent 				10
+	$phongBoost 				1
+	$phongFresnelRanges 		"[0.3 0.6 1]"
+	
+//	$detail 					detail\plastic_hexgrid_half
+//	$detailScale 				40
+//	$detailBlendFactor 			0.4
+//	$detailBlendMode 			1
+    "$model" 1
+}

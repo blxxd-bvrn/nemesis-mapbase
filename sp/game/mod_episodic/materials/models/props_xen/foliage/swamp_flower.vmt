@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{	
+//	"$translucent" 1
+	"$alphatest" 1
+	"$baseTexture" "models/props_xen/detail_props/xen_swamp_detail_props"
+	"$model"	"1"
+	"$nocull" "1"
+}

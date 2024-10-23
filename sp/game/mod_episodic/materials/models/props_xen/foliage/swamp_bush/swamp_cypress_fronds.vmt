@@ -1,0 +1,35 @@
+"VertexLitGeneric"
+{
+// File Created by Wall Worm Pro ( http://dev.wallworm.com )
+
+// BEGIN Textures
+	$basetexture "models/props_xen/foliage/swamp_tree/swamp_tree_branches_01a"
+	$normalmap "models/props_xen/foliage/swamp_tree/swamp_tree_branches_01a_normal"
+	$bumpmap "models/props_xen/foliage/swamp_tree/swamp_tree_branches_01a_normal"
+// END Textures
+
+
+
+// BEGIN Transparency
+	"$nocull" 1
+	"$alphatest" 1
+// END Transparency
+$treeSway                         "1"
+$treeSwayHeight                   "-10"
+$treeSwayStartHeight              ".5"
+$treeSwayRadius                   "0"
+$treeSwayStartRadius              "0.0"
+$treeSwaySpeed                    "2"
+$treeSwayStrength                 "0"
+$treeSwayScrumbleSpeed            "5"
+$treeSwayScrumbleStrength         ".015"
+$treeSwayScrumbleFrequency        "60"
+$treeSwayFalloffExp               "2"
+$treeSwayScrumbleFalloffExp       "3"
+$treeSwaySpeedHighWindMultiplier  ".1"
+$treeSwaySpeedLerpStart           "2000.0"
+$treeSwaySpeedLerpEnd             "2500.0"
+
+
+    "$model" 1
+}

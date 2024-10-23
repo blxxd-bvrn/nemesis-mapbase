@@ -1,0 +1,15 @@
+"VertexLitGeneric"
+{
+	"$model" "1"
+	"$baseTexture" 	"xen/xen_sludge_02b_d"
+	"$bumpmap" 	"xen/xen_sludge_02b_normal"
+
+	"$color2" "[.9 .9 .9]"
+
+	"$surfaceprop" 	"alienflesh"
+
+	"$envmap" 	"env_cubemap"
+	"$envmaptint" 	"[.6 .6 .6]"
+	"$envmapsaturation" "1"
+
+}

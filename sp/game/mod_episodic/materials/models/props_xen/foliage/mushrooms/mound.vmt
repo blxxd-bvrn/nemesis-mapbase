@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 	"xen/xen_swamp_grass_01a_diff"
+	"$bumpmap" 	"xen/xen_swamp_grass_01a_normal"
+	"$normalmapalphaenvmapmask" "1"
+
+	"$surfaceprop" 	"rock"
+
+	"$envmap" 	"env_cubemap"
+	"$envmaptint" 	"[.25 .3 .2]"
+	"$envmapsaturation" "1"
+		
+	"$phong" "1"
+	"$phongexponent" "7"
+	"$phongboost" "2"
+	"$phongfresnelranges"	"[.2 .6 1.8]"
+	"$phongalbedotint" "1"
+    "$model" 1
+}

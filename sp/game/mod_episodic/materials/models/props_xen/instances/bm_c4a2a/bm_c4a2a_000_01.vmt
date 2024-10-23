@@ -1,0 +1,15 @@
+VertexLitGeneric
+{
+	$baseTexture models\props_xen\instances\bm_c4a2a\bm_c4a2a_000_01
+	$bumpMap models\props_xen\instances\bm_c4a2a\bm_c4a2a_000_01_n
+	$envmap env_cubemap
+	$envmaptint .05 .05 .05
+	$normalmapalphaenvmapmask 1
+	$phong 1
+	$phongExponent 4
+	$phongBoost 1
+	$phongFresnelRanges "[0.25 0.5 1]"
+	$nocull 1
+    "$model" 1
+
+}

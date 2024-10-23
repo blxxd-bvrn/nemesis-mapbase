@@ -1,0 +1,28 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" 	"models/props_xen/interloper/knob_lights_green"
+//	"$bumpmap" 	"models/props_xen/interloper/agr_nm"
+//	"$normalmapalphaenvmapmask" "1"
+
+	"$surfaceprop" 	"metal"
+
+	"$envmap" 	"env_cubemap"
+	"$envmaptint" 	"[.6 .2 .1]"
+	"$envmapsaturation" "1"
+
+	"$selfillummask" "models/props_xen/interloper/knob_lights_illum"
+
+
+	$phong 1
+	$phongExponent 35
+	$phongBoost 3
+	$phongFresnelRanges "[0.25 0.5 1]"
+	
+
+
+// Rim lighting parameters
+"$rimlight" "1"
+"$rimlightexponent" "10"
+"$rimlightboost" "1"
+    "$model" 1
+}

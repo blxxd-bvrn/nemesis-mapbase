@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	$color2 "{0.0 0.0 0.0    "$model" 1"
+	//$bumpmap "models/props_xen/rocks/crystals/crystals6_s_normal"
+	$envmap "env_cubemap"
+	$normalmapalphaenvmapmask "1"
+	$bumpmap "models/props_xen/rocks/crystals/crystals_small2_s_normal"
+
+	
+	
+    "$model" 1
+}

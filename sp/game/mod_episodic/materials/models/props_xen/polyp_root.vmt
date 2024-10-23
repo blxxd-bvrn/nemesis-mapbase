@@ -1,0 +1,25 @@
+"VertexLitGeneric"
+{
+	"$baseTexture"					"models/props_xen/roots"
+	"$bumpmap"						"models/props_xen/roots_nm"
+	
+	"$envmap"						"env_cubemap"
+	"$normalmapalphaenvmapmask"		"1"
+//	"$envmaptint"					"[1 1 1]"
+	"$envmaptint"					"[0.25 0.15 0.2]"
+
+	"$phong"						"1"
+	"$phongexponent"				"1"
+	"$phongboost"					"1"
+	"$phongfresnelranges"			"[.4 .8 30]"
+	"$alphatest"					"1"
+	"$halflambert"					"1"
+	"$multipass"					"1"
+//	"$phongwarptexture"				"models/effects/phongwarp_library/iridescence008"
+
+	// Rim lighting parameters
+	"$rimlight"						"1"			// To enable rim lighting (requires phong)
+	"$rimlightexponent"				"50"		// Exponent for phong component of rim lighting
+	"$rimlightboost"				"1"	
+    "$model" 1
+}

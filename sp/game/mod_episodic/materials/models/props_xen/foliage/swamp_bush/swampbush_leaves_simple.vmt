@@ -1,0 +1,24 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_xen/foliage/swamp_bush/swampbush_leaves_a"
+	"$bumpmap" "models/props_xen/foliage/swamp_bush/swampbush_leaves_n"
+	"$alphatest" 1
+	"$nocull" 1
+$treeSway                         "2"
+$treeSwayHeight                   "0"
+$treeSwayStartHeight              "5"
+$treeSwayRadius                   "0"
+$treeSwayStartRadius              "0.0"
+$treeSwaySpeed                    ".05"
+$treeSwayStrength                 ".01"
+$treeSwayScrumbleSpeed            ".5"
+$treeSwayScrumbleStrength         ".1"
+$treeSwayScrumbleFrequency        "10"
+$treeSwayFalloffExp               "80"
+$treeSwayScrumbleFalloffExp       "20"
+$treeSwaySpeedHighWindMultiplier  ".05"
+$treeSwaySpeedLerpStart           "696969.0"
+$treeSwaySpeedLerpEnd             "4200000.0"
+    "$model" 1
+
+}

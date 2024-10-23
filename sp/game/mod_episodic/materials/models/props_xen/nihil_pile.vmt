@@ -1,0 +1,24 @@
+"VertexLitGeneric"
+{
+
+	$basetexture "models/props_xen/nihil_pile_d"
+	$bumpmap "models/props_xen/nihil_pile_nm"
+
+	"$envmap" "env_cubemap"
+   	"$envmaptint" "[.90 .90 .90]"
+	"$normalmapalphaenvmapmask" 1	
+	"$nocull"	1
+
+
+	$phong 1
+        $phongexponent 2
+        $phongboost 1
+        $phongtint "[.3 .3 .1]"
+        $halflambert 0
+	$phongfresnelranges	"[0.8 0.2 0]"
+	$rimlight "1"
+	$rimlightexponent "40"
+	$rimlightboost "1.2"
+
+    "$model" 1
+}

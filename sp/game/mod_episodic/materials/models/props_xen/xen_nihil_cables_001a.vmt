@@ -1,0 +1,24 @@
+"VertexLitGeneric"
+{
+// File Created by Wall Worm Pro ( http://dev.wallworm.com )
+
+// BEGIN Textures
+	$basetexture "models/props_xen/nihil_chamber/xen_nihil_cables_001a"
+	$envmapmask "models/props_xen/nihil_chamber/xen_nihil_cables_001a_normal"
+	$bumpmap "models/props_xen/nihil_chamber/xen_nihil_cables_001a_normal"
+// END Textures
+
+
+	"$surfaceprop" "paper"
+
+// BEGIN ENV and Reflections
+	"$envmap" "env_cubemap"
+
+	 $normalmapalphaenvmapmask "1"
+	"$envmaptint" "[0.7 0.7 0.7]"
+	"$envmapcontrast" "0.0"
+	"$envmapsaturation" "1.0"
+// END ENV and Reflections
+
+    "$model" 1
+}

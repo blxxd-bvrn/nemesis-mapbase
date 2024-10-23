@@ -1,0 +1,22 @@
+"VertexLitGeneric"
+{
+	"$model" "1"
+
+	"$color2" "[.9 .9 .9]"
+
+	"$basetexture" 	"models\props_xen\interloper\int_cavity_wall01_d"
+	"$bumpmap" 	"models\props_xen\interloper\int_cavity_wall01_n"
+
+	"$normalmapalphaenvmapmask" "1"
+
+	"$surfaceprop" 	"flesh"
+
+	"$envmap" 	"env_cubemap"
+	"$envmaptint" 	"[.15 .15 .15]"
+	"$envmapsaturation" "1"
+
+	$phong 1
+	$phongexponent 4
+	$phongboost 2
+	$phongfresnelranges "[0.025 0.0125 0]"
+}

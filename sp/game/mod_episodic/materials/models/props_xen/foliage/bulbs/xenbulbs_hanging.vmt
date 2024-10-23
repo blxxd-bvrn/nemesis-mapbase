@@ -1,0 +1,23 @@
+"VertexLitGeneric"
+{
+// File Created by Wall Worm Pro ( http://dev.wallworm.com )
+
+// BEGIN Textures
+	$basetexture "models/props_xen/foliage/bulbs/xenbulbs_hanging2_d"
+	$selfillumtexture "models/props_xen/foliage/bulbs/xenbulbs_hanging2_d"
+	$normalmap "models/props_xen/foliage/bulbs/xenbulbs_hanging2_normal"
+	$envmapmask "models/props_xen/foliage/bulbs/xenbulbs_hanging2_normal"
+	$bumpmap "models/props_xen/foliage/bulbs/xenbulbs_hanging2_normal"
+// END Textures
+
+
+
+// BEGIN ENV and Reflections
+	"$envmap" "env_cubemap"
+
+	 $normalmapalphaenvmapmask "1"
+// END ENV and Reflections
+
+	 $selfillum "1"
+    "$model" 1
+}

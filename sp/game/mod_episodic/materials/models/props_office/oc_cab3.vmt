@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models\props_office\oc_cab3"
+"$bumpmap" 			"Models\props_office\oc_cab3_nm"
+	"$envmap" 			"env_cubemap"
+	"$normalmapalphaenvmapmask" 	"1"
+    "$model" 1
+
+
+}

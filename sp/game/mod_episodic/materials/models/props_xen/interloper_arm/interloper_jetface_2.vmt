@@ -1,0 +1,13 @@
+"VertexLitGeneric"
+{
+	$basetexture "models/props_xen/interloper_arm/interloper_jetface_2"
+	$bumpmap "models/props_xen/interloper_arm/interloper_jetface_2_nm"
+
+	"$envmap" "env_cubemap"
+   	"$envmaptint" "[1 1 1]"
+	"$normalmapalphaenvmapmask" 1
+
+
+
+    "$model" 1
+}

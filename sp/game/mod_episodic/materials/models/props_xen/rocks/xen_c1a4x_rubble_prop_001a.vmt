@@ -1,0 +1,13 @@
+
+"VertexLitGeneric"
+{
+	"$basetexture"  "xen/xen_c1a4x_rubble_001a"
+	"$bumpmap" "xen/xen_c1a4x_rubble_001a_normal"
+
+	"$envmap"					"env_cubemap"
+	"$normalmapalphaenvmapmask" 		"1"
+	"$envmaptint"				"[.15 .15 .125]"
+	
+    "$model" 1
+
+}

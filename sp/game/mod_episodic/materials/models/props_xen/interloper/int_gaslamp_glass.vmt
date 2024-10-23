@@ -1,0 +1,8 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_xen/interloper/int_gaslamp_a"
+	"$bumpmap" "models/props_xen/interloper/int_gaslamp_n"
+	$additive 1
+    "$model" 1
+
+}

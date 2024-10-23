@@ -1,0 +1,24 @@
+"VertexLitGeneric"
+{
+	"$baseTexture"			"models/props_xen/xen_barnacle"
+	"$bumpmap"				"models/props_xen/xen_barnacle_nm"
+
+
+	"$envmap" "env_cubemap"
+   	"$envmaptint" "[1 1 1]"
+	"$normalmapalphaenvmapmask" 1	
+
+
+
+
+	$phong 1
+        $phongexponent 4
+        $phongboost .2
+        $phongtint "[1 1 1]"
+        $halflambert 0
+        $phongfresnelranges "[.4 .1 1]"
+	$rimlight "1"
+	$rimlightexponent "20"
+	$rimlightboost "2"	
+    "$model" 1
+}

@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "xen/vein_wall"
+	"$bumpmap" "xen/vein_wall_n"
+	"$surfaceprop" "Flesh"
+	"$alphatest" 1
+	//"$nocull" 1
+    "$model" 1
+
+}

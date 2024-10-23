@@ -1,0 +1,17 @@
+"UnlitGeneric"
+{
+	"$basetexture" "models/props_xen/c4a1a/xen_interdimensional_bg"
+//	"$vertexalpha" "1"
+//	"$vertexcolor" 1
+	"%keywords" "bms"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar" "$baseTextureTransform"
+			"texturescrollrate" 1
+			"texturescrollangle" -45
+		}
+	}
+	"$model" 1
+}

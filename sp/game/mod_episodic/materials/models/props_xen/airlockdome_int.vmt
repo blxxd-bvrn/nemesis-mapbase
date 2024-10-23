@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+	"$basetexture"				"models\props_xen\airlockdome_d"
+	//"$basetexture" 			"models\gray50"
+	"$bumpmap"					"models\props_xen\airlockdome_int_n"
+	"$envmap" 					"env_cubemap"
+	"$envmapcontrast" 			".1"
+	"$envmaptint" 				"[0.2 0.2 0.2]"
+	
+	// masked detail blending only works with VertexLitGeneric shader!!
+	//$detail 					"detail/plastic_hexgrid"
+	//$detailscale 				"44"
+	//$detailblendfactor 		".33"
+	//$detailblendmode 			1
+    "$model" 1
+}

@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	// Original shader: VertexLitTexture
+	"$basetexture" "models/Weapons/v_smg3/TEXTURA6"
+        	"$bumpmap" "models/Weapons/v_smg3/TEXTURA6_normal"
+	//"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+
+// -- From here down is new stuff which will only be applied if $phong is set to 1 --
+	"$phong" "1"
+	"$phongexponent" "45"
+	"$phongboost"	"2"
+	"$phongfresnelranges"	"[.2 4 1]"
+
+	"360?$color2" "[ 0.4 0.4 0.4 ]"
+
+	// kubiiik_svK was here
+	// Valve ... please ... learn how to UV your WIP models
+}

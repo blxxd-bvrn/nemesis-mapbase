@@ -1,0 +1,17 @@
+"VertexLitGeneric"
+{
+	$model 1
+	$basetexture "models/props_xen/c4a1c_waterspring_large_bottom_d"	
+	$bumpmap "models/props_xen/c4a1c_waterspring_large_bottom_n"
+
+	$envmap "env_cubemap"
+	$normalmapalphaenvmapmask "1"
+	$envmapcontrast 1
+	$envmaptint "[.85 .85 .85]"
+
+	$phong 1
+ 
+	$phongexponent 64
+	$phongboost 4
+	$phongfresnelranges "[0 .35 .55]"
+}

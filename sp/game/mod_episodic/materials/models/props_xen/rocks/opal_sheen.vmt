@@ -1,0 +1,22 @@
+"VertexLitGeneric"
+{
+	"$baseTexture"	"models/props_xen/rocks/opal_sheen"
+	"$translucent" "1"
+	"$envmap" "env_cubemap"
+//	"$envmapsaturation" '1'
+	"$envmaptint" "[1 1 1]"
+	
+	"$phong" "1"
+	"$phongexponent" "120"
+	"$phongboost" "60"
+	"$phongfresnelranges"	"[0.4 0.9 2.6]"
+	"$phongalbedotint" "1"
+
+	// Rim lighting parameters
+	"$rimlight" "1"
+	"$rimlightexponent" "25"
+	"$rimlightboost" "0.5"
+	"$phongwarptexture"  "models/effects/phongwarp_library/iridescence019"
+
+    "$model" 1
+}

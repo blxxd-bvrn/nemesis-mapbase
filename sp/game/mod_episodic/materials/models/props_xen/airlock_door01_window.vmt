@@ -1,0 +1,20 @@
+VertexLitGeneric
+{
+	$baseTexture models\props_xen\airlock_door01
+	$bumpMap models\props_xen\airlock_door01_normal
+	
+	$color2 "[0.72 0.72 0.72]"
+	$translucent 1
+	$noCull 1
+	
+	$envMap env_cubemap
+	$normalMapAlphaEnvMapMask 1
+	$envMapTint "[3 3 3]"
+	$envMapFresnel 1
+	
+	$phong 1
+	$phongExponent 10
+	$phongBoost 1
+	$phongFresnelRanges "[0.3 0.3 0.3]"
+    "$model" 1
+}

@@ -1,0 +1,9 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_xen/village/vort_fencepost_a"
+	"$bumpmap" "models/props_xen/village/vort_fencepost_n"
+	"$alphatest" 1
+	"$nocull" 1
+    "$model" 1
+
+}

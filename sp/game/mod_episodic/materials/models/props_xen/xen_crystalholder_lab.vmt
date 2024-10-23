@@ -1,0 +1,20 @@
+"VertexLitGeneric"
+{
+	$model 1
+
+	$alphatest 1
+   	$allowalphatocoverage 1
+     	$alphatestreference .4
+
+	$basetexture "models/props_xen/xen_crystalholder_lab_d"	
+	$bumpmap "models/props_xen/xen_crystalholder_lab_n"
+
+	$envmap "env_cubemap"
+	$envmapcontrast 1
+	$envmaptint "[.55 .55 .55]"
+	$phong 1
+ 
+	$phongexponent 4
+	$phongboost 6
+	$phongfresnelranges "[-.15 .35 .55]"
+}

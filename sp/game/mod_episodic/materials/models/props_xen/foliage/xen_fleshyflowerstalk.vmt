@@ -1,0 +1,32 @@
+
+"VertexLitGeneric"
+{
+
+"$SHADERNAME" "model_standard"
+
+	"$basetexture" "models/props_xen/foliage/xen_fleshyflowerstalk"
+	"$bumpmap" "models/props_xen/foliage/xen_fleshyflowerstalk_norm"
+
+	"$envmap" "env_cubemap"	
+	"$envmaptint" "[ .2 .1 .1 ]"
+	"$envmapsaturation" "0.6"
+
+	"$model" "1"
+
+	"$selfillum"	"1"
+	"$selfillumcolor1" "[0.5 0.5 0.5]"
+
+
+// Phong Schtuff
+"$phong" "1"
+"$phongexponent" "5"
+"$phongboost" ".5"
+"$phongfresnelranges"	"[0.1 .5 1.2]"
+
+
+// Rim lighting parameters
+"$rimlight" "1"
+"$rimlightexponent" "25"
+"$rimlightboost" "0.1"
+
+}

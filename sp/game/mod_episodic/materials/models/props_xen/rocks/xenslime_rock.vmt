@@ -1,0 +1,12 @@
+VertexLitGeneric
+{
+	$baseTexture models/props_xen/rocks/xenslime_rock
+	$bumpmap models/props_xen/xenslime_nm
+	$normalmapalphaenvmapmask 1
+	$envmap env_cubemap
+	$envmaptint "[1 .5 .8]"
+	$alphatest 1
+	$nocull 1
+	$allowalphatocoverage 1
+    "$model" 1
+}

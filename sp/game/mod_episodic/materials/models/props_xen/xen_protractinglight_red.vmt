@@ -1,0 +1,21 @@
+"VertexLitGeneric"
+{
+	$basetexture "models/props_xen/xen_protractinglight_diffuse_emissive_red"
+	//$selfillum 1
+	//$selfillumtint "[3.5 3.5 3.5]"
+	
+	$bumpmap "models/props_xen/xen_protractinglight_normal_specular"
+	$normalmapalphaenvmapmask 1
+	$envmap env_cubemap
+	$envmaptint "[0.3 0.3 0.3]"
+	$envmapcontrast 0.7
+	
+	$phong "1"
+//	$phongexponent "25"
+	$phongboost "0.75"
+	$phongfresnelranges	"[0.25 0.5 0.5]"
+	$rimlight "1"
+	$rimlightexponent "60"
+	$rimlightboost "0.2"
+    "$model" 1
+}

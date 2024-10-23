@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$basetexture"  "models/props_xen/tape_01a"
+	"$bumpmap" "models/flatnormal"
+	
+	"$phong" "1"
+	"$phongexponent" "32"
+	"$phongboost" "1"
+	"$phongfresnelranges"	"[0.1 0.7 2.2]"
+    "$model" 1
+}

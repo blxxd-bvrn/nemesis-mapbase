@@ -1,0 +1,49 @@
+VertexLitGeneric
+{
+	$baseTexture 		models\props_xen\water\water_flow
+	
+//	$translucent 		1
+	$alphatest 			1
+	$alphatestreference	0.99
+	$color2 			"[.4 1 .8]"
+	
+	$detail 			models\props_xen\water\waterfall_set02_mask
+	$detailScale 		1
+	$detailBlendFactor 	1.25
+	$detailBlendMode 	8
+	
+	$envMap 			env_cubemap
+//	$envMapTint 		"[1 1 1]"
+//	$envmapsaturation	0  //Does not work with Phong
+	
+	$center 			"[0.5 0.5]"
+	$scale 				"[8 4]"
+	$angle 				0
+	$translate 			"[0 0]"
+	
+	$phong 				1
+    $phongexponent 		1
+    $phongboost 		1
+    $phongtint 			"[1 1 1]"
+	$halflambert 		1
+	$phongfresnelranges "[0.05 0.05 0.05]"  //The angle of the dangle
+	
+	"$model" 1
+	
+	Proxies
+	{
+		LinearRamp
+		{
+			rate -0.24
+			resultVar "$translate[1]"
+		}
+		TextureTransform
+		{
+			centerVar $center
+			scaleVar $scale
+			rotateVar $angle
+			translateVar $translate
+			resultVar $baseTextureTransform
+		}
+	}
+}

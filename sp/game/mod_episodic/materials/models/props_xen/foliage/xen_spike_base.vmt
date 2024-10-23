@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props_xen/foliage/xen_spike_base"
+	"$bumpmap" "models/props_xen/foliage/xen_spike_base_norm"
+
+	"$envmap" "env_cubemap"	
+	"$envmaptint" "[ .2 .1 .1 ]"
+	"$envmapsaturation" "0.6"
+
+	"$model" "1"
+
+}

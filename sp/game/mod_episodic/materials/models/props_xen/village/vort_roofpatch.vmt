@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "xen/xen_int_sandstone_03a"
+	"$bumpmap" "xen/xen_int_sandstone_03a_n"
+	"$color2" "[.9 .9 .9]"
+	"$surfaceprop" "Rock"
+    "$model" 1
+
+}

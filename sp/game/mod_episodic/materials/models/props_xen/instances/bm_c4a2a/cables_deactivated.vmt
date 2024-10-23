@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	$basetexture "models/props_xen/instances/bm_c4a2a/cables_deactivated"
+	$surfaceprop "metal"
+	$color2 "{30.0 30.0 30.0}"
+	$blendTintByBaseAlpha 1
+	$blendTintColorOverBase "1.0"
+	
+    $model 1
+}

@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+
+	$basetexture "models/props_xen/foliage/reeds2"
+
+
+	"$surfaceprop" "foliage"
+
+    "$model" 1
+}

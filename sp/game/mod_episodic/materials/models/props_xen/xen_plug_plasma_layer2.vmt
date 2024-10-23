@@ -1,0 +1,30 @@
+"VertexLitGeneric"
+{
+	$model 1
+	"$basetexture" "models/props_xen/plugplasma_d"
+	$bumpmap 	"models/props_xen/plugplasma_n"
+	"$envmap" 	"cubemaps\cubemap_sheen001" 
+   	"$envmaptint" 	"[2.6 1.8 .1]"
+	"$normalmapalphaenvmapmask" "1"
+
+
+	//"$translucent" "1"
+	"$scale" .5
+	"$angle" 0.0
+	"$translate" "[0.0 0.0]"
+	"$center" "[.5 .5]"
+
+	"Proxies"
+	{
+		"TextureScroll"
+	{
+		"textureScrollVar" "$basetexturetransform"
+		"textureScrollRate" .1
+		"textureScrollAngle" 45
+	}
+	"TextureTransform"
+	{
+		"scaleVar" "$scale"
+	}
+	}	
+} 

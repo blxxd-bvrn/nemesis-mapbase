@@ -1,0 +1,19 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_xen/smallLilypad_d"
+	"$alphatest" 1
+	"$nocull" 1
+	"$bumpmap" "models/props_xen/smallLilypad_n"
+	"$envmap" "env_cubemap" 
+	"$normalmapalphaenvmapmask" "1"
+	"$surfaceprop" "alienflesh" 
+	"$envmaptint" "[1 1 1]"
+	"$phong" 1
+        $phongexponent 7
+        $phongboost 2
+        $phongtint "[1 1 1]"
+        $halflambert 0
+        $phongfresnelranges "[.4 .8 30]"
+    "$model" 1
+
+}

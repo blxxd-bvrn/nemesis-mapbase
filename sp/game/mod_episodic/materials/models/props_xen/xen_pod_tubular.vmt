@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props_xen/Xen_Pod_Tubular_diff4"
+	"$bumpmap" "models/props_xen/Xen_Pod_Tubular_norm"
+	"$envmap" "env_cubemap"
+	"$envmaptint"			"[0.2 0.2 0.2]"
+	"$selfillum"			"2"
+	"$model"				"1"
+
+	"$phong" "1"
+	"$phongboost" "1"
+	"$phongexponent" 7
+	"$phongfresnelranges" "[.2 .4 30]"
+	"$halflambert" "1"
+	$rimlight "1"
+	$rimlightexponent "60"
+	$rimlightboost "0.2"
+}

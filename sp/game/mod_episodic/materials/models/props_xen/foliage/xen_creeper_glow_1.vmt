@@ -1,0 +1,44 @@
+"VertexLitGeneric"
+{
+
+"$SHADERNAME" "model_standard"
+
+	"$basetexture" "models/props_xen/foliage/xen_creeper2"
+	"$bumpmap" "models/props_xen/foliage/xen_creeper_norm"
+
+	"$envmap" "env_cubemap"	
+	"$envmaptint" "[ .5 .5 .5]"
+	"$envmapsaturation" "0.6"
+
+	"$model" "1"
+
+	"$selfillum" '1'
+// Phong Schtuff - DOES NOT WORK WITH TREESWAY
+//"$phong" "1"
+//"$phongexponent" "5"
+//"$phongboost" ".5"
+//"$phongfresnelranges"	"[0 .5 2]"
+
+
+// Rim lighting parameters
+"$rimlight" "1"
+"$rimlightexponent" "25"
+"$rimlightboost" "0.1"
+
+  $treeSway                         "1"
+   $treeSwayHeight                   "0"
+   $treeSwayStartHeight              ".5"
+   $treeSwayRadius                   "25"
+   $treeSwayStartRadius              "0"
+   $treeSwaySpeed                    "0"
+   $treeSwayStrength                 "0"
+   $treeSwayScrumbleSpeed            "2"
+   $treeSwayScrumbleStrength         ".005"
+   $treeSwayScrumbleFrequency        "2"
+   $treeSwayFalloffExp               "6"
+   $treeSwayScrumbleFalloffExp       "2"
+   $treeSwaySpeedHighWindMultiplier  "0"
+   $treeSwaySpeedLerpStart           "1000.0"
+   $treeSwaySpeedLerpEnd             "2500.0"
+
+}

@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/props_xen/interloper/int_supports_a"
+	"$bumpmap" "models/props_xen/interloper/int_supports_n"
+	"$normalmapalphaenvmapmask" "1"
+	$model 1
+
+	"$surfaceprop" 	"metal"
+
+	"$envmap" 	"env_cubemap"
+	"$envmaptint" 	"[.65 .4 .2]"
+	"$envmapsaturation" "1"
+
+        "$detail" "detail\bm_metal_detail_02"
+	"$detailscale" "6"
+	"$detailblendfactor" "2"
+	"$detailblendmode" "0"
+}
