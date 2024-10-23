@@ -802,7 +802,7 @@ void CNPC_Houndeye::StartTask(const Task_t* pTask)
 			Vector vTargetPos = GetEnemyLKP();
 			vTargetPos.z = GetFloorZ(vTargetPos);
 
-			if (GetNavigator()->SetRadialGoal(vTargetPos, random->RandomInt(50, 500), 90, 175, m_bLoopClockwise))
+			if (GetNavigator()->SetRadialGoal(vTargetPos, vTargetPos, random->RandomInt(50, 500), 90, 175, m_bLoopClockwise))
 			{
 				TaskComplete();
 				return;
