@@ -1,16 +1,10 @@
-//========= Copyright Valve Corporation, All rights reserved. ============//
+//========= Copyright © 1996-2005, Valve Corporation, All rights reserved. ============//
 //
-// Purpose:		Base combat character with no AI
-//
-// $Workfile:     $
-// $Date:         $
-//
-//-----------------------------------------------------------------------------
-// $Log: $
+// Purpose: 
 //
 // $NoKeywords: $
+//
 //=============================================================================//
-
 #ifndef NPC_BULLSQUID_H
 #define NPC_BULLSQUID_H
 
@@ -20,7 +14,6 @@
 class CNPC_Bullsquid : public CAI_BaseNPC
 {
 	DECLARE_CLASS( CNPC_Bullsquid, CAI_BaseNPC );
-	DECLARE_DATADESC();
 
 public:
 	void Spawn( void );
@@ -32,9 +25,8 @@ public:
 	void AlertSound( void );
 	void DeathSound( const CTakeDamageInfo &info );
 	void AttackSound( void );
-	void GrowlSound( void );
 
-	float MaxYawSpeed ( void );
+	float MaxYawSpeed( void );
 
 	void HandleAnimEvent( animevent_t *pEvent );
 
@@ -52,7 +44,10 @@ public:
 	virtual void OnListened ( void );
 
 	int SelectSchedule( void );
+	int TranslateSchedule( int scheduleType );
+
 	bool FInViewCone ( Vector pOrigin );
+	bool FVisible ( Vector vecOrigin );
 
 	void StartTask ( const Task_t *pTask );
 	void RunTask ( const Task_t *pTask );
@@ -60,15 +55,14 @@ public:
 	NPC_STATE SelectIdealState ( void );
 
 	DEFINE_CUSTOM_AI;
+	DECLARE_DATADESC()
 
 private:
 	
 	bool  m_fCanThreatDisplay;// this is so the squid only does the "I see a headcrab!" dance one time. 
 	float m_flLastHurtTime;// we keep track of this, because if something hurts a squid, it will forget about its love of headcrabs for a while.
 	float m_flNextSpitTime;// last time the bullsquid used the spit attack.
-	int   m_nSquidSpitSprite;
 	float m_flHungryTime;// set this is a future time to stop the monster from eating for a while. 
-
-	float m_nextSquidSoundTime;
+	
 };
 #endif // NPC_BULLSQUID_H
