@@ -23,30 +23,30 @@ Scheme
 	// controls use these to determine their settings
 	BaseSettings
 	{
-		"FgColor"			"255 220 0 100"
+		"FgColor"			"5 208 0 100"
 		"BgColor"			"0 0 0 76"
 
-		"Panel.FgColor"			"255 220 0 100"
+		"Panel.FgColor"			"5 208 0 100"
 		"Panel.BgColor"			"0 0 0 76"
 		
-		"BrightFg"		"255 220 0 255"
+		"BrightFg"		"5 208  0 255"
 
 		"DamagedBg"			"180 0 0 200"
 		"DamagedFg"			"180 0 0 230"
 		"BrightDamagedFg"		"255 0 0 255"
 
 		// weapon selection colors
-		"SelectionNumberFg"		"255 220 0 255"
-		"SelectionTextFg"		"255 220 0 255"
+		"SelectionNumberFg"		"5 208 0 255"
+		"SelectionTextFg"		"5 208 0 255"
 		"SelectionEmptyBoxBg" 	"0 0 0 80"
 		"SelectionBoxBg" 		"0 0 0 80"
 		"SelectionSelectedBoxBg" "0 0 0 80"
 		
-		"ZoomReticleColor"	"255 220 0 255"
+		"ZoomReticleColor"	"5 208 0 255"
 
 		// HL1-style HUD colors
-		"Yellowish"			"255 160 0 255"
-		"Normal"			"255 208 64 255"
+		"Yellowish"			"5 208 0 255"
+		"Normal"			"5 208 64 255"
 		"Caution"			"255 48 0 255"
 
 		// Top-left corner of the "Half-Life 2" on the main screen
@@ -67,7 +67,7 @@ Scheme
 		"Main.Menu.Y"			"240"
 
 		// Blank space to leave beneath the menu on the main screen
-		"Main.BottomBorder"	"32"
+		"Main.BottomBorder"	"42"
 	}
 
 	//////////////////////// BITMAP FONT FILES /////////////////////////////
@@ -122,7 +122,7 @@ Scheme
 			"1"	[$WIN32]
 			{
 				"name"		"Verdana"
-				"tall"		"9"
+				"tall"		"12"
 				"weight"	"700"
 				"antialias" "1"
 				"yres"	"1 599"
@@ -354,10 +354,11 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"HalfLife2"
-				"tall"		"32"	[$WIN32]
+				"name"		"Westminster"
+				"tall"		"36"	[$WIN32]
 				"tall"		"38"	[$X360]
 				"weight"	"0"
+				"scanlines" "2"
 				"antialias" "1"
 				"additive"	"1"
 				"custom"	"1"
@@ -379,8 +380,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"HalfLife2"
-				"tall"		"32"	[$WIN32]
+				"name"		"Westminster"
+				"tall"		"36"	[$WIN32]
 				"tall"		"38"	[$X360]
 				"weight"	"0"
 				"blur"		"4"
@@ -394,11 +395,12 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"HalfLife2" [!$OSX]
+				"name"		"Westminster" [!$OSX]
 				"name"		"Helvetica Bold" [$OSX]
 				"tall"		"16"	[$WIN32]
 				"tall"		"22"	[$X360]
 				"weight"	"1000"
+				"scanlines" "2"
 				"additive"	"1"
 				"antialias" "1"
 				"custom"	"1"
@@ -631,7 +633,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"  "HL2EP2"
+				"name"  "Trebuchet MS"
 				"tall"			"34"
 				"tall_hidef"	"48"
 				"weight" "0"
