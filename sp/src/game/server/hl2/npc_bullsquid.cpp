@@ -31,7 +31,9 @@
 ConVar sk_bullsquid_health ( "sk_bullsquid_health", "90" );
 ConVar sk_bullsquid_dmg_bite ( "sk_bullsquid_dmg_bite", "20" );
 ConVar sk_bullsquid_dmg_whip ( "sk_bullsquid_dmg_whip", "35" );
-extern ConVar sk_bullsquid_dmg_spit;
+ConVar sk_bullsquid_dmg_spit ("sk_bullsquid_dmg_spit", "40");
+
+LINK_ENTITY_TO_CLASS(grenade_spit, CGrenadeSpit);
 
 //=========================================================
 // monster-specific schedule types
@@ -125,7 +127,8 @@ END_DATADESC()
 
 void CSquidSpit::Precache( void )
 {
-	m_nSquidSpitSprite = PrecacheModel("sprites/bigspit.vmt");// client side spittle.
+	//m_nSquidSpitSprite = PrecacheModel("sprites/bigspit.vmt");// client side spittle.
+	UTIL_PrecacheOther("grenade_spit");
 
 	PrecacheScriptSound( "NPC_BigMomma.SpitTouch1" );
 	PrecacheScriptSound( "NPC_BigMomma.SpitHit1" );
@@ -146,6 +149,7 @@ void CSquidSpit:: Spawn( void )
 	SetModel( "" );
 
 	//SetSprite( CSprite::SpriteCreate( "sprites/bigspit.vmt", GetAbsOrigin(), true ) );
+	//CGrenadeSpit *pGrenade = (CGrenadeSpit*)CreateEntityByName("grenade_spit");
 	
 	UTIL_SetSize( this, Vector( 0, 0, 0), Vector(0, 0, 0) );
 
@@ -154,8 +158,10 @@ void CSquidSpit:: Spawn( void )
 
 void CSquidSpit::Shoot( CBaseEntity *pOwner, Vector vecStart, Vector vecVelocity )
 {
-	CSquidSpit *pSpit = CREATE_ENTITY( CSquidSpit, "squidspit" );
+	CSquidSpit *pSpit = (CSquidSpit*)CreateEntityByName("squidspit");
+	CGrenadeSpit *pGrenade = (CGrenadeSpit*)CreateEntityByName("grenade_spit");
 	pSpit->Spawn();
+	pGrenade->Spawn();
 	
 	UTIL_SetOrigin( pSpit, vecStart );
 	pSpit->SetAbsVelocity( vecVelocity );
@@ -221,7 +227,7 @@ void CSquidSpit::Touch ( CBaseEntity *pOther )
 	}
 	else
 	{
-		CTakeDamageInfo info( this, this, sk_bullsquid_dmg_spit.GetFloat(), DMG_BULLET );
+		CTakeDamageInfo info(this, this, sk_bullsquid_dmg_spit.GetFloat(), DMG_BULLET);
 		CalculateBulletDamageForce( &info, GetAmmoDef()->Index("9mmRound"), GetAbsVelocity(), GetAbsOrigin() );
 		pOther->TakeDamage( info );
 	}
@@ -280,16 +286,19 @@ void CNPC_Bullsquid::Precache()
 	BaseClass::Precache();
 	
 	PrecacheModel("models/bullsquid.mdl");
-	
-	PrecacheModel("sprites/bigspit.vmt");// spit projectile.
+	//PrecacheModel("sprites/bigspit.vmt");// spit projectile.
 
-	PrecacheScriptSound( "Bullsquid.Idle" );
-	PrecacheScriptSound( "Bullsquid.Pain" );
-	PrecacheScriptSound( "Bullsquid.Alert" );
-	PrecacheScriptSound( "Bullsquid.Die" );
-	PrecacheScriptSound( "Bullsquid.Attack" );
-	PrecacheScriptSound( "Bullsquid.Bite" );
-	PrecacheScriptSound( "Bullsquid.Growl" );
+	UTIL_PrecacheOther("grenade_spit");
+
+	PrecacheScriptSound( "NPC_Bullsquid.Idle" );
+	PrecacheScriptSound( "NPC_Bullsquid.Pain" );
+	PrecacheScriptSound( "NPC_Bullsquid.Alert" );
+	PrecacheScriptSound( "NPC_Bullsquid.Die" );
+	PrecacheScriptSound( "NPC_Bullsquid.Attack" );
+	PrecacheScriptSound( "NPC_Bullsquid.Bite" );
+	PrecacheScriptSound( "NPC_Bullsquid.Growl" );
+
+	BaseClass::Precache();
 }
 
 
@@ -594,14 +603,15 @@ void CNPC_Bullsquid::RemoveIgnoredConditions( void )
 	if ( GetEnemy() != NULL )
 	{
 		// ( Unless after a tasty headcrab, yumm ^_^ )
-		if ( FClassnameIs( GetEnemy(), "monster_headcrab" ) )
+		// Taste this dick valve
+		if ( FClassnameIs( GetEnemy(), "npc_headcrab" ) )
 			 ClearCondition( COND_SMELL );
 	}
 }
 
 Disposition_t CNPC_Bullsquid::IRelationType( CBaseEntity *pTarget )
 {
-	if ( gpGlobals->curtime - m_flLastHurtTime < 5 && FClassnameIs ( pTarget, "monster_headcrab" ) )
+	if ( gpGlobals->curtime - m_flLastHurtTime < 5 && FClassnameIs ( pTarget, "npc_headcrab" ) )
 	{
 		// if squid has been hurt in the last 5 seconds, and is getting relationship for a headcrab, 
 		// tell squid to disregard crab. 
@@ -904,7 +914,7 @@ void CNPC_Bullsquid::StartTask ( const Task_t *pTask )
 	case TASK_MELEE_ATTACK2:
 		{
 			CPASAttenuationFilter filter( this );
-			EmitSound( filter, entindex(), "Bullsquid.Growl" );		
+			EmitSound( filter, entindex(), "NPC_Bullsquid.Growl" );		
 			BaseClass::StartTask ( pTask );
 			break;
 		}
