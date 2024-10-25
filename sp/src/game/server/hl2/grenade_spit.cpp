@@ -1,4 +1,4 @@
-//========= Copyright © 1996-2005, Valve Corporation, All rights reserved. ============//
+//========= Copyright ï¿½ 1996-2005, Valve Corporation, All rights reserved. ============//
 //
 // Purpose: 
 //
@@ -13,7 +13,7 @@
 #include "decals.h"
 
 #include "smoke_trail.h"
-#include "shareddefs.h"
+#include "hl2_shareddefs.h"
 #include "vstdlib/random.h"
 #include "engine/IEngineSound.h"
 
@@ -62,7 +62,7 @@ void CGrenadeSpit::Spawn( void )
 	SetFriction( 0.8 );
 	SetSequence( 1 );
 
-	SetCollisionGroup(COLLISION_GROUP_PROJECTILE);
+	SetCollisionGroup(HL2COLLISION_GROUP_SPIT);
 }
 
 
@@ -99,7 +99,7 @@ void CGrenadeSpit::GrenadeSpitTouch( CBaseEntity *pOther )
 	{
 		return;
 	}
-	if ( pOther->GetCollisionGroup() == COLLISION_GROUP_PROJECTILE)
+	if ( pOther->GetCollisionGroup() == HL2COLLISION_GROUP_SPIT)
 	{
 		return;
 	}

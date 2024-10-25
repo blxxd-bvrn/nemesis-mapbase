@@ -1,4 +1,4 @@
-//========= Copyright © 1996-2005, Valve Corporation, All rights reserved. ============//
+//========= Copyright ï¿½ 1996-2005, Valve Corporation, All rights reserved. ============//
 //
 // Purpose:		Cute hound like Alien.
 //
@@ -17,16 +17,12 @@
 #include "NPCEvent.h"
 #include "animation.h"
 #include "npc_bullsquid.h"
-#include "gib.h"
 #include "soundent.h"
 #include "ndebugoverlay.h"
 #include "vstdlib/random.h"
 #include "engine/IEngineSound.h"
 #include "grenade_spit.h"
-#include "util.h"
-#include "shake.h"
 #include "movevars_shared.h"
-#include "decals.h"
 #include "hl2_shareddefs.h"
 #include "ammodef.h"
 
@@ -78,7 +74,7 @@ enum
 #define		BSQUID_AE_HOP		( 5 )
 #define		BSQUID_AE_THROW		( 6 )
 
-LINK_ENTITY_TO_CLASS( monster_bullchicken, CNPC_Bullsquid );
+LINK_ENTITY_TO_CLASS( npc_bullsquid, CNPC_Bullsquid );
 
 int ACT_SQUID_EXCITED;
 int ACT_SQUID_EAT;
@@ -149,7 +145,7 @@ void CSquidSpit:: Spawn( void )
 	SetRenderColorA( 255 );
 	SetModel( "" );
 
-	SetSprite( CSprite::SpriteCreate( "sprites/bigspit.vmt", GetAbsOrigin(), true ) );
+	//SetSprite( CSprite::SpriteCreate( "sprites/bigspit.vmt", GetAbsOrigin(), true ) );
 	
 	UTIL_SetSize( this, Vector( 0, 0, 0), Vector(0, 0, 0) );
 
@@ -165,16 +161,16 @@ void CSquidSpit::Shoot( CBaseEntity *pOwner, Vector vecStart, Vector vecVelocity
 	pSpit->SetAbsVelocity( vecVelocity );
 	pSpit->SetOwnerEntity( pOwner );
 
-	CSprite *pSprite = (CSprite*)pSpit->GetSprite();
+	//CSprite *pSprite = (CSprite*)pSpit->GetSprite();
 
-	if ( pSprite )
+	/*if (pSprite)
 	{
 		pSprite->SetAttachment( pSpit, 0 );
 		pSprite->SetOwnerEntity( pSpit );
 
 		pSprite->SetScale( 0.5 );
 		pSprite->SetTransparency( pSpit->m_nRenderMode, pSpit->m_clrRender->r, pSpit->m_clrRender->g, pSpit->m_clrRender->b, pSpit->m_clrRender->a, pSpit->m_nRenderFX );
-	}
+	}*/
 
 
 	CPVSFilter filter( vecStart );
@@ -1005,7 +1001,7 @@ NPC_STATE CNPC_Bullsquid::SelectIdealState ( void )
 //
 //------------------------------------------------------------------------------
 
-AI_BEGIN_CUSTOM_NPC( monster_bullchicken, CNPC_Bullsquid )
+AI_BEGIN_CUSTOM_NPC(npc_bullsquid, CNPC_Bullsquid )
 
 	DECLARE_TASK ( TASK_SQUID_HOPTURN )
 	DECLARE_TASK ( TASK_SQUID_EAT )

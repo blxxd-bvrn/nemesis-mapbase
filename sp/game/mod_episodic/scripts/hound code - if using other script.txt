@@ -1,0 +1,206 @@
+"HoundEye.Idle"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"		"npc/houndeye/he_idle1.wav"
+		"wave"		"npc/houndeye/he_idle2.wav"
+		"wave"		"npc/houndeye/he_idle3.wav"
+		"wave"		"npc/houndeye/he_idle4.wav"
+		"wave"		"npc/houndeye/he_idle5.wav"
+		"wave"		"npc/houndeye/he_idle6.wav"
+		"wave"		"npc/houndeye/he_idle7.wav"
+		"wave"		"npc/houndeye/he_idle8.wav"
+		"wave"		"npc/houndeye/he_idle9.wav"
+		"wave"		"npc/houndeye/he_idle10.wav"
+
+	}
+}
+
+"HoundEye.Hunt"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"soundlevel"	"SNDLVL_80db"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"		"npc/houndeye/he_idle5.wav"
+		"wave"		"npc/houndeye/he_idle6.wav"
+		"wave"		"npc/houndeye/he_idle7.wav"
+		"wave"		"npc/houndeye/he_idle8.wav"
+
+	}
+}
+
+
+"HoundEye.Alert"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"soundlevel"	"SNDLVL_85db"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"		"npc/houndeye/he_alert1.wav"
+		"wave"		"npc/houndeye/he_alert2.wav"
+		"wave"		"npc/houndeye/he_alert3.wav"
+		"wave"		"npc/houndeye/he_alert4.wav"
+		"wave"		"npc/houndeye/he_alert5.wav"
+		"wave"		"npc/houndeye/he_alert6.wav"
+		"wave"		"npc/houndeye/he_alert7.wav"
+		"wave"		"npc/houndeye/he_alert8.wav"
+		"wave"		"npc/houndeye/he_alert9.wav"
+		"wave"		"npc/houndeye/he_alert10.wav"
+
+	}
+}
+
+"HoundEye.Die"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"soundlevel"	"SNDLVL_85db"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"		"npc/houndeye/die1.wav"
+		"wave"		"npc/houndeye/die1.wav"
+		"wave"		"npc/houndeye/die1.wav"
+
+	}
+}
+
+"HoundEye.Pain"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"soundlevel"	"SNDLVL_80db"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"		"npc/houndeye/pain1.wav"
+		"wave"		"npc/houndeye/pain3.wav"
+		"wave"		"npc/houndeye/pain2.wav"
+		"wave"		"npc/houndeye/pain3.wav"
+
+	}
+}
+
+"HoundEye.Anger1"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"soundlevel"	"SNDLVL_90db"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"		"npc/houndeye/pain3.wav"
+	}
+}
+
+"HoundEye.Anger2"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"VOL_NORM"
+	"soundlevel"	"SNDLVL_90db"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"		"npc/houndeye/pain1.wav"
+
+	}
+}
+
+"HoundEye.Sonic"
+{
+	"channel"	"CHAN_WEAPON"
+	"volume"	"VOL_NORM"
+	"soundlevel"	"SNDLVL_140db"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"		"npc/houndeye/blast1.wav"
+		"wave"		"npc/houndeye/blast1.wav"
+		"wave"		"npc/houndeye/blast1.wav"
+
+	}
+}
+
+"HoundEye.Warn"
+{
+	"channel"	"CHAN_WEAPON"
+	"volume"	"0.7"
+	"soundlevel"	"SNDLVL_80db"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"		"npc/houndeye/charge1.wav"
+		"wave"		"npc/houndeye/charge2.wav"
+		"wave"		"npc/houndeye/charge3.wav"
+
+	}
+}
+
+"npc_houndeye.FootStep"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"VOL_NORM"
+	"soundlevel"	"SNDLVL_90db"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"		"npc/houndeye/he_step1.wav"
+		"wave"		"npc/houndeye/he_step2.wav"
+		"wave"		"npc/houndeye/he_step3.wav"
+	}
+}
+
+"npc_houndeye.Idle"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/houndeye/he_idle1.wav"
+		"wave"	"npc/houndeye/he_idle2.wav"
+		"wave"	"npc/houndeye/he_idle3.wav"
+		"wave"	"npc/houndeye/he_idle4.wav"
+		"wave"	"npc/houndeye/he_idle5.wav"
+		"wave"	"npc/houndeye/he_idle6.wav"
+		"wave"	"npc/houndeye/he_idle7.wav"
+		"wave"	"npc/houndeye/he_idle8.wav"
+		"wave"	"npc/houndeye/he_idle9.wav"
+		"wave"	"npc/houndeye/he_idle10.wav"
+	}
+}
+
+"npc_houndeye.Alert"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"npc/houndeye/he_alert1.wav"
+		"wave"	"npc/houndeye/he_alert2.wav"
+		"wave"	"npc/houndeye/he_alert3.wav"
+		"wave"	"npc/houndeye/he_alert4.wav"
+		"wave"	"npc/houndeye/he_alert5.wav"
+		"wave"	"npc/houndeye/he_alert6.wav"
+		"wave"	"npc/houndeye/he_alert7.wav"
+		"wave"	"npc/houndeye/he_alert8.wav"
+		"wave"	"npc/houndeye/he_alert9.wav"
+		"wave"	"npc/houndeye/he_alert10.wav"
+	}
+}

@@ -1,0 +1,45 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\xenians\houndeye/houndeye"
+	"$bumpmap" "models\xenians\houndeye/houndeye_normals"
+	
+	$detail detail\noise_detail_01 // e.g. for brickwork, concrete...
+	$detailscale 7.74
+	$detailblendfactor 0.8
+	$detailblendmode 0
+	
+	"$model" 1
+	
+	"$phong" "1"
+	"$phongboost" "4"
+	"$phongexponent" "8"
+	"$phongfresnelranges" "[.5 .75 2]"
+	"$phongwarptexture"  "models/effects/phongwarp_library/iridescence011"
+
+	"$selfillum" "1" //masked from diffuse alpha — ONLY for eye phong illum
+	"$selfillumtint" ".75 .75 .75"
+	
+	// Rim lighting parameters
+	"$rimlight" "1"				// To enable rim lighting (requires phong)
+	"$rimlightexponent" "30"             // Exponent for phong component of rim lighting
+	"$rimlightboost" ".5"	               // Boost for ambient cube component of rim lighting
+	
+	$emissiveBlendEnabled 1
+	"$emissiveBlendTexture" "models\props_xen\glow_blue1"
+	$emissiveBlendFlowTexture "models\props_xen\glow_blue1"
+	"$emissiveBlendBaseTexture" "models\xenians\houndeye\houndeye_emissivemask"
+	$emissiveBlendTint "[0 2 4]"
+	"$emissiveBlendScrollVector" "[0.64 0.81]"
+	$emissiveBlendStrength 2
+	
+	Proxies
+	{
+		ModelDetailFx
+		{
+		}
+		HoundeyeCharge
+		{
+			resultVar $emissiveBlendStrength
+		}
+	}
+}
