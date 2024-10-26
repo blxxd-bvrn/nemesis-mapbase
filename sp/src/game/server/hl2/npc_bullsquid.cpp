@@ -28,7 +28,7 @@
 
 #define		SQUID_SPRINT_DIST	256 // how close the squid has to get before starting to sprint and refusing to swerve
 
-ConVar sk_bullsquid_health ( "sk_bullsquid_health", "90" );
+ConVar sk_bullsquid_health ( "sk_bullsquid_health", "100" );
 ConVar sk_bullsquid_dmg_bite ( "sk_bullsquid_dmg_bite", "20" );
 ConVar sk_bullsquid_dmg_whip ( "sk_bullsquid_dmg_whip", "35" );
 ConVar sk_bullsquid_dmg_spit ("sk_bullsquid_dmg_spit", "40");
@@ -127,7 +127,7 @@ END_DATADESC()
 
 void CSquidSpit::Precache( void )
 {
-	//m_nSquidSpitSprite = PrecacheModel("sprites/bigspit.vmt");// client side spittle.
+	m_nSquidSpitSprite = PrecacheModel("sprites/bigspit.vmt");// client side spittle.
 	UTIL_PrecacheOther("grenade_spit");
 
 	PrecacheScriptSound( "NPC_BigMomma.SpitTouch1" );
@@ -158,14 +158,16 @@ void CSquidSpit:: Spawn( void )
 
 void CSquidSpit::Shoot( CBaseEntity *pOwner, Vector vecStart, Vector vecVelocity )
 {
+	//Vector vSpitPos;
 	CSquidSpit *pSpit = (CSquidSpit*)CreateEntityByName("squidspit");
-	CGrenadeSpit *pGrenade = (CGrenadeSpit*)CreateEntityByName("grenade_spit");
+	CGrenadeSpit *pGrenade = (CGrenadeSpit*)CreateNoSpawn( "grenade_spit", vecStart, vec3_angle, pOwner);
 	pSpit->Spawn();
 	pGrenade->Spawn();
+	pGrenade->SetSpitSize( 2 );
 	
-	UTIL_SetOrigin( pSpit, vecStart );
-	pSpit->SetAbsVelocity( vecVelocity );
-	pSpit->SetOwnerEntity( pOwner );
+	UTIL_SetOrigin( pGrenade, vecStart );
+	pGrenade->SetAbsVelocity( vecVelocity );
+	pGrenade->SetOwnerEntity( pOwner );
 
 	//CSprite *pSprite = (CSprite*)pSpit->GetSprite();
 
@@ -330,7 +332,7 @@ Class_T	CNPC_Bullsquid::Classify( void )
 void CNPC_Bullsquid::IdleSound( void )
 {
 	CPASAttenuationFilter filter( this, SQUID_ATTN_IDLE );
-	EmitSound( filter, entindex(), "Bullsquid.Idle" );	
+	EmitSound( filter, entindex(), "NPC_Bullsquid.Idle" );	
 }
 
 //=========================================================
@@ -339,7 +341,7 @@ void CNPC_Bullsquid::IdleSound( void )
 void CNPC_Bullsquid::PainSound( const CTakeDamageInfo &info )
 {
 	CPASAttenuationFilter filter( this );
-	EmitSound( filter, entindex(), "Bullsquid.Pain" );	
+	EmitSound( filter, entindex(), "NPC_NPC_Bullsquid.Pain" );	
 }
 
 //=========================================================
@@ -348,7 +350,7 @@ void CNPC_Bullsquid::PainSound( const CTakeDamageInfo &info )
 void CNPC_Bullsquid::AlertSound( void )
 {
 	CPASAttenuationFilter filter( this );
-	EmitSound( filter, entindex(), "Bullsquid.Alert" );	
+	EmitSound( filter, entindex(), "NPC_Bullsquid.Alert" );	
 }
 
 //=========================================================
@@ -357,7 +359,7 @@ void CNPC_Bullsquid::AlertSound( void )
 void CNPC_Bullsquid::DeathSound( const CTakeDamageInfo &info )
 {
 	CPASAttenuationFilter filter( this );
-	EmitSound( filter, entindex(), "Bullsquid.Die" );	
+	EmitSound( filter, entindex(), "NPC_Bullsquid.Die" );	
 }
 
 //=========================================================
@@ -366,7 +368,7 @@ void CNPC_Bullsquid::DeathSound( const CTakeDamageInfo &info )
 void CNPC_Bullsquid::AttackSound( void )
 {
 	CPASAttenuationFilter filter( this );
-	EmitSound( filter, entindex(), "Bullsquid.Attack" );	
+	EmitSound( filter, entindex(), "NPC_Bullsquid.Attack" );	
 }
 
 //=========================================================
@@ -494,7 +496,7 @@ void CNPC_Bullsquid::HandleAnimEvent( animevent_t *pEvent )
 				{
 					// croonchy bite sound
 					CPASAttenuationFilter filter( this );
-					EmitSound( filter, entindex(), "Bullsquid.Bite" );	
+					EmitSound( filter, entindex(), "NPC_Bullsquid.Bite" );	
 
 					// screeshake transforms the viewmodel as well as the viewangle. No problems with seeing the ends of the viewmodels.
 					UTIL_ScreenShake( pHurt->GetAbsOrigin(), 25.0, 1.5, 0.7, 2, SHAKE_START );
@@ -656,7 +658,7 @@ int CNPC_Bullsquid::OnTakeDamage_Alive( const CTakeDamageInfo &inputInfo )
 	}
 #endif
 
-	if ( !FClassnameIs ( inputInfo.GetAttacker(), "monster_headcrab" ) )
+	if ( !FClassnameIs ( inputInfo.GetAttacker(), "npc_headcrab" ) )
 	{
 		// don't forget about headcrabs if it was a headcrab that hurt the squid.
 		m_flLastHurtTime = gpGlobals->curtime;
@@ -807,7 +809,7 @@ int CNPC_Bullsquid::SelectSchedule( void )
 
 			if ( HasCondition( COND_NEW_ENEMY ) )
 			{
-				if ( m_fCanThreatDisplay && IRelationType( GetEnemy() ) == D_HT && FClassnameIs( GetEnemy(), "monster_headcrab" ) )
+				if ( m_fCanThreatDisplay && IRelationType( GetEnemy() ) == D_HT && FClassnameIs( GetEnemy(), "npc_headcrab" ) )
 				{
 					// this means squid sees a headcrab!
 					m_fCanThreatDisplay = FALSE;// only do the headcrab dance once per lifetime.
@@ -991,7 +993,7 @@ NPC_STATE CNPC_Bullsquid::SelectIdealState ( void )
 		COMBAT goes to ALERT upon death of enemy
 		*/
 		{
-			if ( GetEnemy() != NULL && ( HasCondition( COND_LIGHT_DAMAGE ) || HasCondition ( COND_HEAVY_DAMAGE ) ) && FClassnameIs( GetEnemy(), "monster_headcrab" ) )
+			if ( GetEnemy() != NULL && ( HasCondition( COND_LIGHT_DAMAGE ) || HasCondition ( COND_HEAVY_DAMAGE ) ) && FClassnameIs( GetEnemy(), "npc_headcrab" ) )
 			{
 				// if the squid has a headcrab enemy and something hurts it, it's going to forget about the crab for a while.
 				SetEnemy( NULL );
