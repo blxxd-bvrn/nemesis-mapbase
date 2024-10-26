@@ -33,6 +33,7 @@ STUB_WEAPON_CLASS( weapon_smg1, WeaponSMG1, C_HLMachineGun);
 STUB_WEAPON_CLASS( weapon_mp5, WeaponMP5, C_HLSelectFireMachineGun);
 STUB_WEAPON_CLASS( weapon_357, Weapon357, C_BaseHLCombatWeapon );
 STUB_WEAPON_CLASS( weapon_crossbow, WeaponCrossbow, C_BaseHLCombatWeapon );
+STUB_WEAPON_CLASS (weapon_sniperrifle, WeaponSniperRifle, C_BaseHLCombatWeapon);
 
 #ifndef MAPBASE
 STUB_WEAPON_CLASS( weapon_slam, Weapon_SLAM, C_BaseHLCombatWeapon );
