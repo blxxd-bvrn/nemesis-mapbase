@@ -4,6 +4,7 @@
 	title 		""
 	title2		""
 	supportsvr	1
+	gamelogo	1
 
 	type		singleplayer_only
 

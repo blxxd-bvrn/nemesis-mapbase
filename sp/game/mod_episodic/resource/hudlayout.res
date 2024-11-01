@@ -155,7 +155,7 @@
 		"tall"	"26"
 		
 		"AuxPowerLowColor" "255 0 0 220"
-		"AuxPowerHighColor" "5 255 0 220"
+		"AuxPowerHighColor" "0 220 0 220"
 		"AuxPowerDisabledAlpha" "70"
 
 		"BarInsetX" "8"
@@ -184,7 +184,7 @@
 		"tall"	"26"
 		
 		"AuxPowerLowColor" "255 100 0 220"
-		"AuxPowerHighColor" "255 220 0 220"
+		"AuxPowerHighColor" 0 220 0 220"
 		"AuxPowerDisabledAlpha" "70"
 
 		"BarInsetX" "8"

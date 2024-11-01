@@ -354,8 +354,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Westminster"
-				"tall"		"36"	[$WIN32]
+				"name"		"HalfLife2"
+				"tall"		"32"	[$WIN32]
 				"tall"		"38"	[$X360]
 				"weight"	"0"
 				"scanlines" "2"
@@ -364,7 +364,7 @@ Scheme
 				"custom"	"1"
 			}
 		}
-		SquadIcon	[$X360]
+		SquadIcon
 		{
 			"1"
 			{
@@ -380,8 +380,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Westminster"
-				"tall"		"36"	[$WIN32]
+				"name"		"HalfLife2"
+				"tall"		"32"	[$WIN32]
 				"tall"		"38"	[$X360]
 				"weight"	"0"
 				"blur"		"4"
@@ -395,7 +395,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Westminster" [!$OSX]
+				"name"		"HalfLife2"[!$OSX]
 				"name"		"Helvetica Bold" [$OSX]
 				"tall"		"16"	[$WIN32]
 				"tall"		"22"	[$X360]
