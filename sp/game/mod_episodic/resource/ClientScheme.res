@@ -59,7 +59,7 @@ Scheme
 		"Main.Title2.X"				"76"
 		"Main.Title2.Y"				"190"
 		"Main.Title2.Y_hidef"		"174"
-		"Main.Title2.Color"	"255 255 255 200"
+		"Main.Title2.Color"	"225 0 0 200"
 
 		// Top-left corner of the menu on the main screen
 		"Main.Menu.X"			"53"
@@ -633,7 +633,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"  "Trebuchet MS"
+				"name"  "BankGothic"
 				"tall"			"34"
 				"tall_hidef"	"48"
 				"weight" "0"
@@ -795,7 +795,8 @@ Scheme
 	{
 		"1"		"resource/HALFLIFE2.ttf"
 		"2"		"resource/HL2crosshairs.ttf"
-		"3"	"resource/HL2EP2.ttf"		
+		"3"		"resource/HL2EP2.ttf"
+		"4"		"resource/BankGothic Regular.ttf"		
 	}
 
 }
