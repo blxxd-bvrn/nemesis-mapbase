@@ -192,7 +192,7 @@ Scheme
 		MainMenu.ArmedTextColor		"200 200 200 255"	[$WIN32]
 		MainMenu.ArmedTextColor		"White"				[$X360]
 		MainMenu.DepressedTextColor	"192 186 80 255"
-		MainMenu.MenuItemHeight		"30"				[$WIN32]
+		MainMenu.MenuItemHeight		"40"				[$WIN32]
 		MainMenu.MenuItemHeight			"22"				[$X360]
 		MainMenu.MenuItemHeight_hidef	"32"				[$X360]
 		MainMenu.Inset				"32"
@@ -309,8 +309,8 @@ Scheme
 			{
 				"name"		"Tahoma" [!$POSIX]
 				"name"		"Verdana" [$POSIX]
-				"tall"		"12" [!$POSIX]
-				"tall"		"13" [$POSIX]
+				"tall"		"14" [!$POSIX]
+				"tall"		"14" [$POSIX]
 				"weight"	"0"
 			}
 		}
@@ -320,7 +320,7 @@ Scheme
 			{
 				"name"		"Tahoma" [!$POSIX]
 				"name"		"Verdana" [$POSIX]
-				"tall"		"13"
+				"tall"		"14"
 				"weight"	"0"
 				"dropshadow" "1"
 			}
@@ -331,7 +331,7 @@ Scheme
 			{
 				"name"		"Tahoma" [!$POSIX]
 				"name"		"Verdana" [$POSIX]
-				"tall"		"12"
+				"tall"		"14"
 				"weight"	"0"
 			}
 		}
@@ -342,7 +342,7 @@ Scheme
 			{
 				"name"		"Tahoma" [!$POSIX]
 				"name"		"Verdana" [$POSIX]
-				"tall"		"18"
+				"tall"		"26"
 				"weight"	"0"
 			}
 		}
@@ -352,8 +352,8 @@ Scheme
 			{
 				"name"		"Tahoma" [!$POSIX]
 				"name"		"Verdana" [$POSIX]
-				"tall"		"12"
-				"weight"	"1000"
+				"tall"		"18"
+				"weight"	"1500"
 			}
 			"1"	[$X360]
 			{
@@ -396,9 +396,9 @@ Scheme
 			}
 			"1"	[$WIN32]
 			{
-				"name"		"Verdana" 
-				"tall"		"16" 
-				"weight"	"600"
+				"name"		"Trebuchet MS" 
+				"tall"		"24" 
+				"weight"	"1200"
 				"antialias" "1"
 			}
 			"1"	[$X360]
@@ -481,7 +481,7 @@ Scheme
 				"name"		 "Verdana" [$POSIX]
 				"tall"		"11" [$OSX]
 				"tall"		"14" [$LINUX]
-				"tall"		"10"
+				"tall"		"14"
 				"weight"	"500"
 			}
 		}

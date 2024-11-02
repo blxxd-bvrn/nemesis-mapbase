@@ -634,7 +634,7 @@ Scheme
 			"1"
 			{
 				"name"  "BankGothic"
-				"tall"			"34"
+				"tall"			"48"
 				"tall_hidef"	"48"
 				"weight" "0"
 				"additive" "0"
