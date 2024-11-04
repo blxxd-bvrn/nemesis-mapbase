@@ -286,9 +286,9 @@ bool CWeaponMP5::Reload()
 //-----------------------------------------------------------------------------
 void CWeaponMP5::AddViewKick()
 {
-#define EASY_DAMPEN			2.3f
+#define EASY_DAMPEN			0.6f
 #define MAX_VERTICAL_KICK	2.0f // Degrees
-#define SLIDE_LIMIT			0.06f // Seconds
+#define SLIDE_LIMIT			0.5f // Seconds
 
 	// Get the view kick
 	CBasePlayer* pPlayer = ToBasePlayer(GetOwner());
