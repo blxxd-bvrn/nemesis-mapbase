@@ -1,6 +1,6 @@
 "GameInfo"
 {
-	game 		"NEMESIS [devuild]"
+	game 		"NEMESIS [devbuild]"
 	title 		""
 	title2		"NEMESIS alpha 1"
 	supportsvr	1
