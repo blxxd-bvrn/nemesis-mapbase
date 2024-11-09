@@ -1,8 +1,8 @@
 "GameInfo"
 {
-	game 		"NEMESIS"
+	game 		"NEMESIS [devuild]"
 	title 		""
-	title2		""
+	title2		"NEMESIS alpha 1"
 	supportsvr	1
 	gamelogo	1
 
