@@ -2,8 +2,6 @@
 {
 	"$basetexture" "models\weapons\v_hkmp5-sd/mp5"
 	"$bumpmap" "models\weapons\v_hkmp5-sd/mp5_normals"
-	
-	"$model" 1
 
 //metal
 	"$envmap" "env_cubemap"
@@ -20,15 +18,4 @@
 	"$rimlight" "1"
 	"$rimlightexponent" "35"
 	"$rimlightboost" "0.125"
-
-// 	$detail "effects/models/model_blood_red.vtf"
-	$detailscale 5
-	$detailblendfactor 0.0
-	$detailblendmode 0
-	Proxies
-	{
-		ModelDetailFx
-		{
-		}
-	}
  }
