@@ -1,0 +1,22 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/props_vehicles/car001a_01"
+	"$bumpmap" "models/props_vehicles/car001a_01n"
+	"$normalmapalphaenvmapmask" "1"
+ 
+    "$nocull" "1"
+	"$phong"      "1"
+	"$phongboost"     "1"
+	"$phongfresnelranges"   "[.25 1 15]"
+	"$phongexponent"	"35"
+	"$phongtint"	"[.6 .8 1]"
+ 
+ "$envmapmask"		"models/props_vehicles/car001a_01s"
+//	"$envmap"      "env_cubemap"
+	"$envmaptint"     "[0.05 0.05 0.05]"
+ 
+	"$rimlight"     "0"
+	"$rimlightexponent"   "90" 
+	"$rimlightboost"   "0.2"
+	
+}
