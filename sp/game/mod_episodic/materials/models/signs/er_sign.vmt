@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/signs/er_sign"
+	"$surfaceprop" "Default"
+}

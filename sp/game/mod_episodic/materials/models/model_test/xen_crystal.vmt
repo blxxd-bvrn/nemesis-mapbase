@@ -1,0 +1,8 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/model_test/xen_crystal"
+	"$surfaceprop" "Default"
+	"$surfaceprop2" "Glass"
+	"$envmapcontrast" 1
+	"$envmapsaturation" 1
+}

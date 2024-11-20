@@ -4,7 +4,6 @@
 	title 		""
 	title2		"NEMESIS alpha 1"
 	supportsvr	1
-	gamelogo	1
 
 	type		singleplayer_only
 

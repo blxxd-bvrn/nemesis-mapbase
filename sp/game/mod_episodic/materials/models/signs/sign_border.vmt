@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "sign_border_diffuse"
+	"$normalmap" "sign_border_normal"
+	"$surfaceprop" "Default"
+	"$surfaceprop2" "SolidMetal"
+}

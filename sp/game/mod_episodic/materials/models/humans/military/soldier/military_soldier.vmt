@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "Users/blxxd/Documents/textures in case I can't find emn/soldier/military_soldier"
+	"$bumpmap" "Users/blxxd/Documents/textures in case I can't find emn/soldier/military_soldier_specular"
+	"$bumpmap2" "Users/blxxd/Documents/textures in case I can't find emn/soldier/military_soldier_gloss"
+	"$normalmap" "Users/blxxd/Documents/textures in case I can't find emn/soldier/military_soldier_normal"
+	"$translucent" 1
+}
