@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "decals/roux_grafitti"
+	"$surfaceprop" "Default"
+	"$translucent" 1
+	"$decal" 1
+}

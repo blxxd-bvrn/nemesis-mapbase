@@ -1,8 +1,8 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "8868"
-	"mapversion" "313"
+	"editorbuild" "8869"
+	"mapversion" "315"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "313"
+	"mapversion" "315"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -32392,12 +32392,12 @@ entity
 entity
 {
 	"id" "200"
-	"classname" "info_player_start"
-	"angles" "0 180 0"
-	"origin" "-64 0 -63"
+	"classname" "info_landmark"
+	"targetname" "landmark_1"
+	"origin" "8 0 0"
 	editor
 	{
-		"color" "0 255 0"
+		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[0 11000]"
@@ -36717,8 +36717,8 @@ cameras
 	"activecamera" "0"
 	camera
 	{
-		"position" "[-3291.5 3387.59 247.877]"
-		"look" "[-3290.65 3388 247.084]"
+		"position" "[54.1102 -36.9613 32.309]"
+		"look" "[53.2074 -36.8496 31.4773]"
 	}
 }
 cordons
