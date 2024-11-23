@@ -45,7 +45,7 @@ static ConVar r_flashlightconstant( "r_flashlightconstant", "0.0", FCVAR_CHEAT )
 static ConVar r_flashlightlinear( "r_flashlightlinear", "100.0", FCVAR_CHEAT );
 static ConVar r_flashlightquadratic( "r_flashlightquadratic", "0.0", FCVAR_CHEAT );
 static ConVar r_flashlightvisualizetrace( "r_flashlightvisualizetrace", "0", FCVAR_CHEAT );
-static ConVar r_flashlightambient( "r_flashlightambient", "0.0", FCVAR_CHEAT );
+static ConVar r_flashlightambient( "r_flashlightambient", "10.0", FCVAR_CHEAT );
 static ConVar r_flashlightshadowatten( "r_flashlightshadowatten", "0.35", FCVAR_CHEAT );
 static ConVar r_flashlightladderdist( "r_flashlightladderdist", "40.0", FCVAR_CHEAT );
 #ifndef MAPBASE

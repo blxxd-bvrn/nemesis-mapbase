@@ -1,4 +1,4 @@
-//========= Copyright Valve Corporation, All rights reserved. ============//
+﻿//========= Copyright � 1996-2005, Valve Corporation, All rights reserved. ============//
 //
 // Purpose: Implements a sniper rifle weapon.
 //			
@@ -11,12 +11,12 @@
 // TODO: Animated zoom effect?
 //
 //=============================================================================//
-
+ 
 #include "cbase.h"
-#include "npcevent.h"
+#include "NPCEvent.h"
 #include "basehlcombatweapon.h"
 #include "basecombatcharacter.h"
-#include "ai_basenpc.h"
+#include "AI_BaseNPC.h" 
 #include "player.h"
 #include "gamerules.h"				// For g_pGameRules
 #include "in_buttons.h"
@@ -32,7 +32,7 @@
 #define SNIPER_BULLET_COUNT_NPC				1			// Fire n bullets per shot fired by NPCs.
 #define SNIPER_TRACER_FREQUENCY_PLAYER		0			// Draw a tracer every nth shot fired by the player.
 #define SNIPER_TRACER_FREQUENCY_NPC			0			// Draw a tracer every nth shot fired by NPCs.
-#define SNIPER_KICKBACK						3			// Range for punchangle when firing.
+#define SNIPER_KICKBACK						20			// Range for punchangle when firing. 3 by default ~TheZealot
 
 #define SNIPER_ZOOM_RATE					0.2			// Interval between zoom levels in seconds.
 
@@ -46,10 +46,6 @@ static int g_nZoomFOV[] =
 	5
 };
 
-#ifdef MAPBASE
-extern acttable_t *GetAR2Acttable();
-extern int GetAR2ActtableCount();
-#endif
 
 class CWeaponSniperRifle : public CBaseHLCombatWeapon
 {
@@ -63,23 +59,25 @@ public:
 
 	void Precache( void );
 
-	int CapabilitiesGet( void ) const;
+	int	CapabilitiesGet( void ) { return bits_CAP_WEAPON_RANGE_ATTACK1; }
 
-	const Vector &GetBulletSpread( void );
+	float	WeaponAutoAimScale()	{ return 0.6f; }
+	const Vector &GetBulletSpread( void ); 
 
 	bool Holster( CBaseCombatWeapon *pSwitchingTo = NULL );
 	void ItemPostFrame( void );
 	void PrimaryAttack( void );
 	bool Reload( void );
 	void Zoom( void );
-	virtual float GetFireRate( void ) { return 1; };
+	virtual float GetFireRate( void ) { return 3.0; };
+	virtual float			GetMinRestTime() { return 1.0; }
+	virtual float			GetMaxRestTime() { return 1.5; }
+
+	void FireNPCPrimaryAttack( CBaseCombatCharacter *pOperator, bool bUseWeaponAngles );
+
+	void Operator_ForceNPCFire( CBaseCombatCharacter  *pOperator, bool bSecondary );
 
 	void Operator_HandleAnimEvent( animevent_t *pEvent, CBaseCombatCharacter *pOperator );
-
-#ifdef MAPBASE
-	virtual acttable_t		*GetBackupActivityList() { return GetAR2Acttable(); }
-	virtual int				GetBackupActivityListCount() { return GetAR2ActtableCount(); }
-#endif
 
 	DECLARE_ACTTABLE();
 
@@ -107,81 +105,87 @@ END_DATADESC()
 //-----------------------------------------------------------------------------
 acttable_t	CWeaponSniperRifle::m_acttable[] = 
 {
-	{	ACT_RANGE_ATTACK1, ACT_RANGE_ATTACK_SNIPER_RIFLE, true },
+	{ ACT_RANGE_ATTACK1,			ACT_RANGE_ATTACK_AR2,			true },
+	{ ACT_RELOAD,					ACT_RELOAD_SMG1,				true },		// FIXME: hook to OICW unique
+	{ ACT_IDLE,						ACT_IDLE_SMG1,					true },		// FIXME: hook to OICW unique
+	{ ACT_IDLE_ANGRY,				ACT_IDLE_ANGRY_SMG1,			true },		// FIXME: hook to OICW unique
 
-#if EXPANDED_HL2_UNUSED_WEAPON_ACTIVITIES
-	// Optional new NPC activities
-	// (these should fall back to AR2 animations when they don't exist on an NPC)
-	{ ACT_RELOAD,					ACT_RELOAD_SNIPER_RIFLE,			true },
-	{ ACT_IDLE,						ACT_IDLE_SNIPER_RIFLE,				true },
-	{ ACT_IDLE_ANGRY,				ACT_IDLE_ANGRY_SNIPER_RIFLE,		true },
+	{ ACT_WALK,						ACT_WALK_RIFLE,					true },
 
 // Readiness activities (not aiming)
-	{ ACT_IDLE_RELAXED,				ACT_IDLE_SNIPER_RIFLE_RELAXED,			false },//never aims
-	{ ACT_IDLE_STIMULATED,			ACT_IDLE_SNIPER_RIFLE_STIMULATED,		false },
-	{ ACT_IDLE_AGITATED,			ACT_IDLE_ANGRY_SNIPER_RIFLE,			false },//always aims
+	{ ACT_IDLE_RELAXED,				ACT_IDLE_SMG1_RELAXED,			false },//never aims
+	{ ACT_IDLE_STIMULATED,			ACT_IDLE_SMG1_STIMULATED,		false },
+	{ ACT_IDLE_AGITATED,			ACT_IDLE_ANGRY_SMG1,			false },//always aims
 
-	{ ACT_WALK_RELAXED,				ACT_WALK_SNIPER_RIFLE_RELAXED,			false },//never aims
-	{ ACT_WALK_STIMULATED,			ACT_WALK_SNIPER_RIFLE_STIMULATED,		false },
-	{ ACT_WALK_AGITATED,			ACT_WALK_AIM_SNIPER_RIFLE,				false },//always aims
+	{ ACT_WALK_RELAXED,				ACT_WALK_RIFLE_RELAXED,			false },//never aims
+	{ ACT_WALK_STIMULATED,			ACT_WALK_RIFLE_STIMULATED,		false },
+	{ ACT_WALK_AGITATED,			ACT_WALK_AIM_RIFLE,				false },//always aims
 
-	{ ACT_RUN_RELAXED,				ACT_RUN_SNIPER_RIFLE_RELAXED,			false },//never aims
-	{ ACT_RUN_STIMULATED,			ACT_RUN_SNIPER_RIFLE_STIMULATED,		false },
-	{ ACT_RUN_AGITATED,				ACT_RUN_AIM_SNIPER_RIFLE,				false },//always aims
+	{ ACT_RUN_RELAXED,				ACT_RUN_RIFLE_RELAXED,			false },//never aims
+	{ ACT_RUN_STIMULATED,			ACT_RUN_RIFLE_STIMULATED,		false },
+	{ ACT_RUN_AGITATED,				ACT_RUN_AIM_RIFLE,				false },//always aims
 
 // Readiness activities (aiming)
-	{ ACT_IDLE_AIM_RELAXED,			ACT_IDLE_SNIPER_RIFLE_RELAXED,			false },//never aims	
-	{ ACT_IDLE_AIM_STIMULATED,		ACT_IDLE_AIM_SNIPER_RIFLE_STIMULATED,	false },
-	{ ACT_IDLE_AIM_AGITATED,		ACT_IDLE_ANGRY_SNIPER_RIFLE,			false },//always aims
+	{ ACT_IDLE_AIM_RELAXED,			ACT_IDLE_SMG1_RELAXED,			false },//never aims	
+	{ ACT_IDLE_AIM_STIMULATED,		ACT_IDLE_AIM_RIFLE_STIMULATED,	false },
+	{ ACT_IDLE_AIM_AGITATED,		ACT_IDLE_ANGRY_SMG1,			false },//always aims
 
-	{ ACT_WALK_AIM_RELAXED,			ACT_WALK_SNIPER_RIFLE_RELAXED,			false },//never aims
-	{ ACT_WALK_AIM_STIMULATED,		ACT_WALK_AIM_SNIPER_RIFLE_STIMULATED,	false },
-	{ ACT_WALK_AIM_AGITATED,		ACT_WALK_AIM_SNIPER_RIFLE,				false },//always aims
+	{ ACT_WALK_AIM_RELAXED,			ACT_WALK_RIFLE_RELAXED,			false },//never aims
+	{ ACT_WALK_AIM_STIMULATED,		ACT_WALK_AIM_RIFLE_STIMULATED,	false },
+	{ ACT_WALK_AIM_AGITATED,		ACT_WALK_AIM_RIFLE,				false },//always aims
 
-	{ ACT_RUN_AIM_RELAXED,			ACT_RUN_SNIPER_RIFLE_RELAXED,			false },//never aims
-	{ ACT_RUN_AIM_STIMULATED,		ACT_RUN_AIM_SNIPER_RIFLE_STIMULATED,	false },
-	{ ACT_RUN_AIM_AGITATED,			ACT_RUN_AIM_SNIPER_RIFLE,				false },//always aims
+	{ ACT_RUN_AIM_RELAXED,			ACT_RUN_RIFLE_RELAXED,			false },//never aims
+	{ ACT_RUN_AIM_STIMULATED,		ACT_RUN_AIM_RIFLE_STIMULATED,	false },
+	{ ACT_RUN_AIM_AGITATED,			ACT_RUN_AIM_RIFLE,				false },//always aims
 //End readiness activities
 
-	{ ACT_WALK,						ACT_WALK_SNIPER_RIFLE,					true },
-	{ ACT_WALK_AIM,					ACT_WALK_AIM_SNIPER_RIFLE,				true },
-	{ ACT_WALK_CROUCH,				ACT_WALK_CROUCH_RIFLE,					true },
-	{ ACT_WALK_CROUCH_AIM,			ACT_WALK_CROUCH_AIM_RIFLE,				true },
-	{ ACT_RUN,						ACT_RUN_SNIPER_RIFLE,					true },
-	{ ACT_RUN_AIM,					ACT_RUN_AIM_SNIPER_RIFLE,				true },
-	{ ACT_RUN_CROUCH,				ACT_RUN_CROUCH_RIFLE,					true },
-	{ ACT_RUN_CROUCH_AIM,			ACT_RUN_CROUCH_AIM_RIFLE,				true },
-	{ ACT_GESTURE_RANGE_ATTACK1,	ACT_GESTURE_RANGE_ATTACK_SNIPER_RIFLE,	true },
-	{ ACT_RANGE_ATTACK1_LOW,		ACT_RANGE_ATTACK_SNIPER_RIFLE_LOW,		true },
-	{ ACT_COVER_LOW,				ACT_COVER_SNIPER_RIFLE_LOW,				false },
-	{ ACT_RANGE_AIM_LOW,			ACT_RANGE_AIM_SNIPER_RIFLE_LOW,			false },
-	{ ACT_RELOAD_LOW,				ACT_RELOAD_SNIPER_RIFLE_LOW,			false },
-	{ ACT_GESTURE_RELOAD,			ACT_GESTURE_RELOAD_SNIPER_RIFLE,		true },
-
-	{ ACT_ARM,						ACT_ARM_RIFLE,					false },
-	{ ACT_DISARM,					ACT_DISARM_RIFLE,				false },
-
-#if EXPANDED_HL2_COVER_ACTIVITIES
-	{ ACT_RANGE_AIM_MED,			ACT_RANGE_AIM_SNIPER_RIFLE_MED,			false },
-	{ ACT_RANGE_ATTACK1_MED,		ACT_RANGE_ATTACK_SNIPER_RIFLE_MED,		false },
-#endif
-
-#if EXPANDED_HL2DM_ACTIVITIES
-	// HL2:DM activities (for third-person animations in SP)
-	{ ACT_HL2MP_IDLE,                    ACT_HL2MP_IDLE_SNIPER_RIFLE,                    false },
-	{ ACT_HL2MP_RUN,                    ACT_HL2MP_RUN_SNIPER_RIFLE,                    false },
-	{ ACT_HL2MP_IDLE_CROUCH,            ACT_HL2MP_IDLE_CROUCH_SNIPER_RIFLE,            false },
-	{ ACT_HL2MP_WALK_CROUCH,            ACT_HL2MP_WALK_CROUCH_SNIPER_RIFLE,            false },
-	{ ACT_HL2MP_GESTURE_RANGE_ATTACK,    ACT_HL2MP_GESTURE_RANGE_ATTACK_SNIPER_RIFLE,    false },
-	{ ACT_HL2MP_GESTURE_RELOAD,            ACT_HL2MP_GESTURE_RELOAD_SNIPER_RIFLE,        false },
-	{ ACT_HL2MP_JUMP,                    ACT_HL2MP_JUMP_SNIPER_RIFLE,                    false },
-	{ ACT_HL2MP_WALK,					ACT_HL2MP_WALK_SNIPER_RIFLE,					false },
-	{ ACT_HL2MP_GESTURE_RANGE_ATTACK2,	ACT_HL2MP_GESTURE_RANGE_ATTACK2_SNIPER_RIFLE,    false },
-#endif
-#endif
+	{ ACT_WALK_AIM,					ACT_WALK_AIM_RIFLE,				true },
+	{ ACT_WALK_CROUCH,				ACT_WALK_CROUCH_RIFLE,			true },
+	{ ACT_WALK_CROUCH_AIM,			ACT_WALK_CROUCH_AIM_RIFLE,		true },
+	{ ACT_RUN,						ACT_RUN_RIFLE,					true },
+	{ ACT_RUN_AIM,					ACT_RUN_AIM_RIFLE,				true },
+	{ ACT_RUN_CROUCH,				ACT_RUN_CROUCH_RIFLE,			true },
+	{ ACT_RUN_CROUCH_AIM,			ACT_RUN_CROUCH_AIM_RIFLE,		true },
+	{ ACT_GESTURE_RANGE_ATTACK1,	ACT_GESTURE_RANGE_ATTACK_AR2,	false },
+	{ ACT_COVER_LOW,				ACT_COVER_SMG1_LOW,				false },		// FIXME: hook to OICW unique
+	{ ACT_RANGE_AIM_LOW,			ACT_RANGE_AIM_AR2_LOW,			false },
+	{ ACT_RANGE_ATTACK1_LOW,		ACT_RANGE_ATTACK_SMG1_LOW,		true },		// FIXME: hook to OICW unique
+	{ ACT_RELOAD_LOW,				ACT_RELOAD_SMG1_LOW,			false },
+	{ ACT_GESTURE_RELOAD,			ACT_GESTURE_RELOAD_SMG1,		true },
+//	{ ACT_RANGE_ATTACK2, ACT_RANGE_ATTACK_OICW_GRENADE, true },
 };
 
 IMPLEMENT_ACTTABLE(CWeaponSniperRifle);
+
+void CWeaponSniperRifle::FireNPCPrimaryAttack( CBaseCombatCharacter *pOperator, bool bUseWeaponAngles )
+{
+	Vector vecShootOrigin, vecShootDir;
+
+	CAI_BaseNPC *npc = pOperator->MyNPCPointer();
+	ASSERT( npc != NULL );
+
+	if ( bUseWeaponAngles )
+	{
+		QAngle	angShootDir;
+		GetAttachment( LookupAttachment( "muzzle" ), vecShootOrigin, angShootDir );
+		AngleVectors( angShootDir, &vecShootDir );
+	}
+	else 
+	{
+		vecShootOrigin = pOperator->Weapon_ShootPosition();
+		vecShootDir = npc->GetActualShootTrajectory( vecShootOrigin );
+	}
+
+
+	CSoundEnt::InsertSound( SOUND_COMBAT|SOUND_CONTEXT_GUNFIRE, pOperator->GetAbsOrigin(), SOUNDENT_VOLUME_MACHINEGUN, 0.2, pOperator, SOUNDENT_CHANNEL_WEAPON, pOperator->GetEnemy() );
+
+	pOperator->FireBullets( 1, vecShootOrigin, vecShootDir, VECTOR_CONE_1DEGREES, MAX_TRACE_LENGTH, m_iPrimaryAmmoType, 2 );
+
+	// NOTENOTE: This is overriden on the client-side
+	// pOperator->DoMuzzleFlash();
+
+	m_iClip1 = m_iClip1 - 1;
+}
 
 
 //-----------------------------------------------------------------------------
@@ -192,25 +196,23 @@ CWeaponSniperRifle::CWeaponSniperRifle( void )
 	m_fNextZoom = gpGlobals->curtime;
 	m_nZoomLevel = 0;
 
+	//CBaseEntity *pOwner = GetOwnerEntity();
+	//CAI_BaseNPC *pNPC	= GetOwner()->MyNPCPointer();
+
+	//if ( pOwner->IsNPC() )
+	//{
+	//	pNPC->CapabilitiesAdd( bits_CAP_MOVE_JUMP | bits_CAP_MOVE_CLIMB ); //extra maneuvering for snipers
+	//	pNPC->AddSpawnFlags( SF_NPC_LONG_RANGE ); //automatically give NPCs long vision when wielding
+	//}
+
+
 	m_bReloadsSingly = true;
 
 	m_fMinRange1		= 65;
 	m_fMinRange2		= 65;
-	m_fMaxRange1		= 2048;
-	m_fMaxRange2		= 2048;
+	m_fMaxRange1		= 9048;
+	m_fMaxRange2		= 9048;
 }
-
-
-//-----------------------------------------------------------------------------
-// Purpose: 
-// Output : int
-//-----------------------------------------------------------------------------
-int CWeaponSniperRifle::CapabilitiesGet( void ) const
-{
-	return bits_CAP_WEAPON_RANGE_ATTACK1;
-}
-
-
 
 //-----------------------------------------------------------------------------
 // Purpose: Turns off the zoom when the rifle is holstered.
@@ -353,8 +355,8 @@ bool CWeaponSniperRifle::Reload( void )
 		
 	if (pOwner->GetAmmoCount(m_iPrimaryAmmoType) > 0)
 	{
-		int primary		= MIN(GetMaxClip1() - m_iClip1, pOwner->GetAmmoCount(m_iPrimaryAmmoType));
-		int secondary	= MIN(GetMaxClip2() - m_iClip2, pOwner->GetAmmoCount(m_iSecondaryAmmoType));
+		int primary		= min(GetMaxClip1() - m_iClip1, pOwner->GetAmmoCount(m_iPrimaryAmmoType));
+		int secondary	= min(GetMaxClip2() - m_iClip2, pOwner->GetAmmoCount(m_iSecondaryAmmoType));
 
 		if (primary > 0 || secondary > 0)
 		{
@@ -490,38 +492,42 @@ const Vector &CWeaponSniperRifle::GetBulletSpread( void )
 // Input  : *pEvent - 
 //			*pOperator - 
 //-----------------------------------------------------------------------------
+void CWeaponSniperRifle::Operator_ForceNPCFire( CBaseCombatCharacter *pOperator, bool bSecondary )
+{
+	// Ensure we have enough rounds in the clip
+//	m_iClip1++;
+//
+//	Vector vecShootOrigin, vecShootDir;
+//	QAngle	angShootDir;
+//	GetAttachment( LookupAttachment( "muzzle" ), vecShootOrigin, angShootDir );
+//	AngleVectors( angShootDir, &vecShootDir );
+//	FireNPCPrimaryAttack( pOperator, vecShootOrigin, vecShootDir );
+
+}
+
 void CWeaponSniperRifle::Operator_HandleAnimEvent( animevent_t *pEvent, CBaseCombatCharacter *pOperator )
 {
-	switch ( pEvent->event )
+	switch( pEvent->event )
 	{
-		case EVENT_WEAPON_SNIPER_RIFLE_FIRE:
+		case EVENT_WEAPON_AR2:
 		{
 			Vector vecShootOrigin, vecShootDir;
-			vecShootOrigin = pOperator->Weapon_ShootPosition();
+			vecShootOrigin = pOperator->Weapon_ShootPosition( );
 
 			CAI_BaseNPC *npc = pOperator->MyNPCPointer();
-			Vector vecSpread;
-			if (npc)
-			{
-				vecShootDir = npc->GetActualShootTrajectory( vecShootOrigin );
-				vecSpread = VECTOR_CONE_PRECALCULATED;
-			}
-			else
-			{
-				AngleVectors( pOperator->GetLocalAngles(), &vecShootDir );
-				vecSpread = GetBulletSpread();
-			}
-			WeaponSound( SINGLE_NPC );
-			pOperator->FireBullets( SNIPER_BULLET_COUNT_NPC, vecShootOrigin, vecShootDir, vecSpread, MAX_TRACE_LENGTH, m_iPrimaryAmmoType, SNIPER_TRACER_FREQUENCY_NPC );
-			pOperator->DoMuzzleFlash();
-			break;
-		}
+			ASSERT( npc != NULL );
+			vecShootDir = npc->GetActualShootTrajectory( vecShootOrigin );
 
+			WeaponSound(SINGLE_NPC);
+			pOperator->FireBullets( 3, vecShootOrigin, vecShootDir, VECTOR_CONE_1DEGREES, MAX_TRACE_LENGTH, m_iPrimaryAmmoType, 2 );
+			pOperator->DoMuzzleFlash();
+			m_iClip1 = m_iClip1 - 1;
+		}
+		break;
 		default:
-		{
 			BaseClass::Operator_HandleAnimEvent( pEvent, pOperator );
 			break;
-		}
 	}
 }
+
 

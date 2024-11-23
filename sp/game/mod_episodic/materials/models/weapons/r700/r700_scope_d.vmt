@@ -1,0 +1,17 @@
+VertexLitGeneric
+{
+	$basetexture                "models\weapons\r700\r700_scope_d"
+	$bumpmap                    "models\weapons\r700\r700_scope_n"
+	$phongexponenttexture       "models\weapons\r700\r700_scope_e"
+	
+	$envmap						env_cubemap
+	$envmaptint					"[ .02 .02 .02 ]"
+	$normalmapalphaenvmapmask	"1"	
+	
+	$phong						1
+	$phongexponent				30
+	$phongboost					3
+	$phongfresnelranges			"[0.25 0.5 1]"
+
+	"$nocull"					"1"
+}
