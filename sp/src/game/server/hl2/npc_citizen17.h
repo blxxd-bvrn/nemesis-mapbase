@@ -170,6 +170,7 @@ public:
 	// Damage handling
 	//---------------------------------
 	int 			OnTakeDamage_Alive( const CTakeDamageInfo &info );
+	void			Event_Killed(const CTakeDamageInfo &info);
 
 #ifdef MAPBASE
 	//---------------------------------

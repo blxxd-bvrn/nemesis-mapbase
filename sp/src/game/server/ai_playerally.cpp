@@ -1400,6 +1400,7 @@ void CAI_PlayerAlly::Event_Killed( const CTakeDamageInfo &info )
 		pMourner->m_hPotentialSpeechTarget = this;
 		pMourner->SetSpeechTarget(this);
 #endif
+		if(!info.GetAttacker()->IsPlayer())
 		pMourner->SpeakIfAllowed( TLK_ALLY_KILLED );
 	}
 

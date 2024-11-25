@@ -203,7 +203,7 @@ void CWeaponMP5::FireNPCPrimaryAttack(CBaseCombatCharacter* pOperator, Vector& v
 	pOperator->FireBullets(1, vecShootOrigin, vecShootDir, VECTOR_CONE_PRECALCULATED, MAX_TRACE_LENGTH, m_iPrimaryAmmoType, 2, entindex(), 0);
 
 	pOperator->DoMuzzleFlash();
-	m_iClip1--;
+	m_iClip1 = m_iClip1 - 1;
 }
 
 //-----------------------------------------------------------------------------
@@ -286,9 +286,9 @@ bool CWeaponMP5::Reload()
 //-----------------------------------------------------------------------------
 void CWeaponMP5::AddViewKick()
 {
-#define EASY_DAMPEN			0.6f
+#define EASY_DAMPEN			0.5f
 #define MAX_VERTICAL_KICK	2.0f // Degrees
-#define SLIDE_LIMIT			0.5f // Seconds
+#define SLIDE_LIMIT			2.0f // Seconds
 
 	// Get the view kick
 	CBasePlayer* pPlayer = ToBasePlayer(GetOwner());
