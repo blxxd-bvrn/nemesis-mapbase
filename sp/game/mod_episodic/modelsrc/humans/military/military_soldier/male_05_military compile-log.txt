@@ -1,0 +1,13 @@
+// Created by Crowbar 0.74
+
+  Compiling Define Bones of "male_05_military.qc" ...
+    Output from compiler "D:\Program Files (x86)\Steam\steamapps\common\Source SDK Base 2013 Singleplayer\bin\studiomdl.exe": 
+      qdir:    "d:\program files (x86)\steam\steamapps\sourcemods\mod_episodic\modelsrc\humans\military\military_soldier\"
+      gamedir: "D:\Program Files (x86)\Steam\steamapps\sourcemods\mod_episodic\"
+      g_path:  "male_05_military.qc"
+      Building binary model files...
+      Working on "male_05_military.qc"
+      SMD MODEL military_mesh.smd
+      ERROR: d:\program files (x86)\steam\steamapps\sourcemods\mod_episodic\modelsrc\humans\military\military_soldier\male_05_military.qc(138): - could not load file 'anims\ragdoll.smd'
+      ERROR: Aborted Processing on 'humans\military\military_soldier.mdl'
+  ... Compiling Define Bones of "male_05_military.qc" finished. Check above for any errors.

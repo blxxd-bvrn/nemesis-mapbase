@@ -107,7 +107,7 @@ void CNPC_Houndeye::Spawn()
 
 	SetRenderColor(255, 255, 255, 255);
 
-	SetModel("models/houndeye.mdl");
+	SetModel("models/xenians/houndeye/houndeye.mdl");
 
 	SetHullType(HULL_TINY);
 	SetHullSizeNormal();

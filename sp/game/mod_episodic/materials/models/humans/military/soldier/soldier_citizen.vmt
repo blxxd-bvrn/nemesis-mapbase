@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models\humans\military\soldier\military_soldier.vtf"
+	"$bumpmap" "models\humans\military\soldier\military_soldier_specular.vtf"
+	"$bumpmap2" "models\humans\military\soldier\military_soldier_gloss.vtf"
+	"$normalmap" "models\humans\military\soldier\military_soldier_normal.vtf"
+}

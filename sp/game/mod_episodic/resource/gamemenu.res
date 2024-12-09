@@ -29,6 +29,15 @@
 		"notmulti" "1"
 		"OnlyInGame" "1"
 	}
+
+	"8"
+	{
+		"label" "#GameUI_GameMenu_BonusMaps"
+		"command" "OpenBonusMapsDialog"
+		"InGameOrder" "50"
+		"notmulti" "1"
+	}
+
 	"8"
 	{
 		"label" "#GameUI_Controller"

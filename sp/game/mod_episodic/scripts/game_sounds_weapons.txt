@@ -878,6 +878,75 @@
 	"wave"			"weapons/shotgun/shotgun_fire6.wav"
 }
 
+
+// weapon_mp5.txt
+"Weapon_MP5.Reload"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"		"weapons/mp5/mp5_reload.wav"
+}
+
+"Weapon_MP5.NPC_Reload"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"		"weapons/mp5/mp5_reload.wav"
+}
+
+"Weapon_MP5.Empty"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"		"weapons/pistol/pistol_empty.wav"
+}
+
+"Weapon_MP5.Single"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.55"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"pitch"			"95,105"
+
+	"wave"		"weapons/mp5/mp5_fire1.wav"
+}
+
+"Weapon_MP5.NPC_Single"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"pitch"			"95,105"
+
+	"wave"			"^weapons/mp5/npc_mp5_fire1.wav"
+}
+
+"Weapon_MP5.Special1"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"		"weapons/mp5/switch_single.wav"
+}
+
+"Weapon_MP5.Burst"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_GUNFIRE"
+	"pitch"			"98,105"
+
+	"wave"		"^weapons/mp5/mp5_fire1.wav"
+
+}
+
 // weapon_smg1.txt
 "Weapon_SMG1.Reload"
 {
@@ -964,94 +1033,6 @@
 	"wave"		"^weapons/smg1/smg1_fire1.wav"
 
 }
-
-// weapon_mp5.txt
-"Weapon_SMG1.Reload"
-{
-	"channel"		"CHAN_ITEM"
-	"volume"		"0.7"
-	"soundlevel"	"SNDLVL_NORM"
-
-	"wave"		"weapons/smg1/smg1_reload.wav"
-}
-
-"Weapon_SMG1.NPC_Reload"
-{
-	"channel"		"CHAN_ITEM"
-	"volume"		"0.7"
-	"soundlevel"	"SNDLVL_NORM"
-
-	"wave"		"weapons/smg1/smg1_reload.wav"
-}
-
-"Weapon_SMG1.Empty"
-{
-	"channel"		"CHAN_WEAPON"
-	"volume"		"0.7"
-	"soundlevel"	"SNDLVL_NORM"
-
-	"wave"		"weapons/pistol/pistol_empty.wav"
-}
-
-"Weapon_SMG1.Single"
-{
-	"channel"		"CHAN_WEAPON"
-	"volume"		"0.55"
-	"soundlevel"	"SNDLVL_GUNFIRE"
-	"pitch"			"95,105"
-
-	"wave"		"weapons/smg1/smg1_fire1.wav"
-}
-
-"Weapon_SMG1.Double"
-{
-	"channel"		"CHAN_WEAPON"
-	"volume"		"0.61"
-	"soundlevel"	"SNDLVL_GUNFIRE"
-
-	"wave"		"weapons/ar2/ar2_altfire.wav"
-}
-
-
-"Weapon_SMG1.NPC_Single"
-{
-	"channel"		"CHAN_WEAPON"
-	"volume"		"0.7"
-	"soundlevel"	"SNDLVL_GUNFIRE"
-	"pitch"			"95,105"
-
-	"wave"			"^weapons/smg1/npc_smg1_fire1.wav"
-}
-
-"Weapon_SMG1.Special1"
-{
-	"channel"		"CHAN_WEAPON"
-	"volume"		"0.7"
-	"soundlevel"	"SNDLVL_NORM"
-
-	"wave"		"weapons/smg1/switch_single.wav"
-}
-
-"Weapon_SMG1.Special2"
-{
-	"channel"		"CHAN_WEAPON"
-	"volume"		"0.7"
-	"soundlevel"	"SNDLVL_NORM"
-
-	"wave"			"weapons/smg1/switch_burst.wav"
-}
-
-"Weapon_SMG1.Burst"
-{
-	"channel"		"CHAN_WEAPON"
-	"volume"		"0.7"
-	"soundlevel"	"SNDLVL_GUNFIRE"
-	"pitch"			"98,105"
-
-	"wave"		"^weapons/smg1/smg1_fire1.wav"
-
-}
-
 
 // weapon_sniperrifle.txt
 "Weapon_SniperRifle.Special1"

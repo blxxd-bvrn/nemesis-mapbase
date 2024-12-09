@@ -1,0 +1,10 @@
+"NPC_Nurse.GetOut"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"npc/vo/nurse/nurse_getout.wav"
+}

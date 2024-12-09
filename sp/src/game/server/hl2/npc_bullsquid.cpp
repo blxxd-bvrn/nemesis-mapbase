@@ -254,7 +254,7 @@ void CNPC_Bullsquid::Spawn()
 {
 	Precache( );
 
-	SetModel( "models/bullsquid.mdl");
+	SetModel( "models/xenians/bullsquid/bullsquid.mdl");
 	SetHullType(HULL_WIDE_SHORT);
 	SetHullSizeNormal();
 
