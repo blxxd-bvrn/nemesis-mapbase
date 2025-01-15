@@ -1,0 +1,21 @@
+"Mitchell.RelaxBitch"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"player/mitchell/mitchell_relax.wav"
+}
+
+"Mitchell.ThanksLOL"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"player/mitchell/mitch_thanks.wav"
+}

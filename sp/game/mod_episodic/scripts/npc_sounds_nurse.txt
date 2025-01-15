@@ -1,3 +1,26 @@
+"NPC_Nurse.Startled"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"npc/vo/nurse/nurse_startled.wav"
+}
+
+"NPC_Nurse.Guiding"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"npc/vo/nurse/nurse_guiding.wav"
+}
+
+
 "NPC_Nurse.GetOut"
 {
 	"channel"		"CHAN_VOICE"

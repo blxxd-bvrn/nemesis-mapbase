@@ -5,13 +5,11 @@ actor "!target1"
   {
     event speak "NPC_Nurse.GetOut"
     {
-      time -0.000000 5.015510
+      time 0.107901 5.123411
       param "NPC_Nurse.GetOut"
       event_ramp
       {
         0.0020 0.0074
-        0.7420 0.9037
-        1.6180 0.0963
       }
       fixedlength
       cctype "cc_master"
@@ -31,7 +29,7 @@ scalesettings
   "ExpressionTool" "100"
   "SceneRampTool" "100"
   "RampTool" "100"
-  "CChoreoView" "100"
+  "CChoreoView" "108"
 }
 fps 60
 snap off

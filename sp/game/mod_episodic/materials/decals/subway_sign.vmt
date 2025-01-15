@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "decals/subway_sign"
+	"$surfaceprop" "Default"
+	"$surfaceprop2" "Default"
+	"$envmapcontrast" 1
+	"$translucent" 1
+	"$vertexalpha" 1
+	"$vertexcolor" 1
+}

@@ -1,0 +1,183 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "startled"
+  {
+    event speak "NPC_Nurse.Startled"
+    {
+      time 0.064736 3.234555
+      param "NPC_Nurse.Startled"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event gesture "b_accent_back"
+    {
+      time 0.033474 1.205567
+      param "b_accent_back"
+      absolutetags playback_time
+      {
+        "apex" 0.290316
+        "extreme" 0.435475
+        "loop" 0.580633
+        "end" 0.870949
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "extreme" 0.312500
+        "loop" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+    event gesture "g_left_openhand"
+    {
+      time 1.363637 2.996970
+      param "g_left_openhand"
+      absolutetags playback_time
+      {
+        "apex" 0.291667
+        "accent" 0.416667
+        "loop" 0.520833
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.291667
+        "accent" 0.416667
+        "loop" 0.520833
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+    event lookat "!LookAt"
+    {
+      time -0.530303 -0.030303
+      param "!player"
+    }
+    event flexanimation "face"
+    {
+      time 0.012136 17.163412
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "blink" 
+        {
+          1.6136 0.0000
+          1.6667 0.0000
+          1.6818 0.0000
+          1.8063 0.9130
+          1.8357 1.0000
+          1.8409 1.0000
+          1.9697 0.0000
+          1.9848 0.0000
+          2.3014 0.0000
+        }
+        "outer_raiser" combo 
+        {
+          1.6136 0.0000
+          1.8063 0.0000
+          1.8357 0.0000
+          2.3014 0.0000
+        }
+        {
+          1.6136 0.5000
+          1.8063 0.5000
+          1.8357 0.5000
+          2.3014 0.5000
+        }
+        "lowerer" combo 
+        {
+          1.6136 0.0000
+          1.6667 0.0000
+          1.8063 0.4374
+          1.8357 0.5379
+          1.9848 1.0000
+          2.3014 1.0000
+        }
+        {
+          1.6136 0.5000
+          1.6667 0.5000
+          1.8063 0.5000
+          1.8357 0.5000
+          1.9848 0.5000
+          2.3014 0.5000
+        }
+        "lid_droop" combo 
+        {
+          1.8063 0.0000
+          1.8357 0.0000
+          2.3014 0.4900
+        }
+        {
+          1.8063 0.5000
+          1.8357 0.5000
+          2.3014 0.5000
+        }
+        "stretcher" combo 
+        {
+          1.8063 0.0000
+          1.8357 0.0000
+          2.3014 0.0000
+        }
+        {
+          1.8063 0.5000
+          1.8357 0.5000
+          2.3014 0.5000
+        }
+      }
+    }
+    event face "!FacePlayer"
+    {
+      time -0.095803 7.586952
+      param "!player"
+    }
+  }
+  channel "whisper"
+  {
+    event speak "NPC_Nurse.Guiding"
+    {
+      time 7.558920 16.734589
+      param "NPC_Nurse.Guiding"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event moveto "WalkToPlayer"
+    {
+      time 7.654040 17.154041
+      param "!player"
+      param2 "Walk"
+      param3 "!player"
+      distancetotarget 45.00
+    }
+  }
+}
+
+actor "!player"
+{
+  channel "relax"
+  {
+    event speak "Mitchell.RelaxBitch"
+    {
+      time 3.868358 6.699877
+      param "Mitchell.RelaxBitch"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "RampTool" "54"
+  "CChoreoView" "36"
+  "ExpressionTool" "124"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
