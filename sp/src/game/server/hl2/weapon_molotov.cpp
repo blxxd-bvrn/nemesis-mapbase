@@ -1,17 +1,22 @@
-//========= Copyright Valve Corporation, All rights reserved. ============//
+//=========== (C) Copyright 2000 Valve, L.L.C. All rights reserved. ===========
+//
+// The copyright to the contents herein is the property of Valve, L.L.C.
+// The contents may be used and/or copied only with the written permission of
+// Valve, L.L.C., or in accordance with the terms and conditions stipulated in
+// the agreement/contract under which the contents have been supplied.
 //
 // Purpose: This is the molotov weapon
 //
 // $Workfile:     $
 // $Date:         $
 // $NoKeywords: $
-//=============================================================================//
+//=============================================================================
 
 #include "cbase.h"
-#include	"npcevent.h"
+#include	"NPCEvent.h"
 #include	"basehlcombatweapon.h"
 #include	"basecombatcharacter.h"
-#include	"ai_basenpc.h"
+#include	"AI_BaseNPC.h"
 #include	"AI_Memory.h"
 #include	"player.h"
 #include	"gamerules.h"		// For g_pGameRules
@@ -22,19 +27,16 @@
 #include "vstdlib/random.h"
 #include "movevars_shared.h"
 
-// memdbgon must be the last include file in a .cpp file!!!
-#include "tier0/memdbgon.h"
-
 BEGIN_DATADESC( CWeaponMolotov )
 
 	DEFINE_FIELD( m_nNumAmmoTypes, FIELD_INTEGER ),
-	DEFINE_FIELD( m_bNeedDraw, FIELD_BOOLEAN ),
-	DEFINE_FIELD( m_iThrowBits, FIELD_INTEGER ),
-	DEFINE_FIELD( m_fNextThrowCheck, FIELD_TIME ),
-	DEFINE_FIELD( m_vecTossVelocity, FIELD_VECTOR ),
+	DEFINE_FIELD(  m_bNeedDraw, FIELD_BOOLEAN ),
+	DEFINE_FIELD(  m_iThrowBits, FIELD_INTEGER ),
+	DEFINE_FIELD(  m_fNextThrowCheck, FIELD_TIME ),
+	DEFINE_FIELD(  m_vecTossVelocity, FIELD_VECTOR ),
 
 	// Function Pointers
-	DEFINE_FUNCTION( MolotovTouch ),
+	DEFINE_FUNCTION(  MolotovTouch ),
 
 END_DATADESC()
 
@@ -54,7 +56,7 @@ IMPLEMENT_ACTTABLE(CWeaponMolotov);
 
 void CWeaponMolotov::Precache( void )
 {
-	PrecacheModel("models/props_junk/w_garb_beerbottle.mdl");	//<<TEMP>> need real model
+	engine->PrecacheModel("models/props_junk/w_garb_beerbottle.mdl");	//<<TEMP>> need real model
 	BaseClass::Precache();
 }
 
@@ -76,7 +78,7 @@ void CWeaponMolotov::Spawn( void )
 //------------------------------------------------------------------------------
 void CWeaponMolotov::SetPickupTouch( void )
 {
-	SetTouch(MolotovTouch);
+	SetTouch(&CWeaponMolotov::MolotovTouch);
 }
 
 //-----------------------------------------------------------------------------
@@ -143,7 +145,7 @@ void CWeaponMolotov::Operator_HandleAnimEvent( animevent_t *pEvent, CBaseCombatC
 			// -----------------------------------------------------
 			// If owner has a hand, set position to the hand bone position
 			Vector launchPos;
-			int iBIndex = pNPC->LookupBone("Bip01 R Hand");
+			int iBIndex = pNPC->LookupBone("ValveBiped.Bip01_R_Hand");
 			if (iBIndex != -1) 
 			{
 				Vector origin;
@@ -267,15 +269,16 @@ int CWeaponMolotov::WeaponRangeAttack1Condition( float flDot, float flDist )
 			m_iThrowBits = COND_NONE;
 		}
 		// Get Enemy Position 
-		Vector vecTarget;
-		pEnemy->CollisionProp()->NormalizedToWorldSpace( Vector( 0.5f, 0.5f, 0.0f ), &vecTarget );
+		Vector vecTarget = Vector(pEnemy->GetAbsOrigin().x,
+			pEnemy->GetAbsOrigin().y,
+			pEnemy->GetAbsOrigin().z);
 
 		// Get Toss Vector
 		Vector			throwStart  = pNPC->Weapon_ShootPosition();
 		Vector			vecToss;
 		CBaseEntity*	pBlocker	= NULL;
 		float			throwDist	= (throwStart - vecTarget).Length();
-		float			fGravity	= GetCurrentGravity();
+		float			fGravity	= sv_gravity.GetFloat();
 		float			throwLimit	= pNPC->ThrowLimit(throwStart, vecTarget, fGravity, 35, WorldAlignMins(), WorldAlignMaxs(), pEnemy, &vecToss, &pBlocker);
 
 		// If I can make the throw (or most of the throw)
@@ -317,7 +320,7 @@ void CWeaponMolotov::ThrowMolotov( const Vector &vecSrc, const Vector &vecVeloci
 	QAngle angVel( random->RandomFloat ( -100, -500 ), random->RandomFloat ( -100, -500 ), random->RandomFloat ( -100, -500 ) ); 
 	pMolotov->SetLocalAngularVelocity( angVel );
 
-	pMolotov->SetThrower( GetOwner() );
+	pMolotov->SetThrower(GetOwner());
 	pMolotov->SetOwnerEntity( ((CBaseEntity*)GetOwner()) );
 }
 

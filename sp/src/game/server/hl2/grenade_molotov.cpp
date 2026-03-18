@@ -1,11 +1,16 @@
-//========= Copyright Valve Corporation, All rights reserved. ============//
+//=========== (C) Copyright 2000 Valve, L.L.C. All rights reserved. ===========
+//
+// The copyright to the contents herein is the property of Valve, L.L.C.
+// The contents may be used and/or copied only with the written permission of
+// Valve, L.L.C., or in accordance with the terms and conditions stipulated in
+// the agreement/contract under which the contents have been supplied.
 //
 // Purpose: Flaming bottle thrown from the hand
 //
 // $Workfile:     $
 // $Date:         $
 // $NoKeywords: $
-//=============================================================================//
+//=============================================================================
 
 #include "cbase.h"
 #include "player.h"
@@ -21,9 +26,6 @@
 #include "vstdlib/random.h"
 #include "engine/IEngineSound.h"
 
-// memdbgon must be the last include file in a .cpp file!!!
-#include "tier0/memdbgon.h"
-
 extern short	g_sModelIndexFireball;
 
 extern ConVar    sk_plr_dmg_molotov;
@@ -34,11 +36,11 @@ ConVar    sk_molotov_radius			( "sk_molotov_radius","0");
 
 BEGIN_DATADESC( CGrenade_Molotov )
 
-	DEFINE_FIELD( m_pFireTrail, FIELD_CLASSPTR ),
+	DEFINE_FIELD(m_pFireTrail, FIELD_CLASSPTR ),
 
 	// Function Pointers
-	DEFINE_FUNCTION( MolotovTouch ),
-	DEFINE_FUNCTION( MolotovThink ),
+	DEFINE_ENTITYFUNC(MolotovTouch),
+	DEFINE_THINKFUNC(MolotovThink),
 
 END_DATADESC()
 
@@ -48,24 +50,24 @@ void CGrenade_Molotov::Spawn( void )
 {
 	SetMoveType( MOVETYPE_FLYGRAVITY, MOVECOLLIDE_FLY_BOUNCE );
 	SetSolid( SOLID_BBOX ); 
-	SetCollisionGroup( COLLISION_GROUP_PROJECTILE );
 
+	AddEffects(EF_NOINTERP);
 	SetModel( "models/weapons/w_molotov.mdl");
 
-	UTIL_SetSize(this, Vector( -6, -6, -2), Vector(6, 6, 2));
+	SetSize(-Vector(4, 4, 4), Vector(4, 4, 4));
 
-	SetTouch( MolotovTouch );
-	SetThink( MolotovThink );
-	SetNextThink( gpGlobals->curtime + 0.1f );
+	SetTouch(&CGrenade_Molotov::MolotovTouch);
+	SetThink(&CGrenade_Molotov::MolotovThink);
+	SetNextThink(gpGlobals->curtime);
 
-	m_flDamage		= sk_plr_dmg_molotov.GetFloat();
+	m_flDamage = 100;
 	m_DmgRadius		= sk_molotov_radius.GetFloat();
 
 	m_takedamage	= DAMAGE_YES;
 	m_iHealth		= 1;
 
 	SetGravity( 1.0 );
-	SetFriction( 0.8 );  // Give a little bounce so can flatten
+	SetFriction( 0.6 );  // Give a little bounce so can flatten
 	SetSequence( 1 );
 
 	m_pFireTrail = SmokeTrail::CreateSmokeTrail();
@@ -86,7 +88,7 @@ void CGrenade_Molotov::Spawn( void )
 		m_pFireTrail->m_Opacity		= 0.25f;
 
 		m_pFireTrail->SetLifetime( 20.0f );
-		m_pFireTrail->FollowEntity( this, "0" );
+		m_pFireTrail->FollowEntity( this );
 	}
 }
 
@@ -109,6 +111,7 @@ void CGrenade_Molotov::Detonate( void )
 {
 	SetModelName( NULL_STRING );		//invisible
 	AddSolidFlags( FSOLID_NOT_SOLID );	// intangible
+	//Relink();
 
 	m_takedamage = DAMAGE_NO;
 
@@ -191,9 +194,10 @@ void CGrenade_Molotov::Detonate( void )
 	UTIL_ScreenShake( GetAbsOrigin(), 25.0, 150.0, 1.0, 750, SHAKE_START );
 	CSoundEnt::InsertSound ( SOUND_DANGER, GetAbsOrigin(), BASEGRENADE_EXPLOSION_VOLUME, 3.0 );
 
-	RadiusDamage( CTakeDamageInfo( this, pOwner, m_flDamage, DMG_BLAST ), GetAbsOrigin(), m_DmgRadius, CLASS_NONE, NULL );
+	RadiusDamage(CTakeDamageInfo(this, pOwner, m_flDamage, DMG_BLAST), GetAbsOrigin(), m_DmgRadius, CLASS_NONE, NULL);
 
-	AddEffects( EF_NODRAW );
+	//m_fEffects |= EF_NODRAW;
+	AddEffects(EF_NODRAW);
 	SetAbsVelocity( vec3_origin );
 	SetNextThink( gpGlobals->curtime + 0.2 );
 
@@ -235,10 +239,8 @@ void CGrenade_Molotov::Precache( void )
 {
 	BaseClass::Precache();
 
-	PrecacheModel("models/weapons/w_bb_bottle.mdl");
+	//engine->PrecacheModel("models/weapons/w_bb_bottle.mdl");
 
 	UTIL_PrecacheOther("_firesmoke");
-
-	PrecacheScriptSound( "Grenade_Molotov.Detonate" );
 }
 
